@@ -1,0 +1,14 @@
+#
+### Input configuration
+#
+# Trackpad
+#
+   input "1739:0:Synaptics_TM2668-002" {
+       tap enabled
+       natural_scroll enabled
+#       dwt enabled
+#       middle_emulation enabled
+   }
+#
+# You can get the names of your inputs by running: swaymsg -t get_inputs
+# Read `man 5 sway-input` for more information about this section.

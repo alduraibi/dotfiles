@@ -1,0 +1,35 @@
+#
+### Output configuration
+#
+
+# Border & Gaps
+default_border none
+hide_edge_borders none
+#border none
+gaps inner 0
+gaps outer 0
+# Automatic back-and-forth when switching to the current workspace
+workspace_auto_back_and_forth yes
+
+default_orientation auto
+# horizontal|vertical|auto
+
+# Font
+font FiraGo 12
+
+# Wallpaper
+output * {
+	background wallpapers/nord_arch.png fill
+}
+
+## HDMI output
+#output HDMI-A-1 {
+#  resolution 1920x1080
+#  resolution 3840x2160
+#  position 1920,0
+#  position 2560,0
+#}
+
+
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+

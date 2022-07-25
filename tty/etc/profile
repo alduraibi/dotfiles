@@ -1,0 +1,75 @@
+# /etc/profile
+
+# Set our umask
+umask 022
+
+# Append "$1" to $PATH when not already in.
+# This function API is accessible to scripts in /etc/profile.d
+append_path () {
+    case ":$PATH:" in
+        *:"$1":*)
+            ;;
+        *)
+            PATH="${PATH:+$PATH:}$1"
+    esac
+}
+
+# Append our default paths
+append_path '/usr/local/sbin'
+append_path '/usr/local/bin'
+append_path '/usr/bin'
+
+# Force PATH to be environment
+export PATH
+
+# Load profiles from /etc/profile.d
+if test -d /etc/profile.d/; then
+	for profile in /etc/profile.d/*.sh; do
+		test -r "$profile" && . "$profile"
+	done
+	unset profile
+fi
+
+# Unload our profile API functions
+unset -f append_path
+
+# Source global bash config, when interactive but not posix or sh mode
+if test "$BASH" &&\
+   test "$PS1" &&\
+   test -z "$POSIXLY_CORRECT" &&\
+   test "${0#-}" != sh &&\
+   test -r /etc/bash.bashrc
+then
+	. /etc/bash.bashrc
+fi
+
+# Termcap is outdated, old, and crusty, kill it.
+unset TERMCAP
+
+# Man is much better than us at figuring this out
+unset MANPATH
+
+# Nord theme tty
+# nord-vconsole
+# vconsole colors set printing \\e]PXRRGGBB
+# where X is terminal color, RRGGBB is a hexcolor
+if [ "$TERM" = "linux" ]; then
+  echo -en "\e]P02E3440" #black
+  echo -en "\e]P1BF616A" #darkred
+  echo -en "\e]P2A3BE8C" #darkgreen
+  echo -en "\e]P3EBCB8B" #brown
+  echo -en "\e]P481A1C1" #darkblue
+  echo -en "\e]P5B48EAD" #darkmagenta
+  echo -en "\e]P688C0D0" #darkcyan
+  echo -en "\e]P7E5E9F0" #lightgrey
+  echo -en "\e]P84C566A" #darkgrey
+  echo -en "\e]P9BF616A" #red
+  echo -en "\e]PAA3BE8C" #green
+  echo -en "\e]PBEBCB8B" #yellow
+  echo -en "\e]PC8FBCBB" #blue
+  echo -en "\e]PDB48EAD" #magenta
+  echo -en "\e]PE8FBCBB" #cyan
+  echo -en "\e]PFECEFF4" #white
+  clear #for background artifacting
+fi
+

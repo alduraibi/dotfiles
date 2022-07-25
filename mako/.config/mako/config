@@ -1,0 +1,36 @@
+# General
+layer=overlay
+# Timeout
+default-timeout=10000
+ignore-timeout=1
+# Size
+width=250
+height=80
+padding=5,10
+# Border
+#border-color=#2e3440cc
+border-size=1
+border-radius=5
+# Background
+background-color=#3b4252
+border-color=#2e3440
+#background-color=#3b4252cc
+# Text
+font=FiraGO 10
+text-color=#d8dee9
+# Icons
+max-icon-size=28
+
+#[urgency=low]
+#border-color=#2e3440cc
+
+#[urgency=normal]
+#border-color=#2e3440cc
+
+[urgency=high]
+border-color=#bf616a
+default-timeout=0
+
+[category=mpd]
+default-timeout=2000
+group-by=category

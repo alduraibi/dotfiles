@@ -1,0 +1,17 @@
+#
+### Default config for sway
+#
+
+# Read `man 5 sway` for a complete reference.
+
+# Indicate that a program is run using XWayland
+for_window [shell="xwayland"] title_format "%title [XWayland]"
+
+include variables
+include keys
+include output
+include input
+include idle
+include bar
+include autostart
+#include /etc/sway/config.d/*

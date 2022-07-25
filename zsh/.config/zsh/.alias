@@ -1,0 +1,58 @@
+# ALIASES
+
+# ssh (kitty)
+[[ "$TERM" == "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
+# Misc
+alias dd="dd status=progress"
+alias untar="tar xvf"
+# cp/mv/rm/ln
+alias cp="cp -iR"
+alias mv="mv -i"
+alias rm="rm -r"
+alias rsync="rsync -ah --info=progress2"
+# ls
+#alias ls="ls --color=auto"
+#alias la="ls -a --color=auto"
+#alias ll="ls -hl --color=auto"
+#alias lla="ls -hla --color=auto"
+# exa
+alias ls="exa"
+alias la="exa -a"
+alias ll="exa -l"
+alias lla="exa -la"
+# grep
+alias grep="grep --color=auto"
+alias egrep="egrep --color=auto"
+alias fgrep="fgrep --color=auto"
+# diff
+alias diff="diff --color"
+# cd ..
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+# wl-clipboard
+alias copy="wl-copy"
+alias paste="wl-paste"
+# mount
+alias mount="mount -o uid=1000,gid=1000"
+# stow
+#alias stow="stow --verbose --no-folding"
+#alias stowed="stow --verbose --no-folding -t ~ --stow"
+#alias unstow="stow --verbose --no-folding -t ~ --delete"
+#alias restow="stow --verbose --no-folding -t ~ --restow"
+#alias nostow="stow --simulate --verbose --no-folding -t ~ --stow"
+# kdeconnect-cli
+alias kc="kdeconnect-cli"
+alias kc-gp5="kdeconnect-cli -n kc-gp5"
+# qtile
+alias qtile="qtile start -b wayland"
+# Get package description
+#alias getdesc="grep Description | cut -d":" -f2- | wl-copy"
+getdesc () {
+  yay -Si "$@" | grep Description | cut -d":" -f2- | tr -d "\n" | wl-copy
+}
+getoptl () {
+  yay -Si "$@" | grep Optional\ Deps | cut -d":" -f2- | tr -d "\n" | wl-copy
+}
+
