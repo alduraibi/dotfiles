@@ -1,0 +1,100 @@
+// Waybar config (JSON)
+{
+  "outout": "*",
+  "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+  "modules-center": [],
+  "modules-right": ["tray", "sway/language", "bluetooth", "network", "backlight", "pulseaudio#mic", "pulseaudio#speaker", "battery",  "clock"],
+  "tray": {
+    "icon-size": 14,
+    "show-passive-items": true,
+    "spacing": 10,
+    "reverse-direction": true,
+  },
+  "sway/language": {
+    "format": "",
+    "tooltip-format": " {long}",
+    "on-click": "/bin/kill -SIGRTMIN+0 wvkbd-mobintl",
+  },
+  "bluetooth": {
+    // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+    "on-click": "blueman-manager",
+    "format": "",
+    "format-on": "",
+    "format-off": "",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": " {num_connections} connected",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+  },
+  "network": {
+    "tooltip": true,
+    "tooltip-format-wifi": "{icon} {signalStrength}%\n{essid}\n{ipaddr}",
+    "format": "{icon}",
+    "format-icons": {
+      "wifi": ["直"],
+      "ethernet": [""],
+      "disconnected": ["睊"]
+    }
+  },
+  "backlight": {
+    "format": "{icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "tooltip": true,
+    "tooltip-format": "{icon} {percent}%",
+    "on-click": "brightnessctl set 0%",
+    "on-click-right": "brightnessctl set 100%",
+    "on-scroll-up": "brightnessctl set 5%+",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+  "pulseaudio#mic": {
+    "tooltip": true,
+    "tooltip-format": "{format_source}\n{desc}",
+    "on-click": "pamixer --default-source --toggle-mute",
+    "scroll-step": 0,
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": "",
+  },
+  "pulseaudio#speaker": {
+    "tooltip": true,
+    "tooltip-format": "{icon} {volume}%\n{desc}",
+    "on-click": "pamixer --toggle-mute",
+    "scroll-step": 5,
+    "format": "{icon}",
+    "format-muted": "婢",
+    "format-icons": {
+      "default": ["奄", "奔", "墳"],
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "hdmi": ["奄", "奔", "墳"],
+      "car": "",
+    }
+  },
+  "battery": {
+    "tooltip": true,
+    "tooltip-format": " {capacity}%\n{timeTo}",
+    "bat": "BAT0",
+        "states": {
+            "full": 100,
+            "high": 90,
+            "medium": 70,
+            "low": 30,
+            "critical": 15
+        },
+    "format-icons": {
+      "default": ["", "", "", "", ""],
+      "charging": ["", "", "", ""],
+    },
+    "format": "{icon}",
+  },
+  "clock": {
+      "tooltip": true,
+      "format": "{:%I:%M %p}",
+      "today-format": "<b><u>{}</u></b>",
+      "tooltip-format": "<big>{:%d %b %Y  -  %a}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+}
