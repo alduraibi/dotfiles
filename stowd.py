@@ -3,8 +3,8 @@ import subprocess
 import os.path
 
 home_dir = os.environ["HOME"]
-#dotfiles_dir = home_dir + "/.dotfiles"
-config_file = "stowd.yaml"
+dotfiles_dir = os.path.dirname(__file__)
+config_file = dotfiles_dir + "/stowd.yaml"
 if not os.path.isfile(config_file):
     print("Config file not found. [" + config_file + "]")
     exit
@@ -29,34 +29,36 @@ if 'unstow_root' in config_loaded:
 
 
 for app in stow_home:
-    if not os.path.isdir(app):
-        print(app + " directory not found.")
+    app_path = dotfiles_dir + '/' + app
+    if not os.path.isdir(app_path):
+        print(app_path + " directory not found.")
     else:
-        output = subprocess.run(["stow", "--no-folding", "--target=" + home_dir, "--restow", app])
+        output = subprocess.run(["stow", "--no-folding", "--dir=" + dotfiles_dir, "--target=" + home_dir, "--restow", app])
         if not output.returncode:
             print("stowd " + app)
 
 for app in unstow_home:
-    if not os.path.isdir(app):
-        print(app + " directory not found.")
+    app_path = dotfiles_dir + '/' + app
+    if not os.path.isdir(app_path):
+        print(app_path + " directory not found.")
     else:
-        output = subprocess.run(["stow", "--no-folding", "--target=" + home_dir, "--delete", app])
+        output = subprocess.run(["stow", "--no-folding", "--dir=" + dotfiles_dir, "--target=" + home_dir, "--delete", app])
         if not output.returncode:
             print("unstowd " + app)
 
 for app in stow_root:
-    if not os.path.isdir(app):
-        print(app + " directory not found.")
+    if not os.path.isdir(app_path):
+        print(app_path + " directory not found.")
     else:
-        output = subprocess.run(["sudo", "stow", "--no-folding", "--target=/", "--restow", app])
+        output = subprocess.run(["sudo", "stow", "--no-folding", "--dir=" + dotfiles_dir, "--target=/", "--restow", app])
         if not output.returncode:
             print("stowd " + app)
 
 
 for app in unstow_root:
-    if not os.path.isdir(app):
-        print(app + " directory not found.")
+    if not os.path.isdir(app_path):
+        print(app_path + " directory not found.")
     else:
-        output = subprocess.run(["sudo", "stow", "--no-folding", "--target=/", "--delete", app])
+        output = subprocess.run(["sudo", "stow", "--no-folding", "--dir=" + dotfiles_dir, "--target=/", "--delete", app])
         if not output.returncode:
             print("unstowd " + app)

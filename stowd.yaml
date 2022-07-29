@@ -1,5 +1,6 @@
 ---
 stow_home:
+  - betterdiscord
   - dir_colors
   - electron
   - env
@@ -11,9 +12,11 @@ stow_home:
   - mpv
   - neovim
   - ranger
+  - spicetify
   - sway
   - swaylock
   - tmux
+  - tridactyl
   - vimiv
   - wallpaper
   - waybar
@@ -25,7 +28,6 @@ stow_root:
   - ly
   - tty
 
-unstow_home:
-  - pam
+unstow_home: []
 unstow_root: []
 
