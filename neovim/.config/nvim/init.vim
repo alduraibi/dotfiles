@@ -35,13 +35,10 @@ call plug#begin(expand(plugged_home))
  
     " Colorscheme : Nord
     Plug 'arcticicestudio/nord-vim'
-  
+
     " coc.nvim
     " Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
-    " NERDTree (with on-demand loading)
-    " Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
     " indentLine : Provide indent guides
     " Plug 'Yggdroot/indentLine'
     
@@ -74,6 +71,10 @@ let g:mkdp_browser = 'qutebrowser'
 " By default the theme is define according to the preferences of the system
 let g:mkdp_theme = 'dark'
 " preview page title
+" use a custom markdown style must be absolute path
+let g:mkdp_markdown_css = '~/.config/nvim/markdown_preview.nvim/markdown.css'
+" use a custom highlight style must absolute path
+let g:mkdp_highlight_css = '~/.config/nvim/markdown_preview.nvim/highlight.css'
 " ${name} will be replace with the file name
 let g:mkdp_page_title = '| ${name} |'
 
@@ -131,8 +132,9 @@ syntax enable               " Enables syntax highlighing
 " :command Q! q!
 :command W w
 
-:command NT NEDRTreeToggle
 :command MP MarkdownPreview
+:command UP PlugUpdate
+:command PU PlugUpdate
 
 """ Fix :w and :w!
 " :w	Now asks to create directories while saving
