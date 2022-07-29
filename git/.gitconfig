@@ -5,12 +5,22 @@
 	rebase = false
 [init]
 	defaultBranch = main
+[sendemail]
+	smtpserver = smtp.mailbox.org
+	smtpuser = ghassan@mailbox.org
+	smtpencryption = ssl
+	smtpserverport = 465
 [alias]
   s = status
   a = add
+  at = add -u
   c = commit -m
   co = checkout
   cob = checkout -b
   br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
   lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+  rao = remote add origin
+  brsu = branch --set-upstream-to=origin/main main
+  undo = reset --soft HEAD^
+  undo-hard = reset --hard HEAD^
   
