@@ -9,40 +9,57 @@
 - **🔊 [pamixer](pamixer/README.md) -** Control device volume
 - **📁 [exa](exa/README.md) -** Modern `ls`
 - **🔍 [fd](fd/README.md) -** Alternative to `find`
+- **[atool](atool/README.md) -** Manage archives (zit, tar, etc.)
+- **[tldr](tldr/README.md) -** Simplified man pages
+- **[ansible](ansible/README.md) -** 
+- **📄 [bat](bat/README.md) -** Alternative to `cat`
 - **🔗 [stow](stow/README.md) -** Symlink manager for dotfiles
+- **🔗 [tea](tea/README.md) -** CLI tool to manage gitea
 - **✂️ [wl-clipboard](wl-clipboard/README.md) -** Clipboard
+
 ## Utilities
 - **📟 [kitty](kitty/README.md) -** Terminal
+- **🐚 [zsh](zsh/README.md) -** Shell
 - **🔔 [mako](mako/README.md) -** Notification daemon
 - **⌨️ [wvkbd](wvkbd/README.md) -** On-screen keyboard
+
 ## Display
 - **🖥 [ly](ly/README.md) -** Display manager
-- **🔳 [river](river/README.md) -** Control device brightness
-- **🔳 [sway](sway/README.md) -** Control device brightness
-- **🔒 [swaylock](swaylock/README.md) -** Control device brightness
+- **🪟 [Sway](sway/README.md) -** Wayland compositor and tiling window manager
+- **🔒 [swaylock](swaylock/README.md) -** Lock screen
 - **➖ [waybar](waybar/README.md) -** Status bar
+
 ## Applications
-- **📝 [neovim](neovim/README.md) -** Text editor based on vim
-- **🌐 [firefox](firefox/README.md) -** Internet browser
+- **🌐🦊 [Firefox](firefox/README.md) -** Internet browser
+- **🇻ℹ️ [tridactyl](tridactyl/README.md) -** Vi-bindings for Firefox
 - **🌐 [qutebrowser](qutebrowser/README.md) -** Internet browser with vim bindings
+- **🗝️🔐 Bitwarden -** Password manager
+- **🔄 Syncthing:** File sync
+
+## TUI Applications
+- **📝 [Neovim](neovim/README.md) -** Text editor based on vim
 - **🗃 [ranger](ranger/README.md) -** TUI file explorer with vi bindings
-- **🔳 [tmux](tmux/README.md) -** Terminal multiplexer
+- **🔳 [Tmux](tmux/README.md) -** Terminal multiplexer
 - **🔎🚀 [wofi](wofi/README.md) -** application launcher
-- **🐚 [zsh](zsh/README.md) -** Shell
-- **🗝️🔐 bitwarden -** Password manager
+
 ## Media Players
 - **🎬🎞️ [mpv](mpv/README.md) -** video player
 - **🖼️ [vimiv](vimiv/README.md) -** image viewer
 - **📃 [zathura](zathura/README.md) -** PDF/ePub Viewer
-- **🎵 spotify -** spotify client
+- **🎵🎶 Spotify -** Spotify client
+- **🎨 [Spicetify](spicetify/README.md) -** Spotify theming
+
 ## Communication
-- **💬 discord -** discord client
-- **💬 element -** matrix client
+- **💬 Discord -** Discord client
+- **🎨 [BetterDiscord](betterdiscord/README.md) -** Discord theming
+- **💬 Element -** Matrix client
+- **💬 Telegram -** Telegram client
+
+- **💬 Signal -** Signal client
 ## Extra
-- **🎨 [gtk](gtk/README.md) -** Config files for gtk 2.0 & gtk 3.0
+- **🎨 [GTK](gtk/README.md) -** Config files for GTK 2.0 & GTK 3.0
 - **🎨 [dir_colors](dir_colors/README.md) -** Theme for `ls` and `tree`
 - **⚛️ [electron](electron/README.md) -** Config files for electron apps
-- **🔄 syncthing:** File sync
 ## Fonts
 - **😀 Twemoji -** Twitter emoji font
 - **🔤 FiraGO -** Font
@@ -50,10 +67,28 @@
 - **🔤 Amiri Typewriter -** Arabic Font (with monospaced version)
 
 ## Consider
-- **🖼️ [imv](vimiv/README.md) -** image viewer
-- **🖼️ [mvi](vimiv/README.md) -** image viewer
-## ?
+- **🖼️ [imv](imv/README.md) -** image viewer
+- **🖼️ [mvi](mvi/README.md) -** image viewer
+- **🗓️ [calcurse](calcurse/README.md) -** TUI calendar
+- **📝📋 [Taskwarrior](taskwarrior/README.md) -** TUI TODO list
+- **📄 [LibreOffice](https://www.libreoffice.org/) -** Office suite
+- **📄 [Calligra](https://www.libreoffice.org/) -** Office suite
+- **[duf](https://github.com/muesli/duf) -** `df` alternative
+- **[fzf](https://github.com/junegunn/fzf) -** CLI fuzzy finder
+- **[undistract-me](https://github.com/jml/undistract-me) -** Notifies when slow terminal commands finish
+- **[The Fuck](https://github.com/nvbn/thefuck) -** Corrects last console command
+- **[Color LS](https://github.com/athityakumar/colorls) -** ls with colors and icons
+- **[]() -** 
+
+## Other
+- **🪟 [river](river/README.md) -** Wayland compositor and tiling window manager
 **qtile:** Windows Manager configured in python\
 **⚙ Xresources:** Config files for Xresources
 
-## Stow
+## stowd
+Script to easily symlink configs using stow.
+- Create folder for an app and include all its configs as they appear from your home directory (or root).
+  - Will usually look like: `app_name/.config/app_name/config`- for root: `etc/app_name/config`
+- Edit `stowd.yaml` to include configs to add or remove
+- Run `python stowd.py`
+  - Will get prompted for password for root configs
