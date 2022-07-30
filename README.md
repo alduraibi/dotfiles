@@ -34,7 +34,7 @@
 - **[tridactyl](tridactyl/README.md) -** 🇻ℹ️ Vi-bindings for Firefox ![osi]
 - **[qutebrowser](qutebrowser/README.md) -** 🌐 Internet browser with vim bindings ![osi]
 - **Bitwarden -** 🔐 Password manager ![osi]
-- **Syncthing:** 🔄 File sync ![osi]
+- **Syncthing -** 🔄 File sync ![osi]
 
 ## TUI Applications
 - **📝 [Neovim](neovim/README.md) -** Text editor based on vim ![osi]
@@ -102,14 +102,15 @@
 
 - **[Anbox](https://anbox.io/) -** Run Android applications on any GNU/Linux operating system.
 - **[Waydroid](https://waydro.id/) -** Waydroid uses a container-based approach to boot a full Android system on a regular GNU/Linux system like Ubuntu.
-- **[Anbox]() -** 
+- **[srccpy]() -*Display and control your Android device* 
+- **[guiscrcpy]() -*Open Source GUI based Android Screen Mirroring System* 
 </details>
 <details>
   <summary>Old</summary>
 
 - **🪟 [river](river/README.md) -** Wayland compositor and tiling window manager
-**qtile:** Windows Manager configured in python\
-**⚙ Xresources:** Config files for Xresources
+- **qtile -** Windows Manager configured in python\
+- **⚙ Xresources -** Config files for Xresources
 </details>
 <details>
   <summary>test</summary>
