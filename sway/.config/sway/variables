@@ -17,7 +17,7 @@ set $term $TERMINAL
 set $menu wofi
 set $browser $BROWSER
 set $explorer ranger
-set $dotfiles ~/.dotfiles
+set $dotfiles ~/dotfiles
 
 #
 ### Commands

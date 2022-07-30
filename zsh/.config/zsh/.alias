@@ -47,8 +47,8 @@ alias kc-gp5="kdeconnect-cli -n kc-gp5"
 # qtile
 alias qtile="qtile start -b wayland"
 # run stowd.py
-alias stowd="python ~/.dotfiles/stowd.py"
-alias stowd-conf="vi ~/.dotfiles/stowd.yaml"
+alias stowd="python ~/dotfiles/stowd.py"
+alias stowd-conf="vi ~/dotfiles/stowd.yaml"
 # Get package description
 getdesc () {
   paru -Si "$@" | grep Description | cut -d":" -f2- | tr -d "\n" | wl-copy
