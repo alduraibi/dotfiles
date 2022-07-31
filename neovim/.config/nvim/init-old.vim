@@ -36,6 +36,9 @@ call plug#begin(expand(plugged_home))
     " Colorscheme : Nord
     Plug 'arcticicestudio/nord-vim'
 
+    " Configurations for Nvim LSP
+    Plug 'neovim/nvim-lspconfig'
+
     " coc.nvim
     " Plug 'neoclide/coc.nvim', {'branch': 'release'}
   

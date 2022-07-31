@@ -13,7 +13,7 @@ My laptop configs
 <details>
   <summary>Also Installed</summary>
 
-- **📁 exa ![][osi] -** Modern `ls`
+- **📂 exa ![][osi] -** Modern `ls`
 - **🔍 fd ![osi] -** Alternative to `find`
 - **🗜 atool ![osi] -** Manage archives (zit, tar, etc.)
 - **📖 tldr ![osi] -** Simplified man pages
@@ -29,8 +29,8 @@ My laptop configs
 - **🔎 [fzf](https://github.com/junegunn/fzf) -** CLI fuzzy finder
 - **🔔 [undistract-me](https://github.com/jml/undistract-me) -** Notifies when slow terminal commands finish
 - **🤬 [The Fuck](https://github.com/nvbn/thefuck) -** Corrects last console command
-- **[Color LS](https://github.com/athityakumar/colorls) -** `ls` with colors and icons
-- **[lsd](https://github.com/Peltoche/lsd) -** next gen `ls`
+- **📂 [Color LS](https://github.com/athityakumar/colorls) -** `ls` with colors and icons
+- **📂 [lsd](https://github.com/Peltoche/lsd) -** next gen `ls`
 </details>
 
 ## Utilities
@@ -82,7 +82,7 @@ My laptop configs
 <details>
   <summary>Also Installed</summary>
 
-- **Spotify 🎵🎶 -** Spotify client
+- **🎵🎶 Spotify -** Spotify client
 </details>
 <details>
   <summary>Consider Installing</summary>
@@ -131,7 +131,7 @@ My laptop configs
 <details>
   <summary>Also Installed</summary>
 
-- **📱 KDE Connect -** 
+- **📱 KDE Connect -** Connect to Android phone and other devices
 </details>
 <details>
   <summary>Consider Installing</summary>
@@ -144,9 +144,10 @@ My laptop configs
 
 ## Fonts
 - **😀 Twemoji -** Twitter emoji font ![osi]
-- **🔤 FiraGO -** Font ![osi]
-- **🔤 Fura Code -** Monospaced Fira Code font with Nerd Font patch ![osi]
-- **🔤 Amiri Typewriter -** Arabic Font (with monospaced version) ![osi]
+- **🔤 FiraGO -** Latin script font ![osi]
+- **🔤 Fura Code -** Latin script monospaced Fira Code font with Nerd Font patch ![osi]
+- **🔤 Amiri -** Arabic font ![osi]
+- **🔤 Amiri Typewriter -** Arabic monospaced font ![osi]
 
 
 ## stowd
