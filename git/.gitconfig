@@ -17,8 +17,8 @@
   c = commit -m
   co = checkout
   cob = checkout -b
-  br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-  lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+  br = branch --format='%(HEAD) %(color:green)%(refname:short)%(color:reset) - %(contents:subject) %(color:cyan)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  lg = !git log --pretty=format:\"%C(green)%h%Creset -%C(magenta)%d%Creset %C(normal)%s%Creset %C(cyan)(%cr)%Creset %C(cyan)[%an]\" --abbrev-commit -30
   rao = remote add origin
   brsu = branch --set-upstream-to=origin/main main
   undo = reset --soft HEAD^
