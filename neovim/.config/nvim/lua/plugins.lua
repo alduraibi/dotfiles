@@ -21,12 +21,34 @@ cmd([[
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'  -- Packer can manage itself
 
---  use 'neovim/nvim-lspconfig'   -- Configurations for Nvim LSP
-  use {   -- Configurations for Nvim LSP
+  use {   -- lsp manager
+    "williamboman/mason.nvim",
+    config = function()
+      require('mason').setup{}
+    end
+  }
+
+  use {   -- Bridges mason.nvim with nvim-lspconfig
+    "williamboman/mason-lspconfig.nvim",
+    config = function()
+      require('mason-lspconfig').setup{
+        automatic_installation = true,  -- Auto install servers set up via lspconfig
+        --ensure_installed = { "bashls", "ltex" }
+      }
+    end
+  }
+
+  use {   -- Configurations for LSP
     'neovim/nvim-lspconfig',
     config = function()
       require'lspconfig'.bashls.setup{}   -- bash
-      -- sudo npm i -g bash-language-server
+      require'lspconfig'.pylsp.setup{}    -- python
+      require'lspconfig'.ltex.setup{}     -- latex, markdown, etc.
+      require'lspconfig'.yamlls.setup{}   -- yaml
+      require'lspconfig'.jsonls.setup{}   -- json
+      require'lspconfig'.sumneko_lua.setup{}  -- lua
+      --require'lspconfig'.gopls.setup{}    -- go
+      --require'lspconfig'.spectral.setup{} -- json/yaml linter
     end
   }
 
@@ -44,7 +66,7 @@ return require('packer').startup(function(use)
 
   use {   -- Markdown Preview
     'iamcco/markdown-preview.nvim',
-    run = function() vim.fn['mkdp#util#install']() end
+    run = function() fn['mkdp#util#install']() end
   }
 
   use {   -- fuzzy finder
@@ -58,6 +80,8 @@ return require('packer').startup(function(use)
       require('telescope').setup{
         defaults = {
           file_ignore_patterns = {
+            '~/Pictures',
+            '~/Videos',
             '.git/',
           },
         },
@@ -98,7 +122,9 @@ return require('packer').startup(function(use)
 
   use {   -- autopair
     "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
+    config = function()
+      require("nvim-autopairs").setup{}
+    end
   }
 
   use {   -- show indent lines
@@ -111,7 +137,14 @@ return require('packer').startup(function(use)
   use {   -- displays popup with possible keybinds
     "folke/which-key.nvim",
     config = function()
-      require("which-key").setup()
+      require("which-key").setup{
+        plugins = {
+          spelling = {
+            enabled = true, -- enabling this will show WhichKey when pressing z= to select spelling suggestions
+            suggestions = 10, -- how many suggestions should be shown in the list?
+          }
+        }
+      }
     end
   }
 

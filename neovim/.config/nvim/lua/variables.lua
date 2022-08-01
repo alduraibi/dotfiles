@@ -8,7 +8,7 @@ local g = vim.g
 g.mkdp_browser = 'qutebrowser'
 -- set default theme (dark or light)
 -- By default the theme is define according to the preferences of the system
---g.mkdp_theme = 'dark'
+g.mkdp_theme = 'dark'
 -- preview page title
 -- use a custom markdown style must be absolute path
 g.mkdp_markdown_css = '~/.config/nvim/markdown_preview.nvim/markdown.css'
