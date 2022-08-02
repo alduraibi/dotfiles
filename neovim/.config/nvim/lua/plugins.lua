@@ -18,39 +18,27 @@ cmd([[
   augroup end
 ]])
 
+-- setup file
+local function get_setup(name)
+  return string.format('require("setup.%s")', name)
+end
+
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'  -- Packer can manage itself
 
   use {   -- lsp manager
     "williamboman/mason.nvim",
-    config = function()
-      require('mason').setup{}
-    end
+    config = get_setup('mason')
   }
 
   use {   -- Bridges mason.nvim with nvim-lspconfig
     "williamboman/mason-lspconfig.nvim",
-    config = function()
-      require('mason-lspconfig').setup{
-        automatic_installation = true,  -- Auto install servers set up via lspconfig
-        --ensure_installed = { "bashls", "ltex" }
-      }
-    end
+    config = get_setup('mason-lspconfig')
   }
 
   use {   -- Configurations for LSP
     'neovim/nvim-lspconfig',
-    config = function()
-      --local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-      require'lspconfig'.bashls.setup{}-- capabilities = capabilities }  -- bash
-      require'lspconfig'.pylsp.setup{}-- capabilities = capabilities }   -- python
-      require'lspconfig'.ltex.setup{}-- capabilities = capabilities }    -- latex, markdown, etc.
-      require'lspconfig'.yamlls.setup{}-- capabilities = capabilities }  -- yaml
-      require'lspconfig'.jsonls.setup{}-- capabilities = capabilities }  -- json
-      require'lspconfig'.sumneko_lua.setup{}-- capabilities = capabilities } -- lua
-      --require'lspconfig'.gopls.setup{}    -- go
-      --require'lspconfig'.spectral.setup{} -- json/yaml linter
-    end
+    config = get_setup('lspconfig')
   }
 
 --  use {
@@ -111,31 +99,9 @@ return require('packer').startup(function(use)
       'nvim-treesitter/nvim-treesitter',  -- optional, 
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
-    config = function()
-      require('telescope').setup{
-        defaults = {
-          file_ignore_patterns = {
-            '~/Pictures',
-            '~/Videos',
-            '.git/',
-          },
-        },
-        pickers = {
-          find_files = {
-            --hidden = true,
-            find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
-          },
-          live_grep = {
-            hidden = true
-          },
-          --file_browser = {
-          --  hidden = true
-          --}
-      },
-    }
-    end
+    config = get_setup('telescope')
   }
--- opt packages: ripgrep, fd
+  -- opt packages: ripgrep, fd
 
   use {   -- file explorer
     'kyazdani42/nvim-tree.lua',
@@ -143,44 +109,27 @@ return require('packer').startup(function(use)
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
     tag = 'nightly', -- optional, updated every week. (see issue #1193)
-    config = function()
-      require("nvim-tree").setup()
-    end
+    config = get_setup('nvim-tree')
   }
 
   use {   -- git extras
     'lewis6991/gitsigns.nvim',
-    config = function()
-      require('gitsigns').setup()
-    end
+    config = get_setup('gitsigns')
   }
 
-  use {   -- autopair
+  use {   -- autopair brackets/quotes
     "windwp/nvim-autopairs",
-    config = function()
-      require("nvim-autopairs").setup{}
-    end
+    config = get_setup("nvim-autopairs")
   }
 
   use {   -- show indent lines
     "lukas-reineke/indent-blankline.nvim",
-    config = function()
-      require('indent_blankline').setup()
-    end
+    config = get_setup('indent_blankline')
   }
 
   use {   -- displays popup with possible keybinds
     "folke/which-key.nvim",
-    config = function()
-      require("which-key").setup{
-        plugins = {
-          spelling = {
-            enabled = true, -- enabling this will show WhichKey when pressing z= to select spelling suggestions
-            suggestions = 10, -- how many suggestions should be shown in the list?
-          }
-        }
-      }
-    end
+    config = get_setup('which-key')
   }
 
 
