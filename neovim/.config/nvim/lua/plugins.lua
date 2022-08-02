@@ -41,16 +41,51 @@ return require('packer').startup(function(use)
   use {   -- Configurations for LSP
     'neovim/nvim-lspconfig',
     config = function()
-      require'lspconfig'.bashls.setup{}   -- bash
-      require'lspconfig'.pylsp.setup{}    -- python
-      require'lspconfig'.ltex.setup{}     -- latex, markdown, etc.
-      require'lspconfig'.yamlls.setup{}   -- yaml
-      require'lspconfig'.jsonls.setup{}   -- json
-      require'lspconfig'.sumneko_lua.setup{}  -- lua
+      --local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+      require'lspconfig'.bashls.setup{}-- capabilities = capabilities }  -- bash
+      require'lspconfig'.pylsp.setup{}-- capabilities = capabilities }   -- python
+      require'lspconfig'.ltex.setup{}-- capabilities = capabilities }    -- latex, markdown, etc.
+      require'lspconfig'.yamlls.setup{}-- capabilities = capabilities }  -- yaml
+      require'lspconfig'.jsonls.setup{}-- capabilities = capabilities }  -- json
+      require'lspconfig'.sumneko_lua.setup{}-- capabilities = capabilities } -- lua
       --require'lspconfig'.gopls.setup{}    -- go
       --require'lspconfig'.spectral.setup{} -- json/yaml linter
     end
   }
+
+--  use {
+--    'hrsh7th/cmp-nvim-lsp', -- show data send by the language server
+--    'hrsh7th/cmp-buffer',   -- provides suggestions based on the current file
+--    'hrsh7th/cmp-path',     -- gives completions based on the filesystem
+--    'hrsh7th/cmp-cmdline',
+--    'hrsh7th/nvim-cmp',
+--
+--    -- For luasnip users.
+--    'L3MON4D3/LuaSnip',
+--    'saadparwaiz1/cmp_luasnip', -- it shows snippets in the suggestions
+--
+--    require'cmp'.setup({
+--      snippet = {
+--        -- REQUIRED - you must specify a snippet engine
+--        expand = function(args)
+--          require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+--        end,
+--      },
+--      sources = require'cmp'.config.sources({
+--        { name = 'nvim_lsp' },
+--        { name = 'luasnip' },   -- For luasnip users.
+--      }, {
+--        { name = 'buffer' },
+--      })
+--    })
+--
+--    ---- Setup lspconfig.
+--    --local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+--    ---- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+--    --require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
+--    --  capabilities = capabilities
+--    --}
+--  }
 
   use 'arcticicestudio/nord-vim'  -- Nord colorscheme
 
