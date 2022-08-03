@@ -1,7 +1,7 @@
 ---
 stow_home:
   - betterdiscord
-  - dir_colors
+  - dircolors
   - electron
   - env
   - git
@@ -25,6 +25,7 @@ stow_home:
   - zsh
 
 stow_root:
+  - env_root
   - ly
   - tty
 
