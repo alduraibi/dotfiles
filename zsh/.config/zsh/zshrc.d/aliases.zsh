@@ -2,6 +2,8 @@
 
 # ssh (kitty)
 [[ "$TERM" == "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
+# znap (plugin manager)
+alias PU="znap pull"
 # paru/yay
 alias yay="paru"
 # bat/cat
@@ -49,11 +51,4 @@ alias qtile="qtile start -b wayland"
 # run stowd.py
 alias stowd="python ~/dotfiles/stowd.py"
 alias stowd-conf="vi ~/dotfiles/stowd.yaml"
-# Get package description
-getdesc () {
-  paru -Si "$@" | grep Description | cut -d":" -f2- | tr -d "\n" | wl-copy
-}
-getoptl () {
-  paru -Si "$@" | grep Optional\ Deps | cut -d":" -f2- | tr -d "\n" | wl-copy
-}
 

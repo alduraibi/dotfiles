@@ -1,0 +1,7 @@
+### Default Programs
+# Text editor
+EDITOR=nvim
+VISUAL=nvim
+#PAGER=/bin/less
+# Internet Browser
+#BROWSER=firefox

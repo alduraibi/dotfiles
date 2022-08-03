@@ -16,19 +16,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-if [ -e $XDG_CONFIG_HOME/zsh/.alias ]; then
-  source $XDG_CONFIG_HOME/zsh/.alias
-fi
-if [ -e $XDG_CONFIG_HOME/zsh/.functions ]; then
-  source $XDG_CONFIG_HOME/zsh/.functions
+if [ -e ${ZDOTDIR}/zshrc.d ]; then
+  for file in ${ZDOTDIR}/zshrc.d/*.zsh; do source $file; done
 fi
 
-# To place .dir_colors in config directory instead of directly in the home folder
-if [ -e $XDG_CONFIG_HOME/dir_colors/.dir_colors ]; then
-	eval $(dircolors $XDG_CONFIG_HOME/dir_colors/.dir_colors)
-fi
-
-# Set gsettings
-if [ -e $XDG_CONFIG_HOME/gtk-3.0/gsettings.sh ]; then
-	eval $($XDG_CONFIG_HOME/gtk-3.0/gsettings.sh)
-fi
