@@ -24,3 +24,20 @@
   undo = reset --soft HEAD^
   undo-hard = reset --hard HEAD^
   
+[maintenance]
+	repo = /home/ghassan/.local/share/pure
+	repo = /home/ghassan/.local/share/zsh-autosuggestions
+	repo = /home/ghassan/.local/share/zsh-snap
+	repo = /home/ghassan/.local/share/zsh-syntax-highlighting
+	repo = /home/ghassan/.local/share/zsh/pure
+	repo = /home/ghassan/.local/share/zsh/zsh-autosuggestions
+	repo = /home/ghassan/.local/share/zsh/zsh-snap
+	repo = /home/ghassan/.local/share/zsh/zsh-syntax-highlighting
+	repo = /home/ghassan/.local/share/zsh/znap/pure
+	repo = /home/ghassan/.local/share/zsh/znap/zsh-autosuggestions
+	repo = /home/ghassan/.local/share/zsh/znap/zsh-snap
+	repo = /home/ghassan/.local/share/zsh/znap/zsh-syntax-highlighting
+	repo = /home/ghassan/.local/share/zsh-snap/plugins/pure
+	repo = /home/ghassan/.local/share/zsh-snap/plugins/zsh-autosuggestions
+	repo = /home/ghassan/.local/share/zsh-snap/plugins/zsh-snap
+	repo = /home/ghassan/.local/share/zsh-snap/plugins/zsh-syntax-highlighting
