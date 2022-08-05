@@ -23,7 +23,7 @@ set $dotfiles ~/dotfiles
 ### Commands
 #
 # Virtual Keyboard: (wvkbd)
-set $keyboard_hidden "wvkbd-mobintl --hidden --fn 'FiraGO 18' -l simple,special,emoji,arabic"
+set $keyboard_hidden "wvkbd-mobintl --hidden --fn 'FiraGO 18' -l simple,special,emoji,arabic > /dev/null 2>&1"
 set $keyboard_open_full "wvkbd-mobintl --fn 'FiraGO 16' -l full,special"
 set $keyboard_open_simple "wvkbd-mobintl --fn 'FiraGO 20' -l simple,special"
 set $keyboard_open_arabic "wvkbd-mobintl --fn 'FiraGO 16' -l arabic,special"
