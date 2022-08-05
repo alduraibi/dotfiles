@@ -21,6 +21,7 @@ stow_home:
   - wallpaper
   - waybar
   - wofi
+  - xdg-user-dirs
   - zathura
   - zsh
 
