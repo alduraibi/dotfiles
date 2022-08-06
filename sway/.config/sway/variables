@@ -17,31 +17,12 @@ set $term $TERMINAL
 set $menu wofi
 set $browser $BROWSER
 set $explorer ranger
+set $scripts "~/.scripts"
 set $dotfiles ~/dotfiles
+set $config "~/.config"
 
 #
 ### Commands
 #
-# Virtual Keyboard: (wvkbd)
-set $keyboard_hidden "wvkbd-mobintl --hidden --fn 'FiraGO 18' -l simple,special,emoji,arabic > /dev/null 2>&1"
-set $keyboard_open_full "wvkbd-mobintl --fn 'FiraGO 16' -l full,special"
-set $keyboard_open_simple "wvkbd-mobintl --fn 'FiraGO 20' -l simple,special"
-set $keyboard_open_arabic "wvkbd-mobintl --fn 'FiraGO 16' -l arabic,special"
-set $keyboard_open_emoji "wvkbd-mobintl --fn 'FiraGO 20' -l emoji"
-set $keyboard_toggle "/bin/kill -SIGRTMIN+0 wvkbd-mobintl"
-set $keyboard_close "killall -e wvkbd-mobintl"
-# Volume: (pamixer)
-set $volume_up   "pamixer --increase 5 --allow-boost"
-set $volume_down "pamixer --decrease 5 --allow-boost"
-set $volume_max  "pamixer --set-volume 100"
-set $volume_min  "pamixer --set-volume 0"
-set $volume_mute "pamixer --toggle-mute"
-set $mic_mute    "pamixer --default-source --toggle-mute"
-# Backlight
-set $brightness_up    "brightnessctl set +10%"
-set $brightness_down  "brightnessctl set 10%-"
-set $brightness_max   "brightnessctl set 100%"
-set $brightness_min   "brightnessctl set 1%"
-set $brightness_off   "brightnessctl set 0%"
 # Folders/Files
 set $open_dotfiles "$term ranger --cmd='set show_hidden=true' $dotfiles"

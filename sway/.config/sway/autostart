@@ -5,5 +5,5 @@
 exec mako
 exec autotiling
 exec /usr/lib/kdeconnectd
-exec $keyboard_hidden
+exec $scripts/vkeyboard/start_hidden.sh
 # exec $XDG_CONFIG_HOME/gtk-3.0/gsettings.sh

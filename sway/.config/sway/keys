@@ -171,36 +171,39 @@ bindsym $mod+r mode "resize"
 # Media keys
 #
     # Audio
-    bindsym XF86AudioRaiseVolume        exec $volume_up
-    bindsym XF86AudioLowerVolume        exec $volume_down
-    bindsym Shift+XF86AudioRaiseVolume  exec $volume_max
-    bindsym Shift+XF86AudioLowerVolume  exec $volume_min
-    bindsym XF86AudioMute               exec $volume_mute
-    bindsym Shift+XF86AudioMute         exec $volume_mute
+    bindsym XF86AudioRaiseVolume        exec $scripts/volume/inc_5.sh
+    bindsym XF86AudioLowerVolume        exec $scripts/volume/dec_5.sh
+    bindsym Shift+XF86AudioRaiseVolume  exec $scripts/volume/set_max.sh
+    bindsym Shift+XF86AudioLowerVolume  exec $scripts/volume/set_min.sh
+    bindsym XF86AudioMute               exec $scripts/volume/mute_toggle.sh
+    bindsym Shift+XF86AudioMute         exec $scripts/volume/mute_toggle.sh
     # Microphone
-    bindsym Shift+XF86AudioMicMute exec $mic_mute
+    bindsym Shift+XF86AudioMicMute exec $scripts/mic/mute_toggle.sh
     # Brighness
-    bindsym XF86MonBrightnessDown       exec $brightness_down
-    bindsym XF86MonBrightnessUp         exec $brightness_up
-    bindsym Shift+XF86MonBrightnessDown exec $brightness_min
-    bindsym Shift+XF86MonBrightnessUp   exec $brightness_max
+    bindsym XF86MonBrightnessDown       exec $scripts/backlight/dec_10.sh
+    bindsym XF86MonBrightnessUp         exec $scripts/backlight/inc_10.sh
+    bindsym Shift+XF86MonBrightnessDown exec $scripts/backlight/set_min.sh
+    bindsym Shift+XF86MonBrightnessUp   exec $scripts/backlight/set_max.sh
     # Media Controls
     #bindsym XF86AudioPlay exec playerctl play-pause
     #bindsym XF86AudioNext exec playerctl next
     #bindsym XF86AudioPrev exec playerctl previous
+    # Screenshot
+    bindsym $mod+y  exec  $scripts/screenshot/focus.sh
+    bindsym $mod+Shift+y  exec $scripts/screenshot/full.sh
 
 #
 # X1 Carbon specific
 # 
 # search touch button: open launcher
 bindsym XF86Search exec $menu
-# row touch button: open 
-bindsym XF86LaunchA       exec $keyboard_toggle
-bindsym Shift+XF86LaunchA exec $keyboard_close
+# row touch button: toggle virtual keyboard
+bindsym XF86LaunchA       exec  $scripts/vkeyboard/toggle.sh
+bindsym Shift+XF86LaunchA exec  $scripts/vkeyboard/close.sh
 # grid touch button: open 
 bindsym XF86Explorer exec $term $explorer
 # voice touch button: open 
-bindsym XF86VoiceCommand exec $mic_mute
+bindsym XF86VoiceCommand exec $scripts/mic/mute_toggle.sh
 # FN touch button
 #bindsym XF86WakeUp exec $menu
 # wireless touch button
