@@ -1,16 +1,19 @@
 ---
 stow_home:
   - betterdiscord
+  - brightnessctl
   - dircolors
   - electron
   - env
   - git
   - gtk
+  - grim
   - kitty
   - mako
   - mime
   - mpv
   - neovim
+  - pamixer
   - ranger
   - spicetify
   - sway
@@ -20,7 +23,9 @@ stow_home:
   - vimiv
   - wallpaper
   - waybar
+  - wl-recorder
   - wofi
+  - wvkbd
   - xdg-user-dirs
   - zathura
   - zsh
