@@ -1,6 +1,6 @@
 # .zshenv
 
-ZDOTDIR=${XDG_CONFIG_HOME:=~/.config}/zsh
+export ZDOTDIR=${XDG_CONFIG_HOME:=~/.config}/zsh
 
 
 if [ -e ${ZDOTDIR}/zshenv.d ]; then
