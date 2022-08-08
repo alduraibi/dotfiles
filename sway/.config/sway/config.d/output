@@ -19,7 +19,8 @@ font FiraGo 12
 
 # Wallpaper
 output * {
-	background wallpapers/nord_arch.png fill
+	#background wallpapers/nord_arch.png fill
+	background $config/wallpaper fill
 }
 
 ## HDMI output

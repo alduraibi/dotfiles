@@ -19,8 +19,8 @@
 
 * {
 	border: none;
-	font-family: FiraGo;
-	font-size: 15px;
+	font-family: "FiraGo", "FiraMono Nerd Font";
+	font-size: 14px;
 	min-height: 1px;
   margin-top: 1px;
   margin-bottom: 1px;
@@ -171,7 +171,7 @@ window#waybar.PCSX2 #window {
 	color: @nord14;
 	background: @nord1;
   padding-left: 7px;
-  padding-right: 10px;
+  padding-right: 17px;
 }
 #battery.medium {
 	color: @nord13;

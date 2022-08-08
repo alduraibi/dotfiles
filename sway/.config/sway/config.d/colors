@@ -21,10 +21,10 @@
 
 
 # class                  border  backgr. text    indicator child_border
-client.background        n/a			#434c5e n/a     n/a       n/a
+client.background        #2e3440 #434c5e n/a     n/a       n/a
 client.focused           #3b4252 #434c5e #d8dee9 #434c5e   #434c5e
 client.focused_inactive  #2e3440 #3b4252 #d8dee9 #3b4252   #3b4252
-client.focused_tab_title	#2e3440 #3b4252 #d8dee9 n/a       n/a
+client.focused_tab_title #2e3440 #3b4252 #d8dee9 #3b4252   #3b4252
 client.unfocused         #2e3440 #3b4252 #d8dee9 #3b4252   #3b4252
 client.urgent            #434c5e #434c5e #d8dee9 #434c5e   #434c5e
 client.placeholder       #434c5e #434c5e #d8dee9 #434c5e   #434c5e

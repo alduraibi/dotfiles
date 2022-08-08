@@ -4,6 +4,9 @@
   "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
   "modules-center": [],
   "modules-right": ["tray", "sway/language", "bluetooth", "network", "backlight", "pulseaudio#mic", "pulseaudio#speaker", "battery",  "clock"],
+  "sway/workspaces": {
+    "format": "{name}",
+  },
   "tray": {
     "icon-size": 14,
     "show-passive-items": true,
