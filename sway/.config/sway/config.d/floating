@@ -1,0 +1,2 @@
+for_window [app_id="scrcpy"] floating enable
+for_window [title="Extension: (fx_cast)*"] floating enable

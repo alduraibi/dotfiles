@@ -1,0 +1,10 @@
+# General
+assign [app_id="firefox"] → workspace $firefox
+# Media
+assign [class="Spotify" instance="spotify"] $spotify
+assign [app_id="vimiv"] → workspace number $vimiv
+assign [app_id="mpv"] → $mpv
+# Social
+assign [class="discord"] $discord
+assign [class="Signal"] $signal
+assign [class="Element" instance="element"] $element
