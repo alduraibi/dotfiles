@@ -1,10 +1,56 @@
-# General
-assign [app_id="firefox"] → workspace $firefox
-# Media
-assign [class="Spotify" instance="spotify"] $spotify
-assign [app_id="vimiv"] → workspace number $vimiv
-assign [app_id="mpv"] → $mpv
-# Social
-assign [class="discord"] $discord
-assign [class="Signal"] $signal
-assign [class="Element" instance="element"] $element
+#
+### General
+#
+workspace $w_0 output $displays_internal
+workspace $w_1 output $displays_internal
+workspace $w_2 output $displays_internal
+workspace $w_3 output $displays_internal
+workspace $w_4 output $displays_internal
+workspace $w_5 output $displays_internal
+workspace $w_6 output $displays_internal
+workspace $w_7 output $displays_internal
+workspace $w_8 output $displays_internal
+workspace $w_9 output $displays_internal
+# firefox
+workspace $w_firefox output $displays_internal
+assign [app_id="firefox"] → workspace $w_firefox
+
+#
+### External
+#
+workspace $w_ext0 output $displays_external
+workspace $w_ext1 output $displays_external
+workspace $w_ext2 output $displays_external
+workspace $w_ext3 output $displays_external
+workspace $w_ext4 output $displays_external
+workspace $w_ext5 output $displays_external
+workspace $w_ext6 output $displays_external
+workspace $w_ext7 output $displays_external
+workspace $w_ext8 output $displays_external
+workspace $w_ext9 output $displays_external
+
+#
+### Media
+#
+# spotify
+workspace $w_spotify output $displays_internal
+assign [class="Spotify" instance="spotify"] → workspace $w_spotify
+# vimiv
+workspace $w_vimiv output $displays_internal
+assign [app_id="vimiv"] → workspace $w_vimiv
+# mpv
+workspace $w_mpv output $displays_internal
+assign [app_id="mpv"] → → workspace $w_mpv
+
+#
+### Social
+#
+# discord
+workspace $w_discord output $displays_internal
+assign [class="discord"] → workspace $w_discord
+# signal
+workspace $w_signal output $displays_internal
+assign [class="Signal"] → workspace $w_signal
+# element
+workspace $w_element output $displays_internal
+assign [class="Element" instance="element"] → workspace $w_element

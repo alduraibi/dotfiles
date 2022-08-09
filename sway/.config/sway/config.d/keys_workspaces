@@ -4,63 +4,63 @@
 mode "workspaces" {
   ### General
   # bitwarden
-  bindsym b workspace number $bitwarden ; mode "default"
-  bindsym Shift+b move container to workspace number $bitwarden ; workspace number $bitwarden ; mode "default"
+  bindsym b workspace number $w_bitwarden ; mode "default"
+  bindsym Shift+b move container to workspace number $w_bitwarden ; workspace number $w_bitwarden ; mode "default"
   ### Media
   # spotify
-  bindsym s workspace number $spotify ; mode "default"
-  bindsym Shift+s move container to workspace number $spotify ; workspace number $spotify ; mode "default"
+  bindsym s workspace number $w_spotify ; mode "default"
+  bindsym Shift+s move container to workspace number $w_spotify ; workspace number $w_spotify ; mode "default"
   # vimiv
-  bindsym i workspace number $vimiv ; mode "default"
-  bindsym Shift+i move container to workspace number $vimiv ; workspace number $vimiv ; mode "default"
+  bindsym i workspace number $w_vimiv ; mode "default"
+  bindsym Shift+i move container to workspace number $w_vimiv ; workspace number $w_vimiv ; mode "default"
   # mpv
-  bindsym v workspace number $mpv ; mode "default"
-  bindsym Shift+v move container to workspace number $mpv ; workspace number $mpv ; mode "default"
+  bindsym v workspace number $w_mpv ; mode "default"
+  bindsym Shift+v move container to workspace number $w_mpv ; workspace number $w_mpv ; mode "default"
   # jellyfin
-  bindsym j workspace number $jellyfin ; mode "default"
-  bindsym Shift+j move container to workspace number $jellyfin ; workspace number $jellyfin ; mode "default"
+  bindsym j workspace number $w_jellyfin ; mode "default"
+  bindsym Shift+j move container to workspace number $w_jellyfin ; workspace number $w_jellyfin ; mode "default"
 
   ### Social
   # discord
-  bindsym d workspace number $discord ; mode "default"
-  bindsym Shift+d move container to workspace number $discord ; workspace number $discord ; mode "default"
+  bindsym d workspace number $w_discord ; mode "default"
+  bindsym Shift+d move container to workspace number $w_discord ; workspace number $w_discord ; mode "default"
   # signal
-  bindsym g workspace number $signal ; mode "default"
-  bindsym Shift+g move container to workspace number $signal ; workspace number $signal ; mode "default"
+  bindsym g workspace number $w_signal ; mode "default"
+  bindsym Shift+g move container to workspace number $w_signal ; workspace number $w_signal ; mode "default"
   # telegram
-  bindsym t workspace number $telegram ; mode "default"
-  bindsym Shift+t move container to workspace number $telegram ; workspace number $telegram ; mode "default"
+  bindsym t workspace number $w_telegram ; mode "default"
+  bindsym Shift+t move container to workspace number $w_telegram ; workspace number $w_telegram ; mode "default"
   # element
-  bindsym e workspace number $element ; mode "default"
-  bindsym Shift+e move container to workspace number $element ; workspace number $element ; mode "default"
+  bindsym e workspace number $w_element ; mode "default"
+  bindsym Shift+e move container to workspace number $w_element ; workspace number $w_element ; mode "default"
   # whatsapp
-  bindsym w workspace number $whatsapp ; mode "default"
-  bindsym Shift+w move container to workspace number $whatsapp ; workspace number $whatsapp ; mode "default"
+  bindsym w workspace number $w_whatsapp ; mode "default"
+  bindsym Shift+w move container to workspace number $w_whatsapp ; workspace number $w_whatsapp ; mode "default"
   # zoom
-  bindsym z workspace number $zoom ; mode "default"
-  bindsym Shift+z move container to workspace number $zoom ; workspace number $zoom ; mode "default"
+  bindsym z workspace number $w_zoom ; mode "default"
+  bindsym Shift+z move container to workspace number $w_zoom ; workspace number $w_zoom ; mode "default"
 
 
-  bindsym 1 workspace number 11 ; mode "default"
-  bindsym 2 workspace number 12 ; mode "default"
-  bindsym 3 workspace number 13 ; mode "default"
-  bindsym 4 workspace number 14 ; mode "default"
-  bindsym 5 workspace number 15 ; mode "default"
-  bindsym 6 workspace number 16 ; mode "default"
-  bindsym 7 workspace number 17 ; mode "default"
-  bindsym 8 workspace number 18 ; mode "default"
-  bindsym 9 workspace number 19 ; mode "default"
-  bindsym 0 workspace number 20 ; mode "default"
-  bindsym Shift+1 move container to workspace number 11 ; workspace number 11 ; mode "default"
-  bindsym Shift+2 move container to workspace number 12 ; workspace number 12 ; mode "default"
-  bindsym Shift+3 move container to workspace number 13 ; workspace number 13 ; mode "default"
-  bindsym Shift+4 move container to workspace number 14 ; workspace number 14 ; mode "default"
-  bindsym Shift+5 move container to workspace number 15 ; workspace number 15 ; mode "default"
-  bindsym Shift+6 move container to workspace number 16 ; workspace number 16 ; mode "default"
-  bindsym Shift+7 move container to workspace number 17 ; workspace number 17 ; mode "default"
-  bindsym Shift+8 move container to workspace number 18 ; workspace number 18 ; mode "default"
-  bindsym Shift+9 move container to workspace number 19 ; workspace number 19 ; mode "default"
-  bindsym Shift+0 move container to workspace number 20 ; workspace number 20 ; mode "default"
+  bindsym 1 workspace number $w_ext1 ; mode "default"
+  bindsym 2 workspace number $w_ext2 ; mode "default"
+  bindsym 3 workspace number $w_ext3 ; mode "default"
+  bindsym 4 workspace number $w_ext4 ; mode "default"
+  bindsym 5 workspace number $w_ext5 ; mode "default"
+  bindsym 6 workspace number $w_ext6 ; mode "default"
+  bindsym 7 workspace number $w_ext7 ; mode "default"
+  bindsym 8 workspace number $w_ext8 ; mode "default"
+  bindsym 9 workspace number $w_ext9 ; mode "default"
+  bindsym 0 workspace number $w_ext0 ; mode "default"
+  bindsym Shift+1 move container to workspace number $w_ext1 ; workspace number $w_ext1 ; mode "default"
+  bindsym Shift+2 move container to workspace number $w_ext2 ; workspace number $w_ext2 ; mode "default"
+  bindsym Shift+3 move container to workspace number $w_ext3 ; workspace number $w_ext3 ; mode "default"
+  bindsym Shift+4 move container to workspace number $w_ext4 ; workspace number $w_ext4 ; mode "default"
+  bindsym Shift+5 move container to workspace number $w_ext5 ; workspace number $w_ext5 ; mode "default"
+  bindsym Shift+6 move container to workspace number $w_ext6 ; workspace number $w_ext6 ; mode "default"
+  bindsym Shift+7 move container to workspace number $w_ext7 ; workspace number $w_ext7 ; mode "default"
+  bindsym Shift+8 move container to workspace number $w_ext8 ; workspace number $w_ext8 ; mode "default"
+  bindsym Shift+9 move container to workspace number $w_ext9 ; workspace number $w_ext9 ; mode "default"
+  bindsym Shift+0 move container to workspace number $w_ext0 ; workspace number $w_ext0 ; mode "default"
 
 
   # Return to default mode
