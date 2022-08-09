@@ -9,7 +9,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+w mode "workspaces"
 bindsym $mod+o mode "outputs"
 bindsym $mod+i mode "inputs"
-#bindsym $mod+a mode "apps"
+bindsym $mod+a mode "apps"
 
 
 # Basics:
@@ -120,7 +120,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+Control+space focus mode_toggle
 
 # Move focus to the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 #
 # Scratchpad:
