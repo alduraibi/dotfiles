@@ -1,8 +1,18 @@
 #
-# Mode: Output Devices
+### Mode: Output Devices
 #
 mode "outputs" {
-  ### General
+  #
+  # General
+  #
+  # Change focus to next output
+  bindsym space focus output right ; mode "default"
+  # Move workspace to next output
+  bindsym w move workspace to output right ; mode "default"
+
+  #
+  # Scaling
+  #
   bindsym Control+0 output - scale 0.25 ; mode "default"
   bindsym Shift+0 output - scale 0.5 ; mode "default"
   bindsym Shift+Control+0 output - scale 0.75 ; mode "default"

@@ -7,6 +7,6 @@
 # Indicate that a program is run using XWayland
 for_window [shell="xwayland"] title_format "%title [XWayland]"
 
-include variables
+include var.d/*
 include config.d/*
 include autostart
