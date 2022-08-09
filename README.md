@@ -22,7 +22,7 @@ My laptop configs
 - **🔗 stow  -** Symlink manager for dotfiles
 - **#️⃣ tea  -** CLI tool to manage gitea
 - **#️⃣ gh  -** CLI tool to manage github
-</detais>
+</details>
 <details>
   <summary>Consider Installing</summary>
 

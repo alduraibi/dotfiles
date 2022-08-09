@@ -1,5 +1,13 @@
 # ALIASES
 
+# exit terminal
+alias q="exit"
+alias Q="exit"
+alias q!="exit"
+alias :q="exit"
+alias :q!="exit"
+alias wq="exit"
+alias :wq="exit"
 # ssh (kitty)
 [[ "$TERM" == "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
 # znap (plugin manager)
@@ -45,7 +53,7 @@ alias paste="wl-paste"
 alias mount="mount -o uid=1000,gid=1000"
 # kdeconnect-cli
 alias kc="kdeconnect-cli"
-alias kc-gp5="kdeconnect-cli -n kc-gp5"
+alias kc-gp5="kdeconnect-cli -n ghassan-gp5"
 # qtile
 alias qtile="qtile start -b wayland"
 # run stowd.py
