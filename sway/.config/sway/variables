@@ -24,7 +24,9 @@ set $config "~/.config"
 # General
 set $term1    1:
 set $firefox  2:
-set $term3    3:
+set $git      3:
+set $code     4:
+set $dev      5:
 set $hdmi     99:
 set $docs     :
 set $bitwarden 81:

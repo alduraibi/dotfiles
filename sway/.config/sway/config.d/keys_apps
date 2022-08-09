@@ -1,0 +1,12 @@
+#
+# Mode: Open Applications
+#
+mode "apps" {
+  ### General
+  bindsym f exec firefox; mode "default"
+
+
+  # Return to default mode
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
