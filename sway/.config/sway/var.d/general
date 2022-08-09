@@ -3,11 +3,6 @@
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
-# Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
 # Your preferred terminal emulator
 set $term $TERMINAL
 # Your preferred application launcher
@@ -25,27 +20,6 @@ set $config "~/.config"
 set $displays_internal eDP-1 eDP1
 set $displays_external HDMI-A-1 HDMI-A-2 HDMI1 HDMI2
 
-## General
-#set $term1    1:
-#set $firefox  2:
-#set $git      3:
-#set $code     4:
-#set $dev      5:
-#set $hdmi     99:
-#set $docs     :
-#set $bitwarden 81:
-## Media
-#set $vimiv    31:
-#set $spotify  32:
-#set $mpv      33:
-#set $jellyfin 34:磊
-## Media
-#set $discord  52:ﭮ
-#set $element  53:
-#set $whatsapp 54:
-#set $signal   55:
-#set $telegram 56:
-#set $zoom     57:
 
 #
 ### Commands
