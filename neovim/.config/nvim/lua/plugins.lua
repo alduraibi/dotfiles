@@ -75,9 +75,39 @@ return require('packer').startup(function(use)
 --    --}
 --  }
 
-  use 'arcticicestudio/nord-vim'  -- Nord colorscheme
+  -- CMP
+  --use {   -- A completion plugin 
+  --  "hrsh7th/nvim-cmp",   -- A completion plugin 
+  --  event = "InsertEnter",
+  --  opt = true,
+  --  config = get_setup("cmp"),
+  --  wants = { "LuaSnip" },
+  --  requires = {
+  --    "hrsh7th/cmp-buffer",   -- provides suggestions based on the current file
+  --    "hrsh7th/cmp-path",     -- gives completions based on the filesystem
+  --    "hrsh7th/cmp-nvim-lua", -- show data send by the language server
+  --    "ray-x/cmp-treesitter",
+  --    "hrsh7th/cmp-cmdline",
+  --    "saadparwaiz1/cmp_luasnip",
+  --    "hrsh7th/cmp-nvim-lsp",
+  --    {
+  --      "L3MON4D3/LuaSnip",
+  --      branch = "master",
+  --      wants = "friendly-snippets",
+  --      config = get_setup("luasnip"),
+  --    },
+  --    "rafamadriz/friendly-snippets",
+  --  },
+  --  disable = false,
+  --}
 
-  use 'nvim-lua/plenary.nvim'   -- Required by many plugins
+  --use 'arcticicestudio/nord-vim'  -- Nord colorscheme
+  use {   -- Nord colorscheme (nvim)
+    'shaunsingh/nord.nvim',
+    config = get_setup('nord')
+  }
+
+  --use 'nvim-lua/plenary.nvim'   -- Required by many plugins
 
   use 'kyazdani42/nvim-web-devicons'    -- icon support
   -- requires: a patched font

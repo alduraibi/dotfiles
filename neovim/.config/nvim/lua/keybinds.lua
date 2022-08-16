@@ -5,13 +5,19 @@ local function map(m, k, v)
     vim.keymap.set(m, k, v, { silent = true })
 end
 
+map('n', ';', ':')   -- Use `;` in normal mode to insert 1 character
+map('v', ';', ':')   -- Use `;` in visual mode to insert 1 character
+
 --map('n', '<Space>', 'i <Esc>r')   -- Use <Space> in normal mode to insert 1 character
-map('n', ';', 'i <Esc>r')   -- Use `,` in normal mode to insert 1 character
+map('n', '\\', 'i <Esc>r')   -- Use `,` in normal mode to insert 1 character
 
 -- Use <leader> before yanking and pasting to use system clipboard
 map('v', '<leader>y', '"+y')
 map('n', '<leader>y', '"+y')
 map('n', '<leader>Y', '"+Y')
+map('v', '<leader>d', '"+d')
+map('n', '<leader>d', '"+d')
+map('n', '<leader>D', '"+D')
 map('v', '<leader>p', '"+p')
 map('n', '<leader>p', '"+p')
 map('n', '<leader>P', '"+P')

@@ -14,7 +14,8 @@
 - [mason.nvim][mason] - Package manager for LSP
 - [mason-lspconfig.nvim][mason-lspconfig] - bridges mason and lspconfig
 ### Visual
-- [nord-vim][nord-vim] - Nord color scheme
+- ~~[nord-vim][nord-vim] - Nord color scheme~~
+- [nord.nvim][nord-nvim] - Nord color scheme ported for Neovim
 - [which-key.nvim][which-key] - display popup with possible keybinds
 - [markdown-preview.nvim][markdown-preview] - Render markdown in browser tab
 ### Coding
@@ -47,7 +48,7 @@ Check [here][lsp] to find more (automatically installed with mason)
 [code]: https://github.com/neovim/neovim
 [arch]: https://wiki.archlinux.org/title/Neovim
 
-[packer]: https://github.com/junegunn/vim-plug
+[packer]: https://github.com/wbthomason/packer.nvim
 [lspconfig]: https://github.com/neovim/nvim-lspconfig
 [mason]: https://github.com/williamboman/mason.nvim
 [mason-lspconfig]: https://github.com/williamboman/mason-lspconfig.nvim
@@ -56,6 +57,7 @@ Check [here][lsp] to find more (automatically installed with mason)
 [treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [telescope]: https://github.com/nvim-telescope/telescope.nvim
 [nord-vim]: https://github.com/arcticicestudio/nord-vim
+[nord-nvim]: https://github.com/shaunsingh/nord.nvim
 [markdown-preview]: https://github.com/iamcco/markdown-preview.nvim
 [tree]: https://github.com/kyazdani42/nvim-tree.lua
 [gitsigns]: https://github.com/lewis6991/gitsigns.nvim
