@@ -55,13 +55,13 @@ export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 #nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings
-
-mkdir -p "$XDG_CONFIG_HOME/pg"
-export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
-export PSQL_HISTORY="$XDG_STATE_HOME/psql_history"
-export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
-export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
-
+hash psql &> /dev/null && {
+  mkdir -p "$XDG_CONFIG_HOME/pg"
+  export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
+  export PSQL_HISTORY="$XDG_STATE_HOME/psql_history"
+  export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
+  export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
+}
 export REDISCLI_HISTFILE="$XDG_DATA_HOME"/redis/rediscli_history
 export REDISCLI_RCFILE="$XDG_CONFIG_HOME"/redis/redisclirc
 export RIPGREP_CONFIG_PATH=$XDG_CONFIG_HOME/ripgrep/config
@@ -74,3 +74,8 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 #export WINEPREFIX="$XDG_DATA_HOME"/wineprefixes/default
 #xbindkeys -f "$XDG_CONFIG_HOME"/xbindkeys/config
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+
+hash wl-copy &> /dev/null && {
+  alias copy="wl-copy"
+  alias paste="wl-paste"
+}
