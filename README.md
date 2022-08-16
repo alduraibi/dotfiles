@@ -1,8 +1,8 @@
 # ⚙️ dotfiles 🔧
-My laptop configs
+My Arch and Termux configs
 
 ## Overview
-- **💻 Distro:** Arch Linux
+- **💻 Distro:** Arch Linux / Termux
 - **🎨 Theme:** Nord
 - **🔳 Display Server:** Wayland *(+ xwayland)*
 
@@ -13,7 +13,7 @@ My laptop configs
 <details>
   <summary>Also Installed</summary>
 
-- **📂 exa ![][osi] -** Modern `ls`
+- **📂 exa -** Modern `ls` ![][osi]
 - **🔍 fd  -** Alternative to `find`
 - **🗜 atool  -** Manage archives (zit, tar, etc.)
 - **📖 tldr  -** Simplified man pages
@@ -30,8 +30,6 @@ My laptop configs
 - **🔎 [fzf](https://github.com/junegunn/fzf) -** CLI fuzzy finder
 - **🔔 [undistract-me](https://github.com/jml/undistract-me) -** Notifies when slow terminal commands finish
 - **🤬 [The Fuck](https://github.com/nvbn/thefuck) -** Corrects last console command
-- **📂 [Color LS](https://github.com/athityakumar/colorls) -** `ls` with colors and icons
-- **📂 [lsd](https://github.com/Peltoche/lsd) -** next gen `ls`
 </details>
 
 ## Utilities
@@ -62,6 +60,7 @@ My laptop configs
 - **🌐 [Firefox](firefox) -** Internet browser 
 - **🇻 [tridactyl](tridactyl) -** Vi-bindings for Firefox 
 - **🌐 [qutebrowser](qutebrowser) -** Internet browser with vim bindings 
+- **🌐 [w3m](w3m) -** Terminal-based Internet browser
 <details>
   <summary>Also Installed</summary>
 
@@ -116,7 +115,7 @@ My laptop configs
 
 ## Extra
 - **🎨 [GTK](gtk) -** Config files for GTK 2.0 & GTK 3.0 
-- **🎨 [dir_colors](dir_colors) -** Theme for `ls` and `tree` 
+- **🎨 [dircolors](dircolors) -** Theme for `ls` and `tree` 
 - **⚛️ [electron](electron) -** Config files for electron apps 
 
 ## Games
@@ -129,17 +128,18 @@ My laptop configs
 </details>
 
 ## Android
+- **📱 [termux](termux) -** Terminal with a package manager that works on an android device
 <details>
   <summary>Also Installed</summary>
 
 - **📱 KDE Connect -** Connect to Android phone and other devices
+- **📱 srccpy -** Display and control your Android device
 </details>
 <details>
   <summary>Consider Installing</summary>
 
 - **📱 [Anbox](https://anbox.io/) -** Run Android applications on any GNU/Linux operating system.
 - **📱 [Waydroid](https://waydro.id/) -** Waydroid uses a container-based approach to boot a full Android system on a regular GNU/Linux system like Ubuntu.
-- **📱 [srccpy](https://github.com/Genymobile/scrcpy) -** Display and control your Android device
 - **📱 [guiscrcpy](https://github.com/srevinsaju/guiscrcpy) -** Open Source GUI based Android Screen Mirroring System
 </details>
 
@@ -154,9 +154,10 @@ My laptop configs
 ## stowd
 Script to easily symlink configs using stow.
 - Create folder for an app and include all its configs as they appear from your home directory (or root).
-  - Will usually look like: `app_name/.config/app_name/config`
-  - for root: `etc/app_name/config`
-- Edit `stowd.yaml` to include configs to add or remove
+  - Will usually look like: 
+    - home: `app_name/.config/app_name/config`
+    - root: `etc/app_name/config`
+- Edit `stowd.ini` to include configs to add or remove
 - Run `python stowd.py`
   - Will get prompted for password for root configs
 
