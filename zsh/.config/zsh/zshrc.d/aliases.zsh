@@ -13,9 +13,13 @@ alias :wq="exit"
 # znap (plugin manager)
 alias PU="znap pull"
 # paru/yay
-alias yay="paru"
+hash paru &> /dev/null && {
+  alias yay="paru"
+}
 # bat/cat
-alias cat="bat"
+hash bat &> /dev/null && {
+  alias cat="bat"
+}
 # dd
 alias dd="dd status=progress"
 # cp/mv/rm/ln
@@ -29,10 +33,12 @@ alias rsync="rsync -ah --info=progress2"
 #alias ll="ls -hl --color=auto"
 #alias lla="ls -hla --color=auto"
 # exa
-alias ls="exa"
-alias la="exa -a"
-alias ll="exa -l"
-alias lla="exa -la"
+hash exa &> /dev/null && {
+  alias ls="exa"
+  alias la="exa -a"
+  alias ll="exa -l"
+  alias lla="exa -la"
+}
 # grep
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
@@ -47,8 +53,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 # wl-clipboard
-alias copy="wl-copy"
-alias paste="wl-paste"
+hash wl-copy &> /dev/null && {
+  alias copy="wl-copy"
+  alias paste="wl-paste"
+}
 # mount
 alias mount="mount -o uid=1000,gid=1000"
 # kdeconnect-cli

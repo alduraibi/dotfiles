@@ -6,10 +6,12 @@ export QT_QPA_PLATFORMTHEME=gtk2
 
 
 ### Default Programs ###
-export EDITOR=nvim
-export VISUAL=nvim
-export BROWSER=firefox
-export TERMINAL=kitty
+hash nvim &> /dev/null && {
+  export EDITOR=nvim
+  export VISUAL=nvim
+}
+#export BROWSER=firefox
+#export TERMINAL=kitty
 
 
 ### Default Custom
