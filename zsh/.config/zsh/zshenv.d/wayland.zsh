@@ -1,7 +1,7 @@
 # Environmental Variables
 
 ### Wayland ###
-[[ "$XDG_SESSION_TYPE"=="wayland" ]] && {
+[[ "$XDG_SESSION_TYPE" == "wayland" ]] && {
   export BEMENU_BACKEND=wayland
   export BEMENU_OPTS="-i"
   export CLUTTER_BACKEND=wayland
