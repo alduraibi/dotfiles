@@ -3,7 +3,8 @@ stow_home:
   - dircolors
   - git
 #  - neovim
-#  - ranger
+  - ranger
+  - termux
   - tmux
   - zsh
 
