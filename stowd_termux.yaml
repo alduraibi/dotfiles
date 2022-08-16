@@ -1,0 +1,10 @@
+---
+stow_home:
+  - dircolors
+  - git
+#  - neovim
+#  - ranger
+  - tmux
+  - zsh
+
+unstow_home: []
