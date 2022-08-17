@@ -18,9 +18,9 @@ cmd([[
   augroup end
 ]])
 
--- setup file
-local function get_setup(name)
-  return string.format('require("setup.%s")', name)
+-- plugin config file
+local function get_config(name)
+  return string.format('require("plugins.%s")', name)
 end
 
 return require('packer').startup(function(use)
@@ -28,17 +28,17 @@ return require('packer').startup(function(use)
 
   use {   -- lsp manager
     "williamboman/mason.nvim",
-    config = get_setup('mason')
+    config = get_config('mason')
   }
 
   use {   -- Bridges mason.nvim with nvim-lspconfig
     "williamboman/mason-lspconfig.nvim",
-    config = get_setup('mason-lspconfig')
+    config = get_config('mason-lspconfig')
   }
 
   use {   -- Configurations for LSP
     'neovim/nvim-lspconfig',
-    config = get_setup('lspconfig')
+    config = get_config('lspconfig')
   }
 
 --  use {
@@ -80,7 +80,7 @@ return require('packer').startup(function(use)
   --  "hrsh7th/nvim-cmp",   -- A completion plugin 
   --  event = "InsertEnter",
   --  opt = true,
-  --  config = get_setup("cmp"),
+  --  config = get_config("cmp"),
   --  wants = { "LuaSnip" },
   --  requires = {
   --    "hrsh7th/cmp-buffer",   -- provides suggestions based on the current file
@@ -94,18 +94,18 @@ return require('packer').startup(function(use)
   --      "L3MON4D3/LuaSnip",
   --      branch = "master",
   --      wants = "friendly-snippets",
-  --      config = get_setup("luasnip"),
+  --      config = get_config("luasnip"),
   --    },
   --    "rafamadriz/friendly-snippets",
   --  },
   --  disable = false,
   --}
 
-  --use 'arcticicestudio/nord-vim'  -- Nord colorscheme
-  use {   -- Nord colorscheme (nvim)
-    'shaunsingh/nord.nvim',
-    config = get_setup('nord')
-  }
+  use 'arcticicestudio/nord-vim'  -- Nord colorscheme
+  --use {   -- Nord colorscheme (nvim)
+  --  'shaunsingh/nord.nvim',
+  --  --config = get_config('nord')
+  --}
 
   --use 'nvim-lua/plenary.nvim'   -- Required by many plugins
 
@@ -129,7 +129,7 @@ return require('packer').startup(function(use)
       'nvim-treesitter/nvim-treesitter',  -- optional, 
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
-    config = get_setup('telescope')
+    config = get_config('telescope')
   }
   -- opt packages: ripgrep, fd
 
@@ -139,27 +139,27 @@ return require('packer').startup(function(use)
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
     tag = 'nightly', -- optional, updated every week. (see issue #1193)
-    config = get_setup('nvim-tree')
+    config = get_config('nvim-tree')
   }
 
   use {   -- git extras
     'lewis6991/gitsigns.nvim',
-    config = get_setup('gitsigns')
+    config = get_config('gitsigns')
   }
 
   use {   -- autopair brackets/quotes
     "windwp/nvim-autopairs",
-    config = get_setup("nvim-autopairs")
+    config = get_config("nvim-autopairs")
   }
 
   use {   -- show indent lines
     "lukas-reineke/indent-blankline.nvim",
-    config = get_setup('indent_blankline')
+    config = get_config('indent_blankline')
   }
 
   use {   -- displays popup with possible keybinds
     "folke/which-key.nvim",
-    config = get_setup('which-key')
+    config = get_config('which-key')
   }
 
 
