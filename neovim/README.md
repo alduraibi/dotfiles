@@ -14,8 +14,8 @@
 - [mason.nvim][mason] - Package manager for LSP
 - [mason-lspconfig.nvim][mason-lspconfig] - bridges mason and lspconfig
 ### Visual
-- ~~[nord-vim][nord-vim] - Nord color scheme~~
-- [nord.nvim][nord-nvim] - Nord color scheme ported for Neovim
+- [nord-vim][nord-vim] - Nord color scheme
+- ~~[nord.nvim][nord-nvim] - Nord color scheme ported for Neovim~~
 - [which-key.nvim][which-key] - display popup with possible keybinds
 - [markdown-preview.nvim][markdown-preview] - Render markdown in browser tab
 ### Coding
