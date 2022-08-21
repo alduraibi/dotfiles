@@ -27,7 +27,7 @@ o.showmatch = true      -- Show matching brackets
 o.incsearch = true      -- Highlight search results before clicking enter
 
 -- Visual Properties
---o.termguicolors = true
+o.termguicolors = true
 o.colorcolumn = '80'    -- Enable an 80 column border for good coding style
 
 -- Spell-check

@@ -1,3 +1,3 @@
--- setup/gitsigns.lua
+-- plugins/gitsigns.lua
 require('gitsigns').setup {}
 

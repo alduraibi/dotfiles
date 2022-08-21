@@ -1,3 +1,3 @@
--- setup/nord.lua
+-- plugins/nord.lua
 require('nord').setup {}
 

@@ -6,6 +6,6 @@ vim.g.maplocalleader = ' '  -- Set <leader> as <Space> (might not be needed)
 -- source local files
 require('plugins')
 require('settings')
-require('keybinds')
+require('keymap')
 require('aliases')
 require('variables')
