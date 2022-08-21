@@ -1,3 +1,3 @@
--- setup/indent_blankline.lua
+-- plugins/indent_blankline.lua
 require('indent_blankline').setup()
 

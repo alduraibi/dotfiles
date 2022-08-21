@@ -1,4 +1,4 @@
--- setup/which-key.lua
+-- plugins/which-key.lua
 require("which-key").setup {
   plugins = {
     spelling = {

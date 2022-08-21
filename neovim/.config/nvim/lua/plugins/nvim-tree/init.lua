@@ -1,3 +1,3 @@
--- setup/nvim-tree.lua
+-- plugins/nvim-tree.lua
 require("nvim-tree").setup()
 
