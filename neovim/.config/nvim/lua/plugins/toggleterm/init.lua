@@ -1,3 +1,2 @@
 -- plugins/toggleterm.lua
-require('toggleterm').setup {}
-
+require('toggleterm').setup({})

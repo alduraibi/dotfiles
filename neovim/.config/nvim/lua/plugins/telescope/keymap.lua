@@ -1,6 +1,7 @@
+-- plugins/telescope/keymap.lua
 
 -- usage: map('mode', 'key', 'value', {opts})
-local map=vim.keymap.set
+local map = vim.keymap.set
 
 map('n', '<leader>ff', '<cmd>Telescope find_files<cr>', { silent = true })
 map('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', { silent = true })

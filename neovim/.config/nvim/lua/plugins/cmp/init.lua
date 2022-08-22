@@ -15,7 +15,7 @@ cmp.setup({
   },
   window = {
     completion = {
-      winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+      winhighlight = 'Normal:Pmenu,FloatBorder:Pmenu,Search:None',
       col_offset = -1,
       side_padding = 0,
     },
@@ -23,19 +23,19 @@ cmp.setup({
     -- documentation = cmp.config.window.bordered(),
   },
   formatting = {
-    fields = { "kind", "abbr", "menu" },
+    fields = { 'kind', 'abbr', 'menu' },
     format = function(entry, vim_item)
       vim_item.menu = ({
 
-        nvim_lsp_signature_help = kind_menu(vim_item, "sig"),
-        nvim_lsp_document_symbol = kind_menu(vim_item, "doc"),
-        nvim_lsp = kind_menu(vim_item, "lsp"),
-        nvim_lua = kind_menu(vim_item, "api"),
-        luasnip = kind_menu(vim_item, "snip"),
-        buffer = kind_menu(vim_item, "buf"),
-        path = kind_menu(vim_item, "path"),
+        nvim_lsp_signature_help = kind_menu(vim_item, 'sig'),
+        nvim_lsp_document_symbol = kind_menu(vim_item, 'doc'),
+        nvim_lsp = kind_menu(vim_item, 'lsp'),
+        nvim_lua = kind_menu(vim_item, 'api'),
+        luasnip = kind_menu(vim_item, 'snip'),
+        buffer = kind_menu(vim_item, 'buf'),
+        path = kind_menu(vim_item, 'path'),
       })[entry.source.name]
-      vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
+      vim_item.kind = string.format('%s', kind_icons[vim_item.kind])
       return vim_item
     end,
   },
@@ -51,7 +51,7 @@ cmp.setup({
     { name = 'luasnip' }, -- For luasnip users.
   }, {
     { name = 'buffer' },
-  })
+  }),
 })
 
 -- Set configuration for specific filetype.
@@ -60,23 +60,23 @@ cmp.setup.filetype('gitcommit', {
     -- { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
   }, {
     { name = 'buffer' },
-  })
+  }),
 })
 
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline('/', {
   mapping = cmp.mapping.preset.cmdline(),
   sources = {
-    { name = 'buffer' }
-  }
+    { name = 'buffer' },
+  },
 })
 
 -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline(':', {
   mapping = cmp.mapping.preset.cmdline(),
   sources = cmp.config.sources({
-    { name = 'path' }
+    { name = 'path' },
   }, {
-    { name = 'cmdline' }
-  })
+    { name = 'cmdline' },
+  }),
 })
