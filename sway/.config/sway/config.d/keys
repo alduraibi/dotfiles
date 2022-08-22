@@ -19,7 +19,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Tab exec $term
 
 # Start the browser
-bindsym $mod+Shift+f exec $BROWSER
+bindsym $mod+Shift+f exec $browser
 
 # Kill focused window
 bindsym $mod+q kill
@@ -170,7 +170,7 @@ bindsym XF86Search exec $menu
 bindsym XF86LaunchA       exec  $scripts/vkeyboard/toggle.sh
 bindsym Shift+XF86LaunchA exec  $scripts/vkeyboard/close.sh
 # grid touch button: open 
-bindsym XF86Explorer exec $term $explorer
+bindsym XF86Explorer exec $explorer
 # voice touch button: open 
 bindsym XF86VoiceCommand exec $scripts/mic/mute_toggle.sh
 # FN touch button
