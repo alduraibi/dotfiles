@@ -56,14 +56,24 @@
 - [nvim-web-devicons][devicons] - icon support for plugins
   - requires a patched font
 
-## LSP
-Check [here][lsp] to find more (automatically installed with mason)
-- [bashls][bashls] - Bash
-- [yamlls][yamlls] - YAML
-- [jsonls][jsonls] - JSON
-- [pylsp][pylsp] - Python
-- [sumneko_lua][sumneko_lua] - Lua
-- [ltex-ls][ltex] - LaTeX, Markdown, etc.
+## Language specific
+### Python
+- [pylsp][pylsp] - LSP
+- [pylint][pylint] - Linter
+- [black][black] - Formatter
+- [isort][isort] - Sort includes
+### YAML
+- [yamplls][yamlls] - LSP
+### JSON
+- [jsonls][jsonls] - LSP
+### Lua
+- [sumneko_lua][sumneko_lua] - LSP
+- [stylua][stylua] - Formatter
+### Bash
+- [bashls][bashls] - LSP
+### LaTeX
+- [ltex-ls][ltex] - LSP (LaTeX, Markdown, etc.)
+Check [here][lsp] to find more LSPs (automatically installed with mason)
 
 [site]: https://neovim.io/
 [desc]: https://neovim.io/

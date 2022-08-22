@@ -1,2 +1,2 @@
 -- plugins/Comment.lua
-require('Comment').setup {}
+require('Comment').setup({})
