@@ -35,4 +35,31 @@ require('telescope').setup{
     --  hidden = true
     --}
   },
+  extensions = {
+    media_files = {
+      -- filetypes whitelist
+      -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+      filetypes = {"jpg", "jpeg", "png", "webp", "mp4"},
+      find_cmd = "rg" -- find command (defaults to `fd`)
+    },
+    emoji = {
+      action = function(emoji)
+        -- insert emoji when picked
+        vim.api.nvim_put({ emoji.value }, 'c', false, true)
+      end,
+    },
+    glyph = {
+      action = function(glyph)
+        -- insert glyph when picked
+        vim.api.nvim_put({ glyph.value }, 'c', false, true)
+      end,
+    },
+  },
 }
+
+require('telescope').load_extension('fzf')
+require('telescope').load_extension('media_files')
+require('telescope').load_extension('env')
+require('telescope').load_extension('luasnip')
+require('telescope').load_extension('emoji')
+require('telescope').load_extension('glyph')
