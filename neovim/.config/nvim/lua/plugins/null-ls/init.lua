@@ -26,6 +26,10 @@ require('null-ls').setup({
 
     -- lua
     formatting.stylua,
+    -- json, css, markdown, yaml, js
+    formatting.prettierd,
+    -- shell
+    formatting.shfmt,
     -- require("null-ls").builtins.diagnostics.eslint,
     -- require("null-ls").builtins.completion.spell,
   },
@@ -44,5 +48,3 @@ require('null-ls').setup({
     end
   end,
 })
-
-require('null-ls').setup({})

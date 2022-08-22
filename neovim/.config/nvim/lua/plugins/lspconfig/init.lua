@@ -7,10 +7,13 @@ require('lspconfig').pylsp.setup({ capabilities = capabilities }) -- python
 require('lspconfig').yamlls.setup({ capabilities = capabilities }) -- yaml
 require('lspconfig').jsonls.setup({ capabilities = capabilities }) -- json
 
+-- termux: `pkg install lua-language-server`
+require('lspconfig').sumneko_lua.setup({ capabilities = capabilities }) -- lua
+
 -- LSPs that do not work on termux
-if not vim.fn.has('termux') then
-  require('lspconfig').sumneko_lua.setup({ capabilities = capabilities }) -- lua
+if not vim.fn.has('termux') == 1 then
   require('lspconfig').ltex.setup({ capabilities = capabilities }) -- latex, markdown, etc.
+  require('lspconfig').taplo.setup({ capabilities = capabilities }) -- toml
 end
 
 --require'lspconfig'.gopls.setup{}    -- go
