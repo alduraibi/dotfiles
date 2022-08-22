@@ -34,10 +34,11 @@ alias rsync="rsync -ah --info=progress2"
 #alias lla="ls -hla --color=auto"
 # exa
 hash exa &> /dev/null && {
-  alias ls="exa"
-  alias la="exa -a"
-  alias ll="exa -l"
-  alias lla="exa -la"
+  alias ls="exa --icons"
+  alias la="exa -a --icons"
+  alias ll="exa -l --icons --git"
+  alias lla="exa -la --icons --git"
+  alias tree="exa --tree --icons --git"
 }
 # grep
 alias grep="grep --color=auto"
