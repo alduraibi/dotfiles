@@ -10,25 +10,47 @@
 ## Plugins
 ### Management
 - [packer.nvim][packer] - Plugin manager
+### LSP
 - [nvim-lspconfig][lspconfig] - LSP configs
 - [mason.nvim][mason] - Package manager for LSP
 - [mason-lspconfig.nvim][mason-lspconfig] - bridges mason and lspconfig
+- [lsp_signature.nvim][lsp-signature] - Shows function signature
+### Cmp
+- [nvim-cmp][nvim-cmp] - Completions
+- [cmp-nvim-lsp][cmp-nvim-lsp] - lsp extension
+- [cmp-buffer][cmp-buffer] - Buffer extension
+- [cmp-path][cmp-path] - Path extension
+- [cmp-cmdline][cmp-cmdline] - cmdline extension
+- [cmp-luasnip][cmp-luasnip] - LuaSnip extension
+  - requires: `LuaSnip`
 ### Visual
-- [nord-vim][nord-vim] - Nord color scheme
-- ~~[nord.nvim][nord-nvim] - Nord color scheme ported for Neovim~~
+- ~~[nord-vim][nord-vim] - Nord color scheme~~
+- [nord.nvim][nord-nvim] - Nord color scheme ported for Neovim
 - [which-key.nvim][which-key] - display popup with possible keybinds
 - [markdown-preview.nvim][markdown-preview] - Render markdown in browser tab
+- [nvim-colorizer.lua][colorizer] - Color highlighter
 ### Coding
-- [nvim-treesitter][treesitter] - highlighting
+- [nvim-treesitter][treesitter] - Highlighting
 - [indent-blankline.nvim][indent] - Show indent lines
-- [gitsigns.nvim][gitsigns] - git extras
+- [gitsigns.nvim][gitsigns] - Git extras
+- [Comment.nvim][comment] - Commenter
 - [nvim-autopairs][autopairs] - Close brackets/quotes
-### Files
-- [telescope.nvim][telescope] - fuzzy finder
+- [LuaSnip][luasnip] - Snippets
+- [friendly-snippets][friendly-snippets] - Snippets
+### Telescope (fzf search)
+- [telescope.nvim][telescope] - Fuzzy finder
   - `sudo pacman fd ripgrep`
-  - requires: `plenary.nvim`, `nvim-web-devicons`, `nvim-treesitter`
+  - requires: `plenary.nvim`, `nvim-web-devicons`, `nvim-treesitter`, `telescope-fzf-native.nvim`
+- [telescope-media-files.nvim][telescope-media-files] - Media file extension
+- [telescope-env.nvim][telescope-env] - Environment variable extension
+- [telescope-emoji.nvim][telescope-emoji] - Emoji extension
+- [telescope-glyph.nvim][telescope-glyph] - Font glyph extension
+- [telescope-luasnip.nvim][telescope-luasnip] - LuaSnip extension
+  - requires: `LuaSnip`
+### External
 - [nvim-tree.lua][tree] - File explorer
   - requires: `nvim-web-devicons`
+- [toggleterm.nvim][toggleterm] - Manage multiple terminal windows
 ### Required
 - [plenary.nvim][plenary] - required by other plugins
 - [nvim-web-devicons][devicons] - icon support for plugins
