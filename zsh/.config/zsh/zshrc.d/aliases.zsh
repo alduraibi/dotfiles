@@ -53,6 +53,13 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+# python
+alias py="python"
+# git
+alias g="git"
+alias ga="git add"
+alias gat="git add -u"
+alias gc="git commit -m"
 # wl-clipboard
 hash wl-copy &> /dev/null && {
   alias copy="wl-copy"
@@ -65,7 +72,3 @@ alias kc="kdeconnect-cli"
 alias kc-gp5="kdeconnect-cli -n ghassan-gp5"
 # qtile
 alias qtile="qtile start -b wayland"
-# run stowd.py
-alias stowd="python ~/dotfiles/stowd.py"
-alias stowd-conf="vi ~/dotfiles/stowd.yaml"
-
