@@ -14,13 +14,13 @@ My Arch and Termux configs
 - **🔊 [pamixer](pamixer) -** Control device volume
 - **✂️ [wl-clipboard](wl-clipboard) -** Clipboard
 - **📄 [bat](bat) -** Alternative to `cat`
+- **🌟 [glow](glow) -** Render markdown on the terminal
 <details>
   <summary>Also Installed</summary>
 
 - **📂 exa -** Modern `ls` ![][osi]
 - **🔍 fd -** Alternative to `find`
 - **🗜 atool -** Manage archives (zit, tar, etc.)
-- **🌟 glow -** Render markdown on the terminal
 - **📖 tldr -** Simplified man pages
 - **🔨 ansible -**
 - **🔗 stow -** Symlink manager for dotfiles
