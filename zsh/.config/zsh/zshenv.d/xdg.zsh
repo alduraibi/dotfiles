@@ -62,6 +62,8 @@ hash psql &> /dev/null && {
   export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
   export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
 }
+mkdir -p "$XDG_CONFIG_HOME/python"
+export PYTHONSTARTUP="${XDG_CONFIG_HOME:-$HOME/.config}/python/startup.py"
 export REDISCLI_HISTFILE="$XDG_DATA_HOME"/redis/rediscli_history
 export REDISCLI_RCFILE="$XDG_CONFIG_HOME"/redis/redisclirc
 export RIPGREP_CONFIG_PATH=$XDG_CONFIG_HOME/ripgrep/config
