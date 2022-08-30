@@ -1,27 +1,31 @@
 # ⚙️ dotfiles 🔧
+
 My Arch and Termux configs
 
 ## Overview
-- **💻 Distro:** Arch Linux / Termux
-- **🎨 Theme:** Nord
-- **🔳 Display Server:** Wayland *(+ xwayland)*
+
+- **💻 Distros:** Arch Linux / Termux
+- **🎨 Theme:** Nord _(with black background on termux)_
 
 ## CLI Utilities
-- **🔆 [brightnessctl](brightnessctl)  -** Control device brightness
-- **🔊 [pamixer](pamixer)  -** Control device volume
-- **✂️ [wl-clipboard](wl-clipboard)  -** Clipboard
+
+- **🗃️ [stowd](stowd) -** Easily manage your dotfiles
+- **🔆 [brightnessctl](brightnessctl) -** Control device brightness
+- **🔊 [pamixer](pamixer) -** Control device volume
+- **✂️ [wl-clipboard](wl-clipboard) -** Clipboard
+- **📄 [bat](bat) -** Alternative to `cat`
 <details>
   <summary>Also Installed</summary>
 
 - **📂 exa -** Modern `ls` ![][osi]
-- **🔍 fd  -** Alternative to `find`
-- **🗜 atool  -** Manage archives (zit, tar, etc.)
-- **📖 tldr  -** Simplified man pages
-- **🔨 ansible  -** 
-- **📄 bat  -** Alternative to `cat`
-- **🔗 stow  -** Symlink manager for dotfiles
-- **#️⃣ tea  -** CLI tool to manage gitea
-- **#️⃣ gh  -** CLI tool to manage github
+- **🔍 fd -** Alternative to `find`
+- **🗜 atool -** Manage archives (zit, tar, etc.)
+- **🌟 glow -** Render markdown on the terminal
+- **📖 tldr -** Simplified man pages
+- **🔨 ansible -**
+- **🔗 stow -** Symlink manager for dotfiles
+- **#️⃣ tea -** CLI tool to manage gitea
+- **#️⃣ gh -** CLI tool to manage github
 </details>
 <details>
   <summary>Consider Installing</summary>
@@ -30,55 +34,61 @@ My Arch and Termux configs
 - **🔎 [fzf](https://github.com/junegunn/fzf) -** CLI fuzzy finder
 - **🔔 [undistract-me](https://github.com/jml/undistract-me) -** Notifies when slow terminal commands finish
 - **🤬 [The Fuck](https://github.com/nvbn/thefuck) -** Corrects last console command
+- **🌳 [broot](https://github.com/Canop/broot) -** a usable `tree`
 </details>
 
 ## Utilities
+
 - **📟 [kitty](kitty) -** Terminal
 - **🐚 [zsh](zsh) -** Shell
 - **🔔 [mako](mako) -** Notification daemon
 - **⌨️ [wvkbd](wvkbd) -** On-screen keyboard
 
 ## Display
-- **🖥 [ly](ly) -** Display manage 
-- **🪟 [Sway](sway) -** Wayland compositor and tiling window manager 
-- **🔒 [swaylock](swaylock) -** Lock screen 
-- **➖ [waybar](waybar) -** Status bar 
+
+- **🖥 [ly](ly) -** Display manage
+- **🪟 [Sway](sway) -** Wayland compositor and tiling window manager
+- **🔒 [swaylock](swaylock) -** Lock screen
+- **➖ [waybar](waybar) -** Status bar
 <details>
   <summary>Consider Installing</summary>
 
-- **swayidle -** 
+- **swayidle -**
 </details>
 <details>
   <summary>Old</summary>
 
 - **🪟 [river](river) -** Wayland compositor and tiling window manager
-- **qtile -** Windows Manager configured in python\
+- **🪟 qtile -** Windows Manager configured in python\
 - **⚙ Xresources -** Config files for Xresources
 </details>
 
 ## Applications
-- **🌐 [Firefox](firefox) -** Internet browser 
-- **🇻 [tridactyl](tridactyl) -** Vi-bindings for Firefox 
-- **🌐 [qutebrowser](qutebrowser) -** Internet browser with vim bindings 
+
+- **🌐 [Firefox](firefox) -** Internet browser
+- **🇻 [tridactyl](tridactyl) -** Vi-bindings for Firefox
+- **🌐 [qutebrowser](qutebrowser) -** Internet browser with vim bindings
 - **🌐 [w3m](w3m) -** Terminal-based Internet browser
 <details>
   <summary>Also Installed</summary>
 
-- **🔐 Bitwarden -** Password manager 
-- **🔄 Syncthing -** File sync 
+- **🔐 Bitwarden -** Password manager
+- **🔄 Syncthing -** File sync
 </details>
 
 ## TUI Applications
-- **📝 [Neovim](neovim) -** Text editor based on vim 
-- **🗃 [ranger](ranger) -** TUI file explorer with vi bindings 
-- **🔳 [Tmux](tmux) -** Terminal multiplexer 
-- **🚀 [wofi](wofi) -** application launcher 
+
+- **📝 [Neovim](neovim) -** Text editor based on vim
+- **🗃 [ranger](ranger) -** TUI file explorer with vi bindings
+- **🔳 [Tmux](tmux) -** Terminal multiplexer
+- **🚀 [wofi](wofi) -** application launcher
 
 ## Media Players
-- **🎬🎞️ [mpv](mpv) -** video player 
-- **🖼️ [vimiv](vimiv) -** image viewer 
-- **📃 [zathura](zathura) -** PDF/ePub Viewer 
-- **🎨 [Spicetify](spicetify) -** Spotify theming 
+
+- **🎬🎞️ [mpv](mpv) -** video player
+- **🖼️ [vimiv](vimiv) -** image viewer
+- **📃 [zathura](zathura) -** PDF/ePub Viewer
+- **🎨 [Spicetify](spicetify) -** Spotify theming
 <details>
   <summary>Also Installed</summary>
 
@@ -93,6 +103,7 @@ My Arch and Termux configs
 </details>
 
 ## Productivity
+
 <details>
   <summary>Consider Installing</summary>
 
@@ -103,31 +114,35 @@ My Arch and Termux configs
 </details>
 
 ## Communication
-- **🎨 [BetterDiscord](betterdiscord) -** Discord theming 
+
+- **🎨 [BetterDiscord](betterdiscord) -** Discord theming
 <details>
   <summary>Also Installed</summary>
 
 - **💬 Discord -** Discord client
-- **💬 Element -** Matrix client 
-- **💬 Telegram -** Telegram client 
-- **💬 Signal -** Signal client 
+- **💬 Element -** Matrix client
+- **💬 Telegram -** Telegram client
+- **💬 Signal -** Signal client
 </details>
 
 ## Extra
-- **🎨 [GTK](gtk) -** Config files for GTK 2.0 & GTK 3.0 
-- **🎨 [dircolors](dircolors) -** Theme for `ls` and `tree` 
-- **⚛️ [electron](electron) -** Config files for electron apps 
+
+- **🎨 [GTK](gtk) -** Config files for GTK 2.0 & GTK 3.0
+- **🎨 [dircolors](dircolors) -** Theme for `ls` and `tree`
+- **⚛️ [electron](electron) -** Config files for electron apps
 
 ## Games
+
 <details>
   <summary>Consider Installing</summary>
 
-- **🎮 [0 A.D.](https://play0ad.com/) -** A free, open-source, historical Real Time Strategy (RTS) game 
+- **🎮 [0 A.D.](https://play0ad.com/) -** A free, open-source, historical Real Time Strategy (RTS) game
 - **🎮 [FreeCiv](https://www.freeciv.org/) -** A Free and Open Source empire-building strategy game inspired by the history of human civilization
 - **🎮 [Heroic](https://heroicgameslauncher.com/) -** Open Source GOG and Epic games launcher
 </details>
 
 ## Android
+
 - **📱 [termux](termux) -** Terminal with a package manager that works on an android device
 <details>
   <summary>Also Installed</summary>
@@ -144,21 +159,24 @@ My Arch and Termux configs
 </details>
 
 ## Fonts
-- **😀 Twemoji -** Twitter emoji font 
-- **🔤 FiraGO -** Latin script font 
-- **🔤 Fura Code -** Latin script monospaced Fira Code font with Nerd Font patch 
-- **🔤 Amiri -** Arabic font 
-- **🔤 Amiri Typewriter -** Arabic monospaced font 
 
+- **😀 Twemoji -** Twitter emoji font
+- **🔤 FiraGO -** Latin script font
+- **🔤 Fura Code -** Latin script monospaced Fira Code font with Nerd Font patch
+- **🔤 Amiri -** Arabic font
+- **🔤 Amiri Typewriter -** Arabic monospaced font
 
-## stowd
-Script to easily symlink configs using stow.
-- Create folder for an app and include all its configs as they appear from your home directory (or root).
-  - Will usually look like: 
+## (stowd)[https://github.com/ghassan0/stowd]
+
+Program that manages your dotfiles by symlink-ing them into their respective directories.
+
+- install stowd: `pip install stowd`
+- Within your dotfiles directory, create a folder for an app and include all its configs as they appear from your home or root directory.
+  - Will usually look like:
     - home: `app_name/.config/app_name/config`
     - root: `etc/app_name/config`
-- Edit `stowd.ini` to include configs to add or remove
-- Run `python stowd.py`
+- Edit `stowd.cfg` to include configs to add or remove
+- Run `stowd`
   - Will get prompted for password for root configs
 
 [osi]: ./.img/osi.svg
