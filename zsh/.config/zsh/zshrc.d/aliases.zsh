@@ -55,11 +55,20 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 # python
 alias py="python"
+# pip
+alias pip-in="pip install"
+alias pip-un="pip uninstall"
+alias pip-up="pip install --upgrade"
+alias pip-outdated="pip list --outdated --format=freeze"
+# arch pkgbuild
+alias makepkg-install="makepkg -si"
+alias makepkg-srcinfo="makepkg --printsrcinfo > .SRCINFO"
+alias makepkg-checksums="updpkgsums"
 # git
 alias g="git"
-alias ga="git add"
-alias gat="git add -u"
-alias gc="git commit -m"
+# alias ga="git add"
+# alias gat="git add -u"
+# alias gc="git commit -m"
 # wl-clipboard
 hash wl-copy &> /dev/null && {
   alias copy="wl-copy"
