@@ -21,6 +21,9 @@ text-color=#d8dee9
 # Icons
 max-icon-size=28
 
+[mode=dnd]
+invisible=1
+
 #[urgency=low]
 #border-color=#2e3440cc
 

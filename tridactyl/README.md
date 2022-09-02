@@ -1,12 +1,13 @@
 # Tridactyl
+
 > A Vim-like interface for Firefox.<sup>[1][desc]</sup>
 
 **Links:** [Website][site] - [Source Code][code] - [Wiki][wiki]
 
 ## Installation:
+
 - Install the Firefox add-on from [Mozilla add-ons website][amo] or [Arch repo][pkg]
 - Install native package from the [AUR][pkg]
-
 
 [site]: https://tridactyl.xyz/
 [desc]: https://github.com/tridactyl/tridactyl
