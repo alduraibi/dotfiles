@@ -1,7 +1,9 @@
 # 🦊 Firefox
+
 > The open-source privacy respecting web browser from Mozilla.
 
 ## Installed Add-ons
+
 - **[Nord-ic Night][nord-ic]** - Theme based on the [Nord][nord] color scheme.
 - **[uBlock Origin][ublock]** - Ad-Blocker
 - **[Tridactyl][tridactyl]** - Vim key-bindings
@@ -10,7 +12,9 @@
 - **[Reddit Enhancement Suite][res]** - Improves reddit
 - **[Terms of service; Didn't read][tosdr]** - tldr for TOS
 - **[Privacy Badger][badger]** - Blocks invisible trackers
+
 ## Potential Add-ons
+
 - **[Stylus][stylus]** - Edit css to enable dark mode
 - **[The Camelizer][camel]** - camelcamelcamel price tracker
 
