@@ -43,6 +43,8 @@ require('null-ls').setup({
         callback = function()
           -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
           vim.lsp.buf.formatting_sync()
+          -- local params = vim.lsp.util.make_formatting_params({})
+          -- null_ls.request('textDocument/formatting', params, nil, bufnr)
         end,
       })
     end
