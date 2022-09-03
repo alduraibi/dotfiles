@@ -2,4 +2,4 @@
 
 # Close virtual keyboard
 
-killall -e wvkbd-mobintl"
+killall -e wvkbd-mobintl

@@ -16,7 +16,7 @@
   "sway/language": {
     "format": "",
     "tooltip-format": " {long}",
-    "on-click": "/bin/kill -SIGRTMIN+0 wvkbd-mobintl",
+    "on-click": "vkeybord-toggle",
   },
   "bluetooth": {
     // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
