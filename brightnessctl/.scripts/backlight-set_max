@@ -2,4 +2,4 @@
 
 # Set screen backlight to 100%
 
-brightnessctl set 100%
+brightnessctl set 100% > /dev/null 2>&1

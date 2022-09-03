@@ -12,7 +12,6 @@ set $term kitty
 set $menu wofi
 set $browser firefox
 set $explorer "$term ranger"
-set $scripts "~/.scripts"
 set $dotfiles "~/dotfiles"
 set $config "~/.config"
 
@@ -26,4 +25,3 @@ set $displays_external HDMI-A-1 HDMI-A-2 HDMI1 HDMI2
 #
 # Folders/Files
 set $open_dotfiles "$term ranger --cmd='set show_hidden=true' $dotfiles"
-# set $open_dotfiles "$explorer --cmd='set show_hidden=true' $dotfiles"
