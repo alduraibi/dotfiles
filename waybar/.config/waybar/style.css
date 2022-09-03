@@ -1,5 +1,4 @@
-
-@define-color nord0 #2e3440;		/*Background*/
+@define-color nord0 #2e3440; /*Background*/
 @define-color nord1 #3b4252;
 @define-color nord2 #434c5e;
 @define-color nord3 #4c566a;
@@ -10,18 +9,17 @@
 @define-color nord8 #88c0d0;
 @define-color nord9 #81a1c1;
 @define-color nord10 #5e81ac;
-@define-color nord11 #bf616a;		/*red*/
-@define-color nord12 #d08770;		/*orange*/
-@define-color nord13 #ebcb8b;		/*yellow*/
-@define-color nord14 #a3be8c;		/*green*/
-@define-color nord15 #b48ead;		/*purple*/
-
+@define-color nord11 #bf616a; /*red*/
+@define-color nord12 #d08770; /*orange*/
+@define-color nord13 #ebcb8b; /*yellow*/
+@define-color nord14 #a3be8c; /*green*/
+@define-color nord15 #b48ead; /*purple*/
 
 * {
-	border: none;
-	font-family: "FiraGo", "FiraMono Nerd Font";
-	font-size: 14px;
-	min-height: 1px;
+  border: none;
+  font-family: "FiraGo", "FuraCode Nerd Font";
+  font-size: 14px;
+  min-height: 1px;
   margin-top: 1px;
   margin-bottom: 1px;
   padding-top: 0px;
@@ -29,19 +27,19 @@
 }
 
 window#waybar {
-	background: transparent;
+  background: transparent;
 }
 
 window#waybar.hidden {
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 #window {
   padding-left: 36px;
   padding-right: 0px;
-	transition: none;
+  transition: none;
   color: @nord4;
-	background: transparent;
+  background: transparent;
 }
 
 /*
@@ -55,142 +53,141 @@ window#waybar.PCSX2 #window {
 */
 
 #workspaces {
-	background: @nord1;
-	transition: none;
-	border-radius: 5px;
-	margin-left: 6px;
-	margin-right: 6px;
+  background: @nord1;
+  transition: none;
+  border-radius: 5px;
+  margin-left: 6px;
+  margin-right: 6px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 #workspaces button {
-	transition: none;
-	color: @nord4;
-	background: transparent;
-	margin-left: 0px;
-	margin-right: 0px;
+  transition: none;
+  color: @nord4;
+  background: transparent;
+  margin-left: 0px;
+  margin-right: 0px;
   padding-left: 2px;
   padding-right: 2px;
 }
 
 #workspaces button.focused {
-	color: @nord8;
+  color: @nord8;
 }
 
 #workspaces button:hover {
-	transition: none;
-	box-shadow: inherit;
-	text-shadow: inherit;
-	color: @nord15;
+  transition: none;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: @nord15;
 }
 
 #tray {
-	border-radius: 5px;
-	margin-right: 6px;
-	color: @nord4;
-	background: @nord1;
+  border-radius: 5px;
+  margin-right: 6px;
+  color: @nord4;
+  background: @nord1;
   padding-left: 10px;
   padding-right: 10px;
 }
 #tray menu {
-	color: @nord4;
-	background: @nord1;
+  color: @nord4;
+  background: @nord1;
 }
 
 #language {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-	transition: none;
-	color: @nord4;
-	background: @nord1;
+  transition: none;
+  color: @nord4;
+  background: @nord1;
   padding-left: 10px;
   padding-right: 7px;
 }
 
 #bluetooth {
-	transition: none;
-	color: @nord4;
-	background: @nord1;
+  transition: none;
+  color: @nord4;
+  background: @nord1;
   padding-left: 7px;
   padding-right: 7px;
 }
 #bluetooth.connected {
-	color: @nord14;
+  color: @nord14;
 }
 #bluetooth.disabled {
-	color: @nord11;
+  color: @nord11;
 }
 #bluetooth.off {
-	color: @nord11;
+  color: @nord11;
 }
 
 #network {
-	transition: none;
-	color: @nord4;
-	background: @nord1;
+  transition: none;
+  color: @nord4;
+  background: @nord1;
   padding-left: 7px;
   padding-right: 7px;
 }
 #network.wifi {
-	color: @nord14;
+  color: @nord14;
 }
 #network.ethernet {
-	color: @nord14;
+  color: @nord14;
 }
 #network.disconnected {
-	color: @nord11;
+  color: @nord11;
 }
 
 #backlight {
-	transition: none;
-	color: @nord4;
-	background: @nord1;
+  transition: none;
+  color: @nord4;
+  background: @nord1;
   padding-left: 7px;
   padding-right: 7px;
 }
 
 #pulseaudio {
-	transition: none;
-	color: @nord14;
-	background: @nord1;
+  transition: none;
+  color: @nord14;
+  background: @nord1;
   padding-left: 7px;
   padding-right: 7px;
 }
 #pulseaudio.speaker.muted {
-	color: @nord11;
+  color: @nord11;
 }
 #pulseaudio.mic.source-muted {
-	color: @nord11;
+  color: @nord11;
 }
 
 #battery {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-	transition: none;
-	color: @nord14;
-	background: @nord1;
+  transition: none;
+  color: @nord14;
+  background: @nord1;
   padding-left: 7px;
   padding-right: 17px;
 }
 #battery.medium {
-	color: @nord13;
+  color: @nord13;
 }
 #battery.low {
-	color: @nord12;
+  color: @nord12;
 }
 #battery.critical {
-	color: @nord11;
+  color: @nord11;
 }
 
 #clock {
   border-radius: 5px;
-	margin-left: 6px;
-	margin-right: 6px;
-	transition: none;
-	color: @nord4;
-	background: @nord1;
+  margin-left: 6px;
+  margin-right: 6px;
+  transition: none;
+  color: @nord4;
+  background: @nord1;
   padding-left: 10px;
   padding-right: 10px;
 }
-
