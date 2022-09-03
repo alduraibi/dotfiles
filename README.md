@@ -166,7 +166,7 @@ My Arch and Termux configs
 - **🔤 Amiri -** Arabic font
 - **🔤 Amiri Typewriter -** Arabic monospaced font
 
-## (stowd)[https://github.com/ghassan0/stowd]
+## [stowd](https://github.com/ghassan0/stowd)
 
 Program that manages your dotfiles by symlink-ing them into their respective directories.
 
