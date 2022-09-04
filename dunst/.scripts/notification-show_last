@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# show last notification
+
+dunstctl history-pop
