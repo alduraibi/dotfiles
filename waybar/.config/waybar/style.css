@@ -96,13 +96,27 @@ window#waybar.PCSX2 #window {
   background: @nord1;
 }
 
-#language {
+#custom-notification {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   transition: none;
   color: @nord4;
   background: @nord1;
   padding-left: 10px;
+  padding-right: 7px;
+}
+#custom-notification.paused {
+  color: @nord11;
+}
+#custom-notification.unpaused {
+  color: @nord14;
+}
+
+#language {
+  transition: none;
+  color: @nord4;
+  background: @nord1;
+  padding-left: 7px;
   padding-right: 7px;
 }
 

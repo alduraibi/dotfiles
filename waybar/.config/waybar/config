@@ -1,9 +1,10 @@
 // Waybar config (JSON)
+/* local custom_path = "$HOME/.config/waybar/custom_modules/"; */
 {
   "outout": "*",
   "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
   "modules-center": [],
-  "modules-right": ["tray", "sway/language", "bluetooth", "network", "backlight", "pulseaudio#mic", "pulseaudio#speaker", "battery",  "clock"],
+  "modules-right": ["tray", "custom/notification", "sway/language", "bluetooth", "network", "backlight", "pulseaudio#mic", "pulseaudio#speaker", "battery",  "clock"],
   "sway/workspaces": {
     "format": "{name}",
   },
@@ -13,10 +14,25 @@
     "spacing": 10,
     "reverse-direction": true,
   },
+  "custom/notification": {
+    /* "exec": "./custom_modules/notification.sh", */
+    "exec": "$XDG_CONFIG_HOME/waybar/custom_modules/notification.sh",
+    /* "exec": custom_path + "notification.sh", */
+    "interval": 1,
+    "return-type": "json",
+    "format": "{icon}",
+    "on-click": "notification-pause_toggle",
+    "on-click-right": "notification-clear_all",
+    "escape": true,
+    "format-icons": {
+      "paused": [""],
+      "unpaused": [""],
+    },
+  },
   "sway/language": {
     "format": "",
     "tooltip-format": " {long}",
-    "on-click": "vkeybord-toggle",
+    "on-click": "vkeyboard-toggle",
   },
   "bluetooth": {
     // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system

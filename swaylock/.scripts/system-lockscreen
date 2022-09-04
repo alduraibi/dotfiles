@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Lock screen
+
+swaylock -f

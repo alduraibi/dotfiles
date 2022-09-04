@@ -10,7 +10,9 @@ bindsym $mod+w mode "workspaces"
 bindsym $mod+o mode "outputs"
 bindsym $mod+i mode "inputs"
 bindsym $mod+a mode "apps"
+# bindsym $mod+n mode "notifications"
 
+# bindsym $mod+Shift+n exec notification-pause_toggle
 
 # Basics:
 #
@@ -177,7 +179,7 @@ bindsym XF86VoiceCommand exec mic-mute_toggle
 #bindsym XF86WakeUp exec $menu
 # wireless touch button
 #bindsym XF86WLAN exec $menu
-# notify touch button: open 
-bindsym XF86Display exec $menu
+# notify touch button: pause notifications
+bindsym XF86Display exec notification-pause_toggle
 # settings touch button: open config directory
 bindsym XF86Tools exec $open_dotfiles

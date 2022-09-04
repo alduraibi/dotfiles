@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# close all notifications
+
+dunstctl close-all

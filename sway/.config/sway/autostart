@@ -2,8 +2,8 @@
 ### Auto start
 #
 
-exec mako
+exec dunst
 exec autotiling
 exec /usr/lib/kdeconnectd
-exec $scripts/vkeyboard/start_hidden.sh
+exec vkeyboard-start_hidden
 # exec $XDG_CONFIG_HOME/gtk-3.0/gsettings.sh
