@@ -41,8 +41,16 @@ My Arch and Termux configs
 
 - **📟 [kitty](kitty) -** Terminal
 - **🐚 [zsh](zsh) -** Shell
-- **🔔 [mako](mako) -** Notification daemon
+- **🔔 [dunst](dunst) -** Notification daemon
+- **🚀 [rofi](rofi) -** application launcher
 - **⌨️ [wvkbd](wvkbd) -** On-screen keyboard
+
+<details>
+  <summary>Old</summary>
+
+- **🔔 [mako](mako) -** Notification daemon
+- **🚀 [wofi](wofi) -** application launcher
+</details>
 
 ## Display
 
@@ -58,8 +66,8 @@ My Arch and Termux configs
 <details>
   <summary>Old</summary>
 
-- **🪟 [river](river) -** Wayland compositor and tiling window manager
-- **🪟 qtile -** Windows Manager configured in python\
+- **🪟 river -** Wayland compositor and tiling window manager
+- **🪟 qtile -** Windows Manager configured in python
 - **⚙ Xresources -** Config files for Xresources
 </details>
 
@@ -81,7 +89,6 @@ My Arch and Termux configs
 - **📝 [Neovim](neovim) -** Text editor based on vim
 - **🗃 [ranger](ranger) -** TUI file explorer with vi bindings
 - **🔳 [Tmux](tmux) -** Terminal multiplexer
-- **🚀 [wofi](wofi) -** application launcher
 
 ## Media Players
 

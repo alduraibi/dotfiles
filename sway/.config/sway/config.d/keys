@@ -10,6 +10,7 @@ bindsym $mod+w mode "workspaces"
 bindsym $mod+o mode "outputs"
 bindsym $mod+i mode "inputs"
 bindsym $mod+a mode "apps"
+bindsym $mod+f mode "find"
 # bindsym $mod+n mode "notifications"
 
 # bindsym $mod+Shift+n exec notification-pause_toggle
@@ -21,7 +22,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Tab exec $term
 
 # Start the browser
-bindsym $mod+Shift+f exec $browser
+# bindsym $mod+Shift+f exec $browser
 
 # Kill focused window
 bindsym $mod+q kill
@@ -113,7 +114,7 @@ bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # Make the current focus fullscreen
-bindsym $mod+f fullscreen
+bindsym $mod+Shift+f fullscreen
 
 # Toggle the current focus between tiling and floating mode
 bindsym $mod+Shift+space floating toggle

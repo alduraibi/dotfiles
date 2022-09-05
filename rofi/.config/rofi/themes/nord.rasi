@@ -1,0 +1,144 @@
+* {
+  nord0: #2e3440;
+  nord1: #3b4252;
+  nord2: #434c5e;
+  nord3: #4c566a;
+  nord4: #d8dee9;
+  nord5: #e5e9f0;
+  nord6: #eceff4;
+  nord7: #8fbcbb;
+  nord8: #88c0d0;
+  nord9: #81a1c1;
+  nord10: #5e81ac;
+  nord11: #bf616a;
+  nord12: #d08770;
+  nord13: #ebcb8b;
+  nord14: #a3be8c;
+  nord15: #b48ead;
+
+  /* backlight:   #ccffeedd; */
+  background-color:  transparent;
+
+  /* highlight:     underline bold; */
+  highlight: bold #5e81ac;
+
+  /* transparent: rgba(46,52,64,0); */
+
+  red:                         @nord11;
+  blue:                        @nord10;
+
+  foreground:                  @nord4;
+  text-color:                  @foreground;
+  lightfg:                     @nord6;
+  selected-foreground:         @nord9;
+  active-foreground:           @nord9;
+
+  background:                  @nord0;
+  background-color:            @background;
+  lightbg:                     @nord1;
+
+  urgent-foreground:           @red;
+  urgent-background:           @background;
+
+  bordercolor:                 @nord1;
+  border-color:                @bordercolor;
+
+  spacing:                     2;
+}
+window {
+  background-color: @background;
+  border:           1;
+  padding:          5;
+  width:            33%;
+}
+mainbox {
+  border:  0;
+  padding: 0;
+}
+message {
+  border:       1px solid 0px 0px ;
+  padding:      1px ;
+}
+textbox {
+}
+listview {
+  fixed-height: 0;
+  border:       1px solid 0px 0px ;
+  spacing:      2px ;
+  scrollbar:    true;
+  padding:      2px 0px 0px ;
+  lines:        10;
+}
+element {
+  border:  0;
+  margin: 0px 0px 0px 10px ;
+}
+element-text {
+  padding: 0px 0px 0px 10px ;
+}
+element.normal.normal {
+}
+element.alternate.normal {
+}
+element.normal.urgent {
+  text-color:       @urgent-foreground;
+}
+element.alternate.urgent {
+  text-color:       @urgent-foreground;
+}
+element.normal.active {
+  border:  1px;
+  text-color:       @active-foreground;
+}
+element.alternate.active {
+  text-color:       @active-foreground;
+}
+element.selected.normal {
+  border:  1px;
+  text-color:       @selected-foreground;
+}
+element.selected.urgent {
+  border:  1px;
+  text-color:       @urgent-foreground;
+}
+element.selected.active {
+  border:  1px;
+  text-color:       @selected-foreground;
+}
+scrollbar {
+  width:        4px ;
+  border:       0;
+  handle-width: 8px ;
+  padding:      0;
+  handle-color: @lightbg;
+}
+mode-switcher {
+  border:       1px solid 0px 0px ;
+}
+button.selected {
+  background-color: @lightbg;
+  text-color:       @lightfg;
+}
+inputbar {
+  spacing:    0;
+  padding:    1px ;
+}
+case-indicator {
+  spacing:    0;
+}
+entry {
+  spacing:    0;
+}
+prompt {
+  spacing:    0;
+}
+inputbar {
+  children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+textbox-prompt-colon {
+  expand:     false;
+  str:        ":";
+  margin:     0px 0.3em 0em 0em ;
+}
+
+/* vim:ft=css
