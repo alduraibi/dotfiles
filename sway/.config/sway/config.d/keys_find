@@ -1,0 +1,15 @@
+#
+# Mode: Open Applications
+#
+mode "find" {
+  ### General
+  bindsym r exec rofi -show run; mode "default"
+  bindsym f exec rofi -show filebrowser; mode "default"
+  bindsym j exec rofi -show emoji; mode "default"
+  bindsym i exec rofi -show glyph; mode "default"
+  bindsym a exec rofi -show arabic; mode "default"
+
+  # Return to default mode
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}

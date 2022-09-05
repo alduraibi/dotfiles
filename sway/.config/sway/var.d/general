@@ -9,7 +9,7 @@ set $term kitty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 #set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu wofi
+set $menu rofi -show run
 set $browser firefox
 set $explorer "$term ranger"
 set $dotfiles "~/dotfiles"
