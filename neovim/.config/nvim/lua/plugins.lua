@@ -42,9 +42,9 @@ return require('packer').startup(function(use)
     config = get_config('mason'),
   })
 
-  use({ -- Bridges mason.nvim with nvim-lspconfig
-    'williamboman/mason-lspconfig.nvim',
-    config = get_config('mason-lspconfig'),
+  use({ -- lsp installer/updater
+    'WhoIsSethDaniel/mason-tool-installer.nvim',
+    config = get_config('mason-tool-installer'),
   })
 
   use({ -- Configurations for LSP
@@ -52,9 +52,9 @@ return require('packer').startup(function(use)
     config = get_config('lspconfig'),
   })
 
-  use({ -- lsp installer/updater
-    'WhoIsSethDaniel/mason-tool-installer.nvim',
-    config = get_config('mason-tool-installer'),
+  use({ -- Bridges mason.nvim with nvim-lspconfig
+    'williamboman/mason-lspconfig.nvim',
+    config = get_config('mason-lspconfig'),
   })
 
   use({ -- formatters and linters
@@ -64,6 +64,11 @@ return require('packer').startup(function(use)
       'nvim-lua/plenary.nvim',
     },
   })
+
+  -- use({ -- DAPs
+  --   'mfussenegger/nvim-dap',
+  --   config = get_config('dap'),
+  -- })
 
   use({ -- Show function signature
     'ray-x/lsp_signature.nvim',
@@ -99,9 +104,15 @@ return require('packer').startup(function(use)
 
   use({ -- highlighting
     'nvim-treesitter/nvim-treesitter',
+    config = get_config('treesitter'),
     run = function()
       require('nvim-treesitter.install').update({ with_sync = true })
     end,
+    requires = {
+      'nvim-treesitter/nvim-treesitter-refactor', -- Refactor module
+      'nvim-treesitter/nvim-treesitter-textobjects', -- Syntax aware text-objects, select, move, swap, and peek support.
+      'nvim-treesitter/nvim-treesitter-context', -- Show code context
+    },
   })
 
   use({ -- Markdown Preview
@@ -190,6 +201,10 @@ return require('packer').startup(function(use)
     requires = {
       'kyazdani42/nvim-web-devicons', -- for icons
     },
+  })
+
+  use({ -- mkdir
+    'jghauser/mkdir.nvim',
   })
 
   use({ -- displays popup with possible keybinds
