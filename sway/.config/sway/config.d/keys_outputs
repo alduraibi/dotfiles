@@ -1,5 +1,5 @@
 #
-### Mode: Output Devices
+# Mode: Output Devices
 #
 mode "outputs" {
   #

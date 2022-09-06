@@ -1,6 +1,7 @@
 configuration {
   /* https://github.com/fdw/rofimoji/tree/main/src/picker/data */
-  modi: "run,ssh,keys,combi,drun,filebrowser,emoji:rofimoji,glyph:rofimoji -f nerd_font,arabic:rofimoji -f arabic";
+  modi: "run,ssh,filebrowser";
+  /* modi: "run,ssh,keys,drun,filebrowser,emoji:rofimoji,glyph:rofimoji -f nerd_font,arabic:rofimoji -f arabic,math:rofimoji -f math,calc"; */
   /* font: "FuraCode Nerd Font 12"; */
   font: "FiraGO 12";
 /*	location: 0;*/
@@ -14,8 +15,8 @@ configuration {
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
 /*	run-shell-command: "{terminal} -e {cmd}";*/
-/*	window-command: "wmctrl -i -R {window}";*/
-/*	window-match-fields: "all";*/
+/*  window-command: "wmctrl -i -R {window}"; */
+/*  window-match-fields: "all"; */
 /*	icon-theme: ;*/
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/

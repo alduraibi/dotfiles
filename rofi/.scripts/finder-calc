@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Calculator
+
+rofi -show calc -modi calc -no-show-match -no-sort -display-calc " " -calc-command "echo -n '{result}' | wl-copy"
+# > /dev/null 2>&1

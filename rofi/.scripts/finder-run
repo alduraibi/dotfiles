@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# run
+
+rofi -show run > /dev/null 2>&1
