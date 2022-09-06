@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Emoji picker
+
+rofimoji --action copy --max-recent 0 --prompt 😀 > /dev/null 2>&1

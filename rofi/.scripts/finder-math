@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Math symbol picker
+
+rofimoji --action copy --max-recent 0 --file math --prompt  > /dev/null 2>&1

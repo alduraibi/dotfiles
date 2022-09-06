@@ -15,6 +15,7 @@ My Arch and Termux configs
 - **✂️ [wl-clipboard](wl-clipboard) -** Clipboard
 - **📄 [bat](bat) -** Alternative to `cat`
 - **🌟 [glow](glow) -** Render markdown on the terminal
+- **➗ [qalculate](qalculate) -** Calculator
 <details>
   <summary>Also Installed</summary>
 

@@ -1,13 +1,16 @@
 #
-# Mode: Open Applications
+# Start finder (rofi)
 #
 mode "find" {
   ### General
-  bindsym r exec rofi -show run; mode "default"
-  bindsym f exec rofi -show filebrowser; mode "default"
-  bindsym j exec rofi -show emoji; mode "default"
-  bindsym i exec rofi -show glyph; mode "default"
-  bindsym a exec rofi -show arabic; mode "default"
+  bindsym r exec finder-run; mode "default"
+  bindsym d exec finder-drun; mode "default"
+  bindsym f exec finder-filebrowser; mode "default"
+  bindsym c exec finder-calc; mode "default"
+  bindsym x exec finder-math; mode "default"
+  bindsym j exec finder-emoji; mode "default"
+  bindsym i exec finder-glyph; mode "default"
+  bindsym a exec finder-arabic; mode "default"
 
   # Return to default mode
   bindsym Return mode "default"

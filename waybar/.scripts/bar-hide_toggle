@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# hide/unhide bar (waybar)
+
+killall -SIGUSR1 waybar

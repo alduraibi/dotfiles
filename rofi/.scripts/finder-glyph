@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Glyph picker
+
+rofimoji --action copy --max-recent 0 --file nerd_font --prompt  > /dev/null 2>&1

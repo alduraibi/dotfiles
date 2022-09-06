@@ -52,7 +52,7 @@ return require('packer').startup(function(use)
     config = get_config('lspconfig'),
   })
 
-  use({ -- lsp manager
+  use({ -- lsp installer/updater
     'WhoIsSethDaniel/mason-tool-installer.nvim',
     config = get_config('mason-tool-installer'),
   })
@@ -70,7 +70,13 @@ return require('packer').startup(function(use)
     config = get_config('lsp_signature'),
   })
 
-  -- use { "rafamadriz/friendly-snippets" }
+  use({ -- code snippets
+    'L3MON4D3/LuaSnip',
+    config = get_config('luasnip'),
+    requires = {
+      'rafamadriz/friendly-snippets',
+    },
+  })
 
   use({ -- completions
     'hrsh7th/nvim-cmp',
@@ -128,6 +134,7 @@ return require('packer').startup(function(use)
       'ghassan0/telescope-glyph.nvim', -- glyphs
       { -- code snippets (luasnips)
         'benfowler/telescope-luasnip.nvim',
+        module = 'telescope._extensions.luasnip',
         requires = {
           'L3MON4D3/LuaSnip',
           'rafamadriz/friendly-snippets',
@@ -162,7 +169,7 @@ return require('packer').startup(function(use)
   })
 
   use({ -- color highlighter
-    'norcalli/nvim-colorizer.lua',
+    'NvChad/nvim-colorizer.lua',
     config = get_config('colorizer'),
   })
 

@@ -11,6 +11,7 @@ bindsym $mod+o mode "outputs"
 bindsym $mod+i mode "inputs"
 bindsym $mod+a mode "apps"
 bindsym $mod+f mode "find"
+bindsym $mod+x mode "settings"
 # bindsym $mod+n mode "notifications"
 
 # bindsym $mod+Shift+n exec notification-pause_toggle
@@ -161,8 +162,9 @@ bindsym Shift+XF86MonBrightnessUp   exec backlight-set_max
 #bindsym XF86AudioNext exec playerctl next
 #bindsym XF86AudioPrev exec playerctl previous
 # Screenshot
-bindsym $mod+y        exec screenshot-focus
-bindsym $mod+Shift+y  exec screenshot-full
+bindsym $mod+y          exec screenshot-focus
+bindsym $mod+Shift+y    exec screenshot-full
+bindsym $mod+Control+y  exec screenshot-select
 
 #
 # X1 Carbon specific
