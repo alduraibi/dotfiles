@@ -4,11 +4,11 @@ local null_ls = require('null-ls')
 -- code action sources
 local code_actions = null_ls.builtins.code_actions
 
--- diagnostic sources
-local diagnostics = null_ls.builtins.diagnostics
+-- linter(diagnostic) sources
+local linter = null_ls.builtins.diagnostics
 
 -- formatting sources
-local formatting = null_ls.builtins.formatting
+local formatter = null_ls.builtins.formatting
 
 -- hover sources
 local hover = null_ls.builtins.hover
@@ -19,18 +19,21 @@ local completion = null_ls.builtins.completion
 local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 require('null-ls').setup({
   sources = {
-    -- python
-    diagnostics.pylint,
-    formatting.black,
-    formatting.isort, -- sort includes
-
+    -- javascript/typescript
+    -- linter.eslint,
     -- lua
-    formatting.stylua,
-    -- json, css, markdown, yaml, js
-    formatting.prettierd,
+    formatter.stylua,
+    -- markdown
+    -- linter.write-good,
+    -- python
+    linter.pylint,
+    formatter.black,
+    formatter.isort, -- sort includes
     -- shell
-    formatting.shfmt,
-    -- require("null-ls").builtins.diagnostics.eslint,
+    formatter.shfmt,
+    -- Multi:
+    linter.misspell,
+    formatter.prettierd, -- json, css, markdown, yaml, js
     -- require("null-ls").builtins.completion.spell,
   },
   -- you can reuse a shared lspconfig on_attach callback here
