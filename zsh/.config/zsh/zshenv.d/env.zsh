@@ -2,6 +2,7 @@
 
 ### PATH ###
 export PATH=$PATH:~/.scripts
+# export PATH=$PATH:~/.local/share/cargo/bin
 
 ### Theming ###
 #export QT_QPA_PLATFORMTHEME=qt5ct

@@ -19,6 +19,8 @@ local completion = null_ls.builtins.completion
 local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 require('null-ls').setup({
   sources = {
+    -- go
+    formatter.goimports,
     -- javascript/typescript
     -- linter.eslint,
     -- lua
