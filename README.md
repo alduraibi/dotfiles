@@ -9,7 +9,7 @@ My Arch and Termux configs
 
 ## CLI Utilities
 
-- **🗃️ [stowd](stowd) -** Easily manage your dotfiles
+- **🗃️ [doti](doti) -** Easily manage dotfiles
 - **🔆 [brightnessctl](brightnessctl) -** Control device brightness
 - **🔊 [pamixer](pamixer) -** Control device volume
 - **✂️ [wl-clipboard](wl-clipboard) -** Clipboard
@@ -42,6 +42,7 @@ My Arch and Termux configs
 
 - **📟 [kitty](kitty) -** Terminal
 - **🐚 [zsh](zsh) -** Shell
+- **➡️ [starship](starship) -** Shell prompt
 - **🔔 [dunst](dunst) -** Notification daemon
 - **🚀 [rofi](rofi) -** application launcher
 - **⌨️ [wvkbd](wvkbd) -** On-screen keyboard

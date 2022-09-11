@@ -70,6 +70,7 @@ export RIPGREP_CONFIG_PATH=$XDG_CONFIG_HOME/ripgrep/config
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export SQLITE_HISTORY=$XDG_DATA_HOME/sqlite_history
 #sqlite3 -init "$XDG_CONFIG_HOME"/sqlite3/sqliterc
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship/starship.toml
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 #echo hsts-file \= "$XDG_CACHE_HOME"/wget-hsts >> "$XDG_CONFIG_HOME/wgetrc"
 #mkdir -p "$XDG_DATA_HOME"/wineprefixes
