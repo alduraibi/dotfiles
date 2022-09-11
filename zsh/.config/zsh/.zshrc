@@ -20,3 +20,5 @@ if [ -e ${ZDOTDIR}/zshrc.d ]; then
   for file in ${ZDOTDIR}/zshrc.d/*.zsh; do source $file; done
 fi
 
+# start prompt
+eval "$(starship init zsh)"

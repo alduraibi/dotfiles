@@ -15,7 +15,7 @@
 source $XDG_DATA_HOME/zsh-snap/plugins/zsh-snap/znap.zsh  # Start Znap
 
 # `znap prompt` makes your prompt visible in just 15-40ms!
-znap prompt sindresorhus/pure
+# znap prompt sindresorhus/pure
 
 #znap source omkatv/zsh-defer
 #znap source wfxr/forgit
