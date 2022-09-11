@@ -4,6 +4,10 @@
 
 **Links:** [Website][site] - [Source Code][code]
 
+## Setup
+
+My Termux setup is documented [here](SETUP.md).
+
 [site]: https://termux.dev/
 [desc]: https://termux.dev/
 [code]: https://github.com/termux/termux-app

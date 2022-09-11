@@ -25,8 +25,10 @@ alias dd="dd status=progress"
 # cp/mv/rm/ln
 alias cp="cp -iR"
 alias mv="mv -i"
-alias rm="rm -r"
+alias rm="rm -Ir"
 alias rsync="rsync -ah --info=progress2"
+# mkdir
+alias mkdir="mkdir -p"
 # ls
 #alias ls="ls --color=auto"
 #alias la="ls -a --color=auto"
@@ -55,6 +57,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 # python
 alias py="python"
+alias py-in="python -m install -e"
 # pip
 alias pip-in="pip install"
 alias pip-un="pip uninstall"
