@@ -131,8 +131,13 @@ style = "yellow"
 show_notifications = true
 min_time_to_notify = 30000
 
-[[battery.display]]
-threshold = 15
+# [[battery.display]]
+# threshold = 15
+# style = "bold red"
+#
+# [[battery.display]]
+# threshold = 30
+# style = "bold yellow"
 
 
 ## Languages
