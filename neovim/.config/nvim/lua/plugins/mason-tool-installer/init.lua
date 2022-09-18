@@ -35,7 +35,7 @@ local ensure_installed = {
   'prettierd', -- formatter (json, css, markdown, yaml, js, ts, html, flow, jsx, scss, less, vue, angular, graphql)
 }
 -- Tools that need to be installed manually on termux
--- `pkg install stylua shfmt`
+-- `pkg install stylua lua-language-server`
 local install_pc = {
   -- lua
   'lua-language-server', -- lsp

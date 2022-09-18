@@ -6,7 +6,7 @@ local capabilities = {
 
 require('lspconfig').cssls.setup({ capabilities = capabilities }) -- css
 require('lspconfig').gopls.setup({ capabilities = capabilities }) -- go
--- require('lspconfig').tsserver.setup({ capabilities = capabilities }) -- javascript/typescript
+require('lspconfig').tsserver.setup({ capabilities = capabilities }) -- javascript/typescript
 require('lspconfig').jsonls.setup({ capabilities = capabilities }) -- json
 require('lspconfig').ltex.setup({ capabilities = capabilities }) -- latex, markdown, etc.
 require('lspconfig').pylsp.setup({

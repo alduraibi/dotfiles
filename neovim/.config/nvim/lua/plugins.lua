@@ -12,12 +12,12 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Automatically run :PackerCompile whenever plugins.lua is updated with an autocommand:
-cmd([[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-  augroup end
-]])
+-- cmd([[
+--   augroup packer_user_config
+--     autocmd!
+--     autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+--   augroup end
+-- ]])
 
 -- plugin config file
 local function get_config(name)
@@ -29,12 +29,8 @@ return require('packer').startup(function(use)
     'wbthomason/packer.nvim',
   })
 
-  -- use {   -- Nord colorscheme
-  --   'arcticicestudio/nord-vim',
-  -- }
   use({ -- Nord colorscheme (nvim)
     'shaunsingh/nord.nvim',
-    --config = get_config('nord'),
   })
 
   use({ -- lsp manager
@@ -42,19 +38,31 @@ return require('packer').startup(function(use)
     config = get_config('mason'),
   })
 
-  use({ -- lsp installer/updater
-    'WhoIsSethDaniel/mason-tool-installer.nvim',
-    config = get_config('mason-tool-installer'),
+  -- use({ -- lsp installer/updater
+  --   'WhoIsSethDaniel/mason-tool-installer.nvim',
+  --   config = get_config('mason-tool-installer'),
+  -- })
+
+  use({ -- Bridges mason.nvim with nvim-lspconfig
+    'williamboman/mason-lspconfig.nvim',
+    config = get_config('mason-lspconfig'),
+    requires = {
+      'williamboman/mason.nvim',
+    },
+    after = {
+      'mason.nvim',
+    },
   })
 
   use({ -- Configurations for LSP
     'neovim/nvim-lspconfig',
     config = get_config('lspconfig'),
-  })
-
-  use({ -- Bridges mason.nvim with nvim-lspconfig
-    'williamboman/mason-lspconfig.nvim',
-    config = get_config('mason-lspconfig'),
+    requires = {
+      'williamboman/mason-lspconfig.nvim',
+    },
+    after = {
+      'mason-lspconfig.nvim',
+    },
   })
 
   use({ -- formatters and linters
@@ -62,6 +70,19 @@ return require('packer').startup(function(use)
     config = get_config('null-ls'),
     requires = {
       'nvim-lua/plenary.nvim',
+    },
+  })
+
+  use({ -- Bridges mason.nvim with null-ls
+    'jayp0521/mason-null-ls.nvim',
+    config = get_config('mason-null-ls'),
+    requires = {
+      'jose-elias-alvarez/null-ls.nvim',
+      'williamboman/mason.nvim',
+    },
+    after = {
+      'null-ls.nvim',
+      'mason.nvim',
     },
   })
 
@@ -130,6 +151,8 @@ return require('packer').startup(function(use)
       'nvim-lua/plenary.nvim',
       'nvim-treesitter/nvim-treesitter', -- optional,
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
+      'nvim-telescope/telescope-symbols.nvim', -- emojis, glyphs, etc.
+      'nvim-telescope/telescope-file-browser.nvim',
       { -- lightspeed!
         'nvim-telescope/telescope-fzf-native.nvim',
         run = 'make',
@@ -141,8 +164,6 @@ return require('packer').startup(function(use)
         }, -- requires: uberzug, fmpegthumbnailer
       },
       'LinArcX/telescope-env.nvim', -- environment variables
-      'xiyaowong/telescope-emoji.nvim', -- emojis
-      'ghassan0/telescope-glyph.nvim', -- glyphs
       { -- code snippets (luasnips)
         'benfowler/telescope-luasnip.nvim',
         module = 'telescope._extensions.luasnip',
@@ -155,14 +176,14 @@ return require('packer').startup(function(use)
     -- opt packages: ripgrep, fd
   })
 
-  use({ -- file explorer
-    'kyazdani42/nvim-tree.lua',
-    tag = 'nightly', -- optional, updated every week. (see issue #1193)
-    config = get_config('nvim-tree'),
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- for file icons
-    },
-  })
+  -- use({ -- file explorer
+  --   'kyazdani42/nvim-tree.lua',
+  --   tag = 'nightly', -- optional, updated every week. (see issue #1193)
+  --   config = get_config('nvim-tree'),
+  --   requires = {
+  --     'kyazdani42/nvim-web-devicons', -- for file icons
+  --   },
+  -- })
 
   use({ -- git extras
     'lewis6991/gitsigns.nvim',
@@ -210,6 +231,11 @@ return require('packer').startup(function(use)
   use({ -- displays popup with possible keybinds
     'folke/which-key.nvim',
     config = get_config('which-key'),
+  })
+
+  use({ -- displays popup with possible keybinds
+    'nvim-lualine/lualine.nvim',
+    config = get_config('lualine'),
   })
 
   -- Automatically set up your configuration after cloning packer.nvim

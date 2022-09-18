@@ -7,3 +7,8 @@ require('which-key').setup({
     },
   },
 })
+
+require('which-key').register({
+  f = { name = 'find' }, -- telescope group name
+  x = { name = 'diagnostics' }, -- trouble group name
+}, { prefix = '<leader>' })

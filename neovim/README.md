@@ -16,8 +16,9 @@
 - [nvim-lspconfig][lspconfig] - LSP configs
 - [mason.nvim][mason] - Package manager for LSP
 - [mason-lspconfig.nvim][mason-lspconfig] - bridges mason and lspconfig
-- [mason-tool-installer.nvim][mason-tool-installer] - Install/update LSPs
+- [mason-null-ls.nvim][mason-null-ls] - bridges mason and null-ls
 - [null-ls.nvim][null-ls] - Formatters and Linters
+- ~~[mason-tool-installer.nvim][mason-tool-installer]~~ - Install/update mason tools
 <!-- - [nvim-dap][dap] - DAPs -->
 
 ### Cmp
@@ -34,6 +35,7 @@
 
 - ~~[nord-vim][nord-vim] - Nord color scheme~~
 - [nord.nvim][nord-nvim] - Nord color scheme ported for Neovim
+- [lualine.nvim][lualine] - statusline
 - [which-key.nvim][which-key] - display popup with possible keybinds
 - [markdown-preview.nvim][markdown-preview] - Render markdown in browser tab
 - [nvim-colorizer.lua][colorizer] - Color highlighter
@@ -160,8 +162,9 @@ Check [here][dap-packages] to configure DAPs.
 [lspconfig]: https://github.com/neovim/nvim-lspconfig
 [mason]: https://github.com/williamboman/mason.nvim
 [mason-lspconfig]: https://github.com/williamboman/mason-lspconfig.nvim
-[mason-tool-installer]: https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim
+[mason-null-ls]: https://github.com/jayp0521/mason-null-ls.nvim
 [null-ls]: https://github.com/jose-elias-alvarez/null-ls.nvim
+[mason-tool-installer]: https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim
 [dap]: https://github.com/mfussenegger/nvim-dap
 [cmp]: https://github.com/hrsh7th/nvim-cmp
 [cmp-nvim-lsp]: https://github.com/hrsh7th/cmp-nvim-lsp
@@ -171,6 +174,7 @@ Check [here][dap-packages] to configure DAPs.
 [cmp-luasnip]: https://github.com/saadparwaiz1/cmp_luasnip
 [nord-vim]: https://github.com/arcticicestudio/nord-vim
 [nord-nvim]: https://github.com/shaunsingh/nord.nvim
+[lualine]: https://github.com/nvim-lualine/lualine.nvim
 [which-key]: https://github.com/folke/which-key.nvim
 [markdown-preview]: https://github.com/iamcco/markdown-preview.nvim
 [colorizer]: https://github.com/NvChad/nvim-colorizer.lua
