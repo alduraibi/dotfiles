@@ -175,17 +175,17 @@ My Arch and Termux configs
 - **🔤 Amiri -** Arabic font
 - **🔤 Amiri Typewriter -** Arabic monospaced font
 
-## [stowd](https://github.com/ghassan0/stowd)
+## [doti](https://github.com/ghassan0/doti)
 
 Program that manages your dotfiles by symlink-ing them into their respective directories.
 
-- install stowd: `pip install stowd`
+- install doti: `pip install doti` (or `yay -S doti` for Arch)
 - Within your dotfiles directory, create a folder for an app and include all its configs as they appear from your home or root directory.
   - Will usually look like:
     - home: `app_name/.config/app_name/config`
     - root: `etc/app_name/config`
-- Edit `stowd.cfg` to include configs to add or remove
-- Run `stowd`
+- Edit `doti.cfg` to include configs to add or remove
+- Run `doti`
   - Will get prompted for password for root configs
 
 [osi]: ./.img/osi.svg

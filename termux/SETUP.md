@@ -7,7 +7,7 @@
 pkg install termux-api zsh openssh neovim
 
 # Tools
-pkg install atool bat duf exa fd fzf gh ncdu ranger stow tmux
+pkg install atool bat duf exa fd fzf gh ncdu ranger starship stow tmux w3m
 
 # Package Managers / Build Tools
 pkg install golang nodejs openjdk-17 php pip rust
@@ -16,14 +16,11 @@ pkg install golang nodejs openjdk-17 php pip rust
 pkg install lua-language-server ripgrep stylua
 
 # Pip Packages
-pip install stowd trash-cli
+pip install doti trash-cli
 
 # Npm Packages
 npm install -g neovim
 ```
-
-<!-- - w3m -->
-<!--   - w3m-img -->
 
 ## Configure System
 
@@ -39,5 +36,5 @@ termux-setup-storage
 
 # Setup dotfiles
 git clone DOTFILE_REPO ~/dotfiles
-stowd
+doti
 ```
