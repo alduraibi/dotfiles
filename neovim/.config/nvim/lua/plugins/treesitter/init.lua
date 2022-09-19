@@ -1,5 +1,10 @@
 -- plugins/treesitter/init.lua
 
+local cmd = vim.cmd
+
+-- Alias
+cmd(':command TU TSUpdate')
+
 require('nvim-treesitter.configs').setup({
   -- A list of parser names, or "all"
   ensure_installed = {

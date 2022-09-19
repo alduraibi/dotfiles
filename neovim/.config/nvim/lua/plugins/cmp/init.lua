@@ -34,23 +34,26 @@ cmp.setup({
         luasnip = kind_menu(vim_item, 'snip'),
         buffer = kind_menu(vim_item, 'buf'),
         path = kind_menu(vim_item, 'path'),
+        calc = kind_menu(vim_item, 'calc'),
+        dictionary = kind_menu(vim_item, 'dict'),
       })[entry.source.name]
       vim_item.kind = string.format('%s', kind_icons[vim_item.kind])
       return vim_item
     end,
   },
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' }, -- For luasnip users.
+    { name = 'buffer' },
+    { name = 'calc' },
+    { name = 'dictionary' },
+  }),
   mapping = cmp.mapping.preset.insert({
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<C-e>'] = cmp.mapping.abort(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-  }),
-  sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = 'luasnip' }, -- For luasnip users.
-  }, {
-    { name = 'buffer' },
   }),
 })
 

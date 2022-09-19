@@ -18,6 +18,7 @@ map('n', '<leader>fv', '<cmd>Telescope env<cr>', { silent = true, desc = 'enviro
 
 -- code
 map('n', '<leader>fs', '<cmd>Telescope luasnip<cr>', { silent = true, desc = 'snippets' })
+map('n', '<leader>fr', '<cmd>Telescope repo list<cr>', { silent = true, desc = 'git repos' })
 
 -- symbols
 map('n', '<leader>fj', function()
@@ -29,3 +30,21 @@ end, { silent = true, desc = 'glyphs' })
 map('n', '<leader>f=', function()
   require('telescope.builtin').symbols({ sources = { 'math' } })
 end, { silent = true, desc = 'math symbols' })
+
+-- notifications
+map('n', '<leader>fn', function()
+  require('telescope').extensions.notify.notify()
+end, { silent = true, desc = 'notifications' })
+
+-- clipboard
+map('n', '<leader>fy', '<cmd>Telescope neoclip<cr>', { silent = true, desc = 'clipboard' })
+
+-- plugins (packer)
+map('n', '<leader>fp', function()
+  require('telescope').extensions.packer.packer()
+end, { silent = true, desc = 'plugins' })
+
+-- dictionary
+map('n', '<leader>fw', function()
+  require('telescope').extensions.dict.synonyms()
+end, { silent = true, desc = 'synonyms' })

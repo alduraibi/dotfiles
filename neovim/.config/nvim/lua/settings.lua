@@ -3,8 +3,7 @@
 local o = vim.o
 local cmd = vim.cmd
 
-cmd('colorscheme nord') -- Nord theme
-cmd('syntax enable') -- Enables syntax highlighing
+cmd('syntax enable') -- Enables syntax highlighting
 
 -- Enable numbered lines
 o.number = true -- Add line numbers

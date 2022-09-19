@@ -39,6 +39,13 @@ require('telescope').setup({
       filetypes = { 'jpg', 'jpeg', 'png', 'webp', 'mp4' },
       find_cmd = 'rg', -- find command (defaults to `fd`)
     },
+    repo = {
+      list = {
+        search_dirs = {
+          '~/code',
+        },
+      },
+    },
   },
 })
 
@@ -47,3 +54,5 @@ require('telescope').load_extension('file_browser')
 require('telescope').load_extension('media_files')
 require('telescope').load_extension('env')
 require('telescope').load_extension('luasnip')
+require('telescope').load_extension('neoclip')
+require('telescope').load_extension('repo')
