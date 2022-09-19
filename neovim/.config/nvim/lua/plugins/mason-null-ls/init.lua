@@ -18,7 +18,6 @@ require('mason-null-ls').setup({
   -- if set to true, the tool will check null-ls for the available sources,
   -- and then install the dependency(ies) if available in mason.
   -- Default: true
-  -- automatic_installation = { exclude = excluded },
+  automatic_installation = { exclude = excluded },
+  -- automatic_installation = true,
 })
-
-require('mason-null-ls').check_install()

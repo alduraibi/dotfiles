@@ -3,6 +3,8 @@
 local fn = vim.fn
 local cmd = vim.cmd
 
+cmd(':command PU PackerSync')
+
 -- Install packer if not already installed
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -25,12 +27,29 @@ local function get_config(name)
 end
 
 return require('packer').startup(function(use)
+  use({ -- Improve startup time
+    'lewis6991/impatient.nvim',
+  })
+
   use({ -- Packer can manage itself
     'wbthomason/packer.nvim',
   })
 
   use({ -- Nord colorscheme (nvim)
     'shaunsingh/nord.nvim',
+    config = get_config('nord'),
+  })
+
+  use({ -- notifications
+    'rcarriga/nvim-notify',
+    config = get_config('notify'),
+  })
+
+  use({
+    'akinsho/bufferline.nvim',
+    tag = 'v2.*',
+    config = get_config('bufferline'),
+    requires = 'kyazdani42/nvim-web-devicons',
   })
 
   use({ -- lsp manager
@@ -48,6 +67,7 @@ return require('packer').startup(function(use)
     config = get_config('mason-lspconfig'),
     requires = {
       'williamboman/mason.nvim',
+      'neovim/nvim-lspconfig',
     },
     after = {
       'mason.nvim',
@@ -57,9 +77,9 @@ return require('packer').startup(function(use)
   use({ -- Configurations for LSP
     'neovim/nvim-lspconfig',
     config = get_config('lspconfig'),
-    requires = {
-      'williamboman/mason-lspconfig.nvim',
-    },
+    -- requires = {
+    --   'williamboman/mason-lspconfig.nvim',
+    -- },
     after = {
       'mason-lspconfig.nvim',
     },
@@ -113,6 +133,11 @@ return require('packer').startup(function(use)
       'hrsh7th/cmp-buffer', -- provides suggestions based on the current file
       'hrsh7th/cmp-path', -- gives completions based on the filesystem
       'hrsh7th/cmp-cmdline',
+      'hrsh7th/cmp-calc', -- math calculation
+      {
+        'uga-rosa/cmp-dictionary', -- dictionary
+        config = get_config('cmp.dictionary'),
+      },
       { -- code snippets
         'saadparwaiz1/cmp_luasnip',
         requires = {
@@ -138,6 +163,7 @@ return require('packer').startup(function(use)
 
   use({ -- Markdown Preview
     'iamcco/markdown-preview.nvim',
+    config = get_config('markdown-preview'),
     run = function()
       fn['mkdp#util#install']()
     end,
@@ -145,7 +171,7 @@ return require('packer').startup(function(use)
 
   use({ -- fuzzy finder
     'nvim-telescope/telescope.nvim',
-    tag = '0.1.0',
+    tag = '0.1.*',
     config = get_config('telescope'),
     requires = {
       'nvim-lua/plenary.nvim',
@@ -153,6 +179,10 @@ return require('packer').startup(function(use)
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
       'nvim-telescope/telescope-symbols.nvim', -- emojis, glyphs, etc.
       'nvim-telescope/telescope-file-browser.nvim',
+      'LinArcX/telescope-env.nvim', -- environment variables
+      'cljoly/telescope-repo.nvim', -- git repos
+      'nvim-telescope/telescope-packer.nvim', -- plugins (packer)
+      'rudism/telescope-dict.nvim', -- dictionary
       { -- lightspeed!
         'nvim-telescope/telescope-fzf-native.nvim',
         run = 'make',
@@ -163,7 +193,6 @@ return require('packer').startup(function(use)
           'nvim-lua/popup.nvim',
         }, -- requires: uberzug, fmpegthumbnailer
       },
-      'LinArcX/telescope-env.nvim', -- environment variables
       { -- code snippets (luasnips)
         'benfowler/telescope-luasnip.nvim',
         module = 'telescope._extensions.luasnip',
@@ -172,18 +201,22 @@ return require('packer').startup(function(use)
           'rafamadriz/friendly-snippets',
         },
       },
+      {
+        'AckslD/nvim-neoclip.lua',
+        config = get_config('telescope.neoclip'),
+      },
     },
     -- opt packages: ripgrep, fd
   })
 
-  -- use({ -- file explorer
-  --   'kyazdani42/nvim-tree.lua',
-  --   tag = 'nightly', -- optional, updated every week. (see issue #1193)
-  --   config = get_config('nvim-tree'),
-  --   requires = {
-  --     'kyazdani42/nvim-web-devicons', -- for file icons
-  --   },
-  -- })
+  use({ -- file explorer
+    'kyazdani42/nvim-tree.lua',
+    tag = 'nightly', -- optional, updated every week. (see issue #1193)
+    config = get_config('nvim-tree'),
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- for file icons
+    },
+  })
 
   use({ -- git extras
     'lewis6991/gitsigns.nvim',
