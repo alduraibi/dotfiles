@@ -7,7 +7,8 @@ local excluded_termux = {
   -- c/c++
   'clangd', -- lsp
   -- lua
-  'lua-language-server', -- lsp
+  -- 'lua-language-server', -- lsp
+  'sumneko_lua', -- lsp
   -- markdown
   'marksman', -- lsp
 }
@@ -26,6 +27,6 @@ require('mason-lspconfig').setup({
   --   - true: All servers set up via lspconfig are automatically installed.
   --   - { exclude: string[] }: All servers set up via lspconfig, except the ones provided in the list, are automatically installed.
   --       Example: automatic_installation = { exclude = { "rust_analyzer", "solargraph" } }
-  -- automatic_installation = { exclude = excluded },
-  automatic_installation = true,
+  automatic_installation = { exclude = excluded },
+  -- automatic_installation = true,
 })
