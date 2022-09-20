@@ -2,7 +2,7 @@
 
 > Neovim is a hyperextensible Vim-based text editor.<sup>[1][desc]</sup>
 
-**Links:** [Website][site] - [Source Code][code] - [Arch Wiki][arch]
+**Links:** [Website] - [Source Code] - [Arch Wiki]
 
 - Config folder:
   - Unix: `~/.config/nvim/`
@@ -94,13 +94,13 @@
 - [nvim-web-devicons] - icon support for plugins
   - requires a patched font
 
-## LSPs, Formatters, Linters, DAPs
+## LSPs, Formatters, Diagnostics, DAPs
 
 - Check [here][lsp-packages] to configure LSPs. (automatically installed)
 - Check [here][dap-packages] to configure DAPs.
 - Check [here][mason-packages] to find more LSPs, DAPs, Linters, and Formatters.
 
-|           Language            |      LSP      |     Formatter      |        Linter        | DAP |         Hover         |
+|           Language            |      LSP      |     Formatter      |     Diagnostics      | DAP |         Hover         |
 | :---------------------------: | :-----------: | :----------------: | :------------------: | :-: | :-------------------: |
 |              CSS              |    [cssls]    |    [prettierd]     |
 |              Go               |    [gopls]    |    [goimports]     |
@@ -124,10 +124,10 @@
 
 <!-- General -->
 
-[site]: https://neovim.io/
+[website]: https://neovim.io/
 [desc]: https://neovim.io/
-[code]: https://github.com/neovim/neovim
-[arch]: https://wiki.archlinux.org/title/Neovim
+[source code]: https://github.com/neovim/neovim
+[arch wiki]: https://wiki.archlinux.org/title/Neovim
 
 <!-- Plugins -->
 

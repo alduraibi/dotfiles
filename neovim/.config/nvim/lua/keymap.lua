@@ -4,8 +4,8 @@
 local map = vim.keymap.set
 local map_opt = { silent = true, noremap = true }
 
-map('n', ';', ':', map_opt) -- Use `;` in normal mode to insert 1 character
-map('v', ';', ':', map_opt) -- Use `;` in visual mode to insert 1 character
+-- map('n', ';', ':', map_opt) -- Use `;` in normal mode to insert 1 character
+-- map('v', ';', ':', map_opt) -- Use `;` in visual mode to insert 1 character
 
 --map('n', '<Space>', 'i <Esc>r')   -- Use <Space> in normal mode to insert 1 character
 map('n', '\\', 'i <Esc>r', map_opt) -- Use `,` in normal mode to insert 1 character

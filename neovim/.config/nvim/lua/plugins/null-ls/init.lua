@@ -32,7 +32,11 @@ require('null-ls').setup({
     formatter.prettierd, -- json, css, markdown, yaml, js
     -- Language
     linter.misspell,
-    linter.vale,
+    -- linter.vale,
+    linter.vale.with({
+      extra_args = { '--config=' .. vim.fn.stdpath('config') .. '/vale/vale.ini' },
+      extra_filetypes = { 'txt', 'text', 'md', 'wiki', 'markdown' },
+    }),
     hover.dictionary,
     hover.printenv,
     -- require('null-ls').builtins.diagnostics.vale,

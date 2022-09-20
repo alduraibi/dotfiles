@@ -134,9 +134,11 @@ return require('packer').startup(function(use)
       'hrsh7th/cmp-path', -- gives completions based on the filesystem
       'hrsh7th/cmp-cmdline',
       'hrsh7th/cmp-calc', -- math calculation
+      -- 'f3fora/cmp-spell', -- spell
       {
         'uga-rosa/cmp-dictionary', -- dictionary
         config = get_config('cmp.dictionary'),
+        disable = true,
       },
       { -- code snippets
         'saadparwaiz1/cmp_luasnip',

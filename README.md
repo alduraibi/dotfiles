@@ -4,7 +4,8 @@ My Arch and Termux configs
 
 ## Overview
 
-- **💻 Distros:** Arch Linux / Termux
+- **💻 Distros:** Arch Linux and Android/Termux
+- **📝 Editor:** [Neovim](neovim)
 - **🎨 Theme:** Nord _(with black background on termux)_
 
 ## CLI Utilities
@@ -44,14 +45,14 @@ My Arch and Termux configs
 - **🐚 [zsh](zsh) -** Shell
 - **➡️ [starship](starship) -** Shell prompt
 - **🔔 [dunst](dunst) -** Notification daemon
-- **🚀 [rofi](rofi) -** application launcher
+- **🚀 [rofi](rofi) -** Application launcher
 - **⌨️ [wvkbd](wvkbd) -** On-screen keyboard
 
 <details>
   <summary>Old</summary>
 
 - **🔔 [mako](mako) -** Notification daemon
-- **🚀 [wofi](wofi) -** application launcher
+- **🚀 [wofi](wofi) -** Application launcher
 </details>
 
 ## Display
@@ -73,12 +74,11 @@ My Arch and Termux configs
 - **⚙ Xresources -** Config files for Xresources
 </details>
 
-## Applications
+## GUI Applications
 
 - **🌐 [Firefox](firefox) -** Internet browser
 - **🇻 [tridactyl](tridactyl) -** Vi-bindings for Firefox
 - **🌐 [qutebrowser](qutebrowser) -** Internet browser with vim bindings
-- **🌐 [w3m](w3m) -** Terminal-based Internet browser
 <details>
   <summary>Also Installed</summary>
 
@@ -91,11 +91,12 @@ My Arch and Termux configs
 - **📝 [Neovim](neovim) -** Text editor based on vim
 - **🗃 [ranger](ranger) -** TUI file explorer with vi bindings
 - **🔳 [Tmux](tmux) -** Terminal multiplexer
+- **🌐 [w3m](w3m) -** Terminal-based Internet browser
 
 ## Media Players
 
 - **🎬🎞️ [mpv](mpv) -** video player
-- **🖼️ [vimiv](vimiv) -** image viewer
+- **🖼️ [vimiv](vimiv) -** Image viewer
 - **📃 [zathura](zathura) -** PDF/ePub Viewer
 - **🎨 [Spicetify](spicetify) -** Spotify theming
 <details>
@@ -106,8 +107,8 @@ My Arch and Termux configs
 <details>
   <summary>Consider Installing</summary>
 
-- **🖼️ [imv](imv) -** image viewer
-- **🖼️ [mvi](mvi) -** image viewer
+- **🖼️ [imv](imv) -** Image viewer
+- **🖼️ [mvi](mvi) -** Image viewer
 - **🔤 [OSD Lyrics](https://github.com/osdlyrics/osdlyrics) -** Show synced lyrics with your favorite media player on Linux
 </details>
 
@@ -179,7 +180,7 @@ My Arch and Termux configs
 
 Program that manages your dotfiles by symlink-ing them into their respective directories.
 
-- install doti: `pip install doti` (or `yay -S doti` for Arch)
+- Install doti: `pip install doti` (or `yay -S doti` for Arch)
 - Within your dotfiles directory, create a folder for an app and include all its configs as they appear from your home or root directory.
   - Will usually look like:
     - home: `app_name/.config/app_name/config`

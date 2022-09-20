@@ -30,8 +30,8 @@ o.termguicolors = true
 o.colorcolumn = '80' -- Enable an 80 column border for good coding style
 
 -- Spell-check
-o.spelllang = 'en' -- Spell-check language
---o.spell               -- Enable spell-checker
+o.spelllang = 'en_us' -- Spell-check language
+-- o.spell = true -- Enable spell-checker
 
 -- Misc
 o.mouse = 'a' -- Enable mouse
