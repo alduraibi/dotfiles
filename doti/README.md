@@ -2,7 +2,7 @@
 
 > Easily manage all your dotfiles across your devices.<sup>[1][desc]</sup>
 
-**Links:** [Source Code][code] - [Package][pkg]
+**Links:** [Source Code] - [Package]
 
 ## Install:
 
@@ -21,5 +21,5 @@ doti
 ```
 
 [desc]: https://github.com/ghassan0/doti
-[code]: https://github.com/ghassan0/doti
-[pkg]: https://pypi.org/project/doti/
+[source code]: https://github.com/ghassan0/doti
+[package]: https://pypi.org/project/doti/

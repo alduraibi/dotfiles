@@ -1,10 +1,10 @@
 # grim
 
-> Grab images from any Wayland compositor which supports the screencopy protocol. Works well with [slurp][site1].<sup>[1][desc]</sup>
+> Grab images from any Wayland compositor which supports the screencopy protocol. Works well with [slurp].<sup>[1][desc]</sup>
 
-**Links:** [Website][site] - [Source Code][code]
+**Links:** [Website] - [Source Code]
 
-[site]: https://wayland.emersion.fr/grim/
-[site1]: https://wayland.emersion.fr/slurp/
+[website]: https://wayland.emersion.fr/grim/
+[slurp]: https://wayland.emersion.fr/slurp/
 [desc]: https://wayland.emersion.fr/grim/
-[code]: https://sr.ht/~emersion/grim/
+[source code]: https://sr.ht/~emersion/grim/

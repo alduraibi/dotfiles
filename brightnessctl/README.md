@@ -2,7 +2,7 @@
 
 > This program allows you read and control device brightness.<sup>[1][desc]</sup>
 
-**Links:** [Source Code][code]
+**Links:** [Source Code]
 
 ## Commands:
 
@@ -18,4 +18,4 @@
   `brightnessctl set 0%`
 
 [desc]: https://github.com/Hummer12007/brightnessctl
-[code]: https://github.com/Hummer12007/brightnessctl
+[source code]: https://github.com/Hummer12007/brightnessctl

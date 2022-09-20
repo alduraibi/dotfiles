@@ -2,6 +2,6 @@
 
 > Used to set default application association.
 
-**Links:** [Arch Wiki][aw]
+**Links:** [Arch Wiki]
 
-[aw]: https://wiki.archlinux.org/title/Default_applications
+[arch wiki]: https://wiki.archlinux.org/title/Default_applications
