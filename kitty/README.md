@@ -2,9 +2,9 @@
 
 > A fast, feature-rich, cross-platform, GPU based terminal.<sup>[1][desc]</sup>
 
-**Links:** [Website][site] - [Source Code][code] - [Arch Wiki][aw]
+**Links:** [Website] - [Source Code] - [Arch Wiki]
 
-[site]: https://sw.kovidgoyal.net/kitty/
+[website]: https://sw.kovidgoyal.net/kitty/
 [desc]: https://sw.kovidgoyal.net/kitty/
-[code]: https://github.com/kovidgoyal/kitty
-[aw]: https://wiki.archlinux.org/title/Kitty
+[source code]: https://github.com/kovidgoyal/kitty
+[arch wiki]: https://wiki.archlinux.org/title/Kitty

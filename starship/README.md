@@ -2,7 +2,7 @@
 
 > The minimal, blazing-fast, and infinitely customizable prompt for any shell!<sup>[1][desc]</sup>
 
-**Links:** [Website][site] - [Source Code][code]
+**Links:** [Website] - [Source Code]
 
 # Setup
 
@@ -11,6 +11,6 @@
 - include at the end of `.zshrc`
   `eval "$(starship init zsh)"`
 
-[site]: https://starship.rs/
+[website]: https://starship.rs/
 [desc]: https://starship.rs/
-[code]: https://github.com/starship/starship
+[source code]: https://github.com/starship/starship

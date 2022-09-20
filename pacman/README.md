@@ -2,8 +2,8 @@
 
 > Official package manager for Arch Linux.
 
-**Links:** [Website][site] - [Source Code][code] - [Arch Wiki][aw]
+**Links:** [Website] - [Source Code] - [Arch Wiki]
 
-[site]: https://archlinux.org/pacman/
-[code]: https://gitlab.archlinux.org/pacman/pacman
-[aw]: https://wiki.archlinux.org/title/Pacman
+[website]: https://archlinux.org/pacman/
+[source code]: https://gitlab.archlinux.org/pacman/pacman
+[arch wiki]: https://wiki.archlinux.org/title/Pacman

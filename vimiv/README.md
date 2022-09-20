@@ -2,8 +2,8 @@
 
 > An image viewer with vim-like keybindings.<sup>[1][desc]</sup>
 
-**Links:** [Website][site] - [Source Code][code]
+**Links:** [Website] - [Source Code]
 
-[site]: https://karlch.github.io/vimiv/
+[website]: https://karlch.github.io/vimiv/
 [desc]: https://karlch.github.io/vimiv/
-[code]: https://github.com/karlch/vimiv
+[source code]: https://github.com/karlch/vimiv

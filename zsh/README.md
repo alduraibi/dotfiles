@@ -2,9 +2,9 @@
 
 > A powerful shell that operates as both an interactive shell and as a scripting language interpreter.<sup>[1][desc]</sup>
 
-**Links:** [Website][site] - [Source Code][code] - [Arch Wiki][aw]
+**Links:** [Website] - [Source Code] - [Arch Wiki]
 
-[site]: https://www.zsh.org/
+[website]: https://www.zsh.org/
 [desc]: https://wiki.archlinux.org/title/Zsh
-[code]: https://zsh.sourceforge.io/
-[aw]: https://wiki.archlinux.org/title/Zsh
+[source code]: https://zsh.sourceforge.io/
+[arch wiki]: https://wiki.archlinux.org/title/Zsh

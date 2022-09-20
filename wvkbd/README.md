@@ -2,7 +2,7 @@
 
 > On-screen keyboard for wlroots that sucks less.<sup>[1][desc]</sup>
 
-**Links:** [Source Code][code]
+**Links:** [Source Code]
 
 ## Open on-screen keyboard
 
@@ -20,4 +20,4 @@
   `killall -e wvkbd-mobintl`
 
 [desc]: https://git.sr.ht/~proycon/wvkbd
-[code]: https://git.sr.ht/~proycon/wvkbd
+[source code]: https://git.sr.ht/~proycon/wvkbd

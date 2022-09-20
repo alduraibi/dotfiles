@@ -19,7 +19,7 @@ My Arch and Termux configs
 <details>
   <summary>Also Installed</summary>
 
-- **📂 exa -** Modern `ls` ![][osi]
+- **📂 exa -** Modern `ls`
 - **🔍 fd -** Alternative to `find`
 - **🗜 atool -** Manage archives (zit, tar, etc.)
 - **📖 tldr -** Simplified man pages
@@ -187,5 +187,3 @@ Program that manages your dotfiles by symlink-ing them into their respective dir
 - Edit `doti.cfg` to include configs to add or remove
 - Run `doti`
   - Will get prompted for password for root configs
-
-[osi]: ./.img/osi.svg

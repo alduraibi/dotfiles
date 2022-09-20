@@ -2,10 +2,10 @@
 
 > A tiling Wayland compositor and a drop-in replacement for the i3 window manager for X11.<sup>[1][desc]</sup>
 
-**Links:** [Website][site] - [Source Code][code] - [Wiki][wiki] - [Arch Wiki][aw]
+**Links:** [Website] - [Source Code] - [Wiki] - [Arch Wiki]
 
-[site]: https://swaywm.org/
+[website]: https://swaywm.org/
 [desc]: https://swaywm.org/
-[code]: https://github.com/swaywm/sway
+[source code]: https://github.com/swaywm/sway
 [wiki]: https://github.com/swaywm/sway/wiki
-[aw]: https://wiki.archlinux.org/title/Sway
+[arch wiki]: https://wiki.archlinux.org/title/Sway
