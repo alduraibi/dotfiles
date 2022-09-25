@@ -48,6 +48,7 @@ return require('packer').startup(function(use)
   use({
     'akinsho/bufferline.nvim',
     tag = 'v2.*',
+    keys = { 'n', '<leader>v' },
     config = get_config('bufferline'),
     requires = 'kyazdani42/nvim-web-devicons',
   })
@@ -126,6 +127,7 @@ return require('packer').startup(function(use)
 
   use({ -- completions
     'hrsh7th/nvim-cmp',
+    event = { 'InsertEnter', 'CmdlineEnter' },
     config = get_config('cmp'),
     -- after = "lspkind-nvim",
     requires = {
@@ -137,8 +139,9 @@ return require('packer').startup(function(use)
       -- 'f3fora/cmp-spell', -- spell
       {
         'uga-rosa/cmp-dictionary', -- dictionary
+        event = { 'InsertEnter', 'CmdlineEnter' },
         config = get_config('cmp.dictionary'),
-        disable = true,
+        disable = false,
       },
       { -- code snippets
         'saadparwaiz1/cmp_luasnip',
@@ -165,6 +168,7 @@ return require('packer').startup(function(use)
 
   use({ -- Markdown Preview
     'iamcco/markdown-preview.nvim',
+    ft = { 'markdown' },
     config = get_config('markdown-preview'),
     run = function()
       fn['mkdp#util#install']()
@@ -174,23 +178,43 @@ return require('packer').startup(function(use)
   use({ -- fuzzy finder
     'nvim-telescope/telescope.nvim',
     tag = '0.1.*',
+    keys = { 'n', '<leader>f' },
+    -- module = 'telescope',
     config = get_config('telescope'),
     requires = {
       'nvim-lua/plenary.nvim',
       'nvim-treesitter/nvim-treesitter', -- optional,
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
-      'nvim-telescope/telescope-symbols.nvim', -- emojis, glyphs, etc.
-      'nvim-telescope/telescope-file-browser.nvim',
-      'LinArcX/telescope-env.nvim', -- environment variables
-      'cljoly/telescope-repo.nvim', -- git repos
-      'nvim-telescope/telescope-packer.nvim', -- plugins (packer)
-      'rudism/telescope-dict.nvim', -- dictionary
       { -- lightspeed!
         'nvim-telescope/telescope-fzf-native.nvim',
         run = 'make',
       },
+      {
+        'nvim-telescope/telescope-symbols.nvim', -- emojis, glyphs, etc.
+      },
+      {
+        'nvim-telescope/telescope-file-browser.nvim',
+        module = 'telescope._extensions.file_browser',
+      },
+      {
+        'LinArcX/telescope-env.nvim', -- environment variables
+        module = 'telescope._extensions.env',
+      },
+      {
+        'cljoly/telescope-repo.nvim', -- git repos
+        module = 'telescope._extensions.repo',
+      },
+      {
+        'nvim-telescope/telescope-packer.nvim', -- plugins (packer)
+        module = 'telescope._extensions.packer',
+      },
+      {
+        'rudism/telescope-dict.nvim', -- dictionary
+        module = 'telescope._extensions.dict',
+      },
       { -- media finder
         'nvim-telescope/telescope-media-files.nvim',
+        module = 'telescope._extensions.media_files',
         requires = {
           'nvim-lua/popup.nvim',
         }, -- requires: uberzug, fmpegthumbnailer
@@ -205,6 +229,7 @@ return require('packer').startup(function(use)
       },
       {
         'AckslD/nvim-neoclip.lua',
+        module = 'telescope._extensions.neoclip',
         config = get_config('telescope.neoclip'),
       },
     },
@@ -214,6 +239,8 @@ return require('packer').startup(function(use)
   use({ -- file explorer
     'kyazdani42/nvim-tree.lua',
     tag = 'nightly', -- optional, updated every week. (see issue #1193)
+    -- cmd = { 'NvimTreeToggle', 'NvimTreeOpen' },
+    keys = { 'n', '<leader>v' },
     config = get_config('nvim-tree'),
     requires = {
       'kyazdani42/nvim-web-devicons', -- for file icons
@@ -253,6 +280,7 @@ return require('packer').startup(function(use)
 
   use({ -- show diagnostics & references
     'folke/trouble.nvim',
+    keys = { 'n', '<leader>x' },
     config = get_config('trouble'),
     requires = {
       'kyazdani42/nvim-web-devicons', -- for icons
