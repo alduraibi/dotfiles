@@ -45,7 +45,7 @@ cmp.setup({
         path = kind_menu(vim_item, 'path'),
         calc = kind_menu(vim_item, 'calc'),
         -- spell = kind_menu(vim_item, 'spell'),
-        -- dictionary = kind_menu(vim_item, 'dict'),
+        dictionary = kind_menu(vim_item, 'dict'),
       })[entry.source.name]
       vim_item.kind = string.format('%s', kind_icons[vim_item.kind])
       return vim_item
@@ -57,7 +57,7 @@ cmp.setup({
     { name = 'buffer' },
     { name = 'calc' },
     -- { name = 'spell' },
-    -- { name = 'dictionary' },
+    { name = 'dictionary' },
   }),
   mapping = cmp.mapping.preset.insert({
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
@@ -92,7 +92,7 @@ cmp.setup({
 -- Set configuration for specific filetype.
 cmp.setup.filetype('gitcommit', {
   sources = cmp.config.sources({
-    -- { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
+    -- { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you have installed it.
   }, {
     { name = 'buffer' },
   }),

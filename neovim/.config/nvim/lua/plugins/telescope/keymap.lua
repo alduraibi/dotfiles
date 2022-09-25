@@ -3,22 +3,52 @@
 -- usage: map('mode', 'key', 'value', {opts})
 local map = vim.keymap.set
 
+-- telescope
+map('n', '<leader>fT', function()
+  require('telescope.builtin').builtin({})
+end, { silent = true, desc = 'telescope builtins' })
+
 -- files
-map('n', '<leader>ff', '<cmd>Telescope find_files<cr>', { silent = true, desc = 'files' })
-map('n', '<leader>fe', '<cmd>Telescope file_browser<cr>', { silent = true, desc = 'file explorer' })
-map('n', '<leader>fm', '<cmd>Telescope media_files<cr>', { silent = true, desc = 'media files' })
-map('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', { silent = true, desc = 'live grep' })
+map('n', '<leader>ff', function()
+  require('telescope.builtin').find_files({})
+end, { silent = true, desc = 'files' })
+map('n', '<leader>fe', function()
+  require('telescope').extensions.file_browser.file_browser({})
+end, { silent = true, desc = 'file explorer' })
+map('n', '<leader>fm', function()
+  require('telescope').extensions.media_files.media_files()
+end, { silent = true, desc = 'media files' })
+map('n', '<leader>fg', function()
+  require('telescope.builtin').live_grep({})
+end, { silent = true, desc = 'live grep' })
 
 -- neovim
-map('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { silent = true, desc = 'buffers' })
-map('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', { silent = true, desc = 'help tags' })
+map('n', '<leader>fb', function()
+  require('telescope.builtin').buffers({})
+end, { silent = true, desc = 'buffers' })
+
+-- help
+map('n', '<leader>fh', function()
+  require('telescope.builtin').help_tags({})
+end, { silent = true, desc = 'help tags' })
+map('n', '<leader>fH', function()
+  require('telescope.builtin').man_pages({})
+end, { silent = true, desc = 'man pages' })
 
 -- system
-map('n', '<leader>fv', '<cmd>Telescope env<cr>', { silent = true, desc = 'environment variables' })
+map('n', '<leader>fv', function()
+  require('telescope').extensions.env.env({})
+end, { silent = true, desc = 'environment variables' })
 
--- code
-map('n', '<leader>fs', '<cmd>Telescope luasnip<cr>', { silent = true, desc = 'snippets' })
-map('n', '<leader>fr', '<cmd>Telescope repo list<cr>', { silent = true, desc = 'git repos' })
+-- snippets
+map('n', '<leader>fs', function()
+  require('telescope').extensions.luasnip.luasnip({})
+end, { silent = true, desc = 'snippets' })
+
+-- git repos
+map('n', '<leader>fr', function()
+  require('telescope').extensions.repo.list({})
+end, { silent = true, desc = 'git repos' })
 
 -- symbols
 map('n', '<leader>fj', function()
@@ -37,7 +67,9 @@ map('n', '<leader>fn', function()
 end, { silent = true, desc = 'notifications' })
 
 -- clipboard
-map('n', '<leader>fy', '<cmd>Telescope neoclip<cr>', { silent = true, desc = 'clipboard' })
+map('n', '<leader>fy', function()
+  require('telescope').extensions.neoclip.default()
+end, { silent = true, desc = 'clipboard' })
 
 -- plugins (packer)
 map('n', '<leader>fp', function()

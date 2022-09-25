@@ -1,6 +1,6 @@
 -- plugins/cmp/dictionary/init.lua
 
-dict_path = fn.stdpath('config') .. '/dict/'
+dict_path = vim.fn.stdpath('config') .. '/dict/'
 
 require('cmp_dictionary').setup({
   dic = {
