@@ -22,21 +22,8 @@
   - ~~[mason-tool-installer.nvim] - Install/update mason tools~~
   <!-- - [nvim-dap][dap] - DAPs -->
 
-### Cmp
-
-- [nvim-cmp] - Completions
-  - [cmp-nvim-lsp] - lsp extension
-  - [cmp-buffer] - Buffer extension
-  - [cmp-path] - Path extension
-  - [cmp-cmdline] - cmdline extension
-  - [cmp-luasnip] - LuaSnip extension
-    - requires: `LuaSnip`
-  - [cmp-calc] - calculator extension
-  - [cmp-dictionary] - dictionary extension
-
 ### Visual
 
-- ~~[nord-vim] - Nord color scheme~~
 - [nord.nvim] - Nord color scheme ported for Neovim
 - [lualine.nvim] - statusline
 - [bufferline.nvim] - bufferline
@@ -44,13 +31,7 @@
 - [which-key.nvim] - display popup with possible keybinds
 - [markdown-preview.nvim] - Render markdown in browser tab
 - [nvim-colorizer.lua] - Color highlighter
-
-### TreeSitter
-
-- [nvim-treesitter] - Highlighting
-  - [nvim-treesitter-refactor] - Refactor module
-  - [nvim-treesitter-textobjects] - Syntax aware text-objects, select, move, swap, and peek support.
-  - [nvim-treesitter-context] - Show code context
+- ~~[nord-vim] - Nord color scheme~~
 
 ### Coding
 
@@ -62,6 +43,31 @@
 - [nvim-autopairs] - Close brackets/quotes
 - [LuaSnip] - Snippets
 - [friendly-snippets] - Snippets
+
+### External
+
+- [nvim-tree.lua] - File explorer requires: `nvim-web-devicons`
+- [toggleterm.nvim] - Manage multiple terminal windows
+- [mkdir.nvim] - Create missing directories on save
+
+### TreeSitter
+
+- [nvim-treesitter] - Highlighting
+  - [nvim-treesitter-refactor] - Refactor module
+  - [nvim-treesitter-textobjects] - Syntax aware text-objects, select, move, swap, and peek support.
+  - [nvim-treesitter-context] - Show code context
+
+### Cmp
+
+- [nvim-cmp] - Completions
+  - [cmp-nvim-lsp] - lsp extension
+  - [cmp-buffer] - Buffer extension
+  - [cmp-path] - Path extension
+  - [cmp-cmdline] - cmdline extension
+  - [cmp-luasnip] - LuaSnip extension
+    - requires: `LuaSnip`
+  - [cmp-calc] - calculator extension
+  - [cmp-dictionary] - dictionary extension
 
 ### Telescope (fzf search)
 
@@ -81,12 +87,6 @@
   - [nvim-neoclip.lua] - Find clipboard entries
   - ~~[telescope-emoji.nvim] - Find emojis~~
   - ~~[telescope-glyph.nvim] - Find font glyphs~~
-
-### External
-
-- [nvim-tree.lua] - File explorer requires: `nvim-web-devicons`
-- [toggleterm.nvim] - Manage multiple terminal windows
-- [mkdir.nvim] - Create missing directories on save
 
 ### Required
 
@@ -114,7 +114,7 @@
 |             Shell             |   [bashls]    |      [shfmt]       |                      |     |      [printenv]       |
 |             TOML              |    [taplo]    |
 |             YAML              |   [yamlls]    |    [prettierd]     |
-|           Spelling            |               |                    | [misspell] \| [vale] |     | [dictionary][nl-dict] |
+|           Spelling            |    [ltex]     |                    | [misspell] \| [vale] |     | [dictionary][nl-dict] |
 
 <!-- - [debugpy][debugpy] - Python DAP -->
 <!-- ### R -->

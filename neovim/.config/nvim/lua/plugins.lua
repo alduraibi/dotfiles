@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
   use({
     'akinsho/bufferline.nvim',
     tag = 'v2.*',
-    keys = { 'n', '<leader>v' },
+    -- keys = { 'n', '<leader>v' },
     config = get_config('bufferline'),
     requires = 'kyazdani42/nvim-web-devicons',
   })
@@ -78,9 +78,6 @@ return require('packer').startup(function(use)
   use({ -- Configurations for LSP
     'neovim/nvim-lspconfig',
     config = get_config('lspconfig'),
-    -- requires = {
-    --   'williamboman/mason-lspconfig.nvim',
-    -- },
     after = {
       'mason-lspconfig.nvim',
     },
@@ -112,13 +109,21 @@ return require('packer').startup(function(use)
   --   config = get_config('dap'),
   -- })
 
+  use({ -- UI for nvim-lsp progress
+    'j-hui/fidget.nvim',
+    event = { 'BufWinEnter' },
+    config = get_config('fidget'),
+  })
+
   use({ -- Show function signature
     'ray-x/lsp_signature.nvim',
+    event = { 'BufWinEnter' },
     config = get_config('lsp_signature'),
   })
 
   use({ -- code snippets
     'L3MON4D3/LuaSnip',
+    event = { 'BufWinEnter' },
     config = get_config('luasnip'),
     requires = {
       'rafamadriz/friendly-snippets',
@@ -129,7 +134,6 @@ return require('packer').startup(function(use)
     'hrsh7th/nvim-cmp',
     event = { 'InsertEnter', 'CmdlineEnter' },
     config = get_config('cmp'),
-    -- after = "lspkind-nvim",
     requires = {
       'hrsh7th/cmp-nvim-lsp', -- show data sent by the language server
       'hrsh7th/cmp-buffer', -- provides suggestions based on the current file
@@ -168,6 +172,7 @@ return require('packer').startup(function(use)
 
   use({ -- Markdown Preview
     'iamcco/markdown-preview.nvim',
+    event = { 'BufWinEnter' },
     ft = { 'markdown' },
     config = get_config('markdown-preview'),
     run = function()
@@ -254,6 +259,7 @@ return require('packer').startup(function(use)
 
   use({ -- autopair brackets/quotes
     'windwp/nvim-autopairs',
+    event = { 'BufWinEnter' },
     config = get_config('nvim-autopairs'),
   })
 
@@ -270,11 +276,17 @@ return require('packer').startup(function(use)
   use({ -- manage multiple terminal windows
     'akinsho/toggleterm.nvim',
     tag = 'v2.*',
+    keys = {
+      { 'n', '<C-\\>' },
+      { 'i', '<C-\\>' },
+      { 'v', '<C-\\>' },
+    },
     config = get_config('toggleterm'),
   })
 
   use({ -- commenter
     'numToStr/Comment.nvim',
+    event = { 'BufWinEnter' },
     config = get_config('Comment'),
   })
 
@@ -293,6 +305,7 @@ return require('packer').startup(function(use)
 
   use({ -- displays popup with possible keybinds
     'folke/which-key.nvim',
+    event = { 'BufWinEnter' },
     config = get_config('which-key'),
   })
 
