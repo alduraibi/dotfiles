@@ -10,6 +10,7 @@ require('telescope').setup({
       '~/Pictures',
       '~/Videos',
       '.git/',
+      'vale/styles/',
       '__pycache__',
     },
     mappings = {

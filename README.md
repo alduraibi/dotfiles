@@ -95,7 +95,7 @@ My Arch and Termux configs
 
 ## Media Players
 
-- **🎬🎞️ [mpv](mpv) -** video player
+- **🎞️ [mpv](mpv) -** video player
 - **🖼️ [vimiv](vimiv) -** Image viewer
 - **📃 [zathura](zathura) -** PDF/ePub Viewer
 - **🎨 [Spicetify](spicetify) -** Spotify theming
