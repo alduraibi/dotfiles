@@ -8,7 +8,7 @@ cmd(':command MP MarkdownPreview')
 
 -- specify browser to open preview page
 -- default: ''
-g.mkdp_browser = 'firefox'
+g.mkdp_browser = 'qutebrowser'
 -- set default theme (dark or light)
 -- By default the theme is define according to the preferences of the system
 g.mkdp_theme = 'dark'

@@ -1,7 +1,7 @@
 -- plugins/lspconfig.lua
 
 local capabilities = {
-  require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+  require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities()),
 }
 
 require('lspconfig').cssls.setup({ capabilities = capabilities }) -- css
@@ -10,9 +10,7 @@ require('lspconfig').tsserver.setup({ capabilities = capabilities }) -- javascri
 require('lspconfig').jsonls.setup({ capabilities = capabilities }) -- json
 require('lspconfig').ltex.setup({ capabilities = capabilities }) -- latex, markdown, etc.
 -- termux: `pkg install lua-language-server`
-require('lspconfig').sumneko_lua.setup({ -- lua
-  capabilities = capabilities,
-})
+require('lspconfig').sumneko_lua.setup({ capabilities = capabilities }) -- lua
 require('lspconfig').pylsp.setup({ -- python
   capabilities = capabilities,
   settings = {
