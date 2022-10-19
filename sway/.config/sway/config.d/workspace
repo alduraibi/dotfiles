@@ -1,7 +1,7 @@
 #
 ### General
 #
-workspace $w_0 output $displays_internal
+# workspace $w_0 output $displays_internal
 workspace $w_1 output $displays_internal
 workspace $w_2 output $displays_internal
 workspace $w_3 output $displays_internal
