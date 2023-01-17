@@ -1,0 +1,4 @@
+[GSConnect]
+title=GSConnect / KDE Connect
+description=Enabling communication between all your devices
+ports=1714:1764/tcp|1714:1764/udp

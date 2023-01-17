@@ -12,6 +12,10 @@ alias :wq="exit"
 [[ "$TERM" == "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
 # znap (plugin manager)
 alias PU="znap pull"
+# neovim
+hash nvim &> /dev/null && {
+  alias vi="nvim"
+}
 # paru/yay
 hash paru &> /dev/null && {
   alias yay="paru"

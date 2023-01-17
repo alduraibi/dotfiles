@@ -35,9 +35,14 @@ return require('packer').startup(function(use)
     'wbthomason/packer.nvim',
   })
 
-  use({ -- Nord colorscheme (nvim)
-    'shaunsingh/nord.nvim',
-    config = get_config('nord'),
+  -- use({ -- Nord colorscheme (nvim)
+  --   'shaunsingh/nord.nvim',
+  --   config = get_config('nord'),
+  -- })
+
+  use({ -- Adwaita colorscheme (nvim)
+    'Mofiqul/adwaita.nvim',
+    config = get_config('adwaita'),
   })
 
   use({ -- notifications
