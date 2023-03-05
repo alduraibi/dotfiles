@@ -21,4 +21,4 @@ if [ -e ${ZDOTDIR}/zshrc.d ]; then
 fi
 
 # start prompt
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
