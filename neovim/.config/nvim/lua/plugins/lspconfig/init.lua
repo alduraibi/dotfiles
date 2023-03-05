@@ -10,7 +10,7 @@ require('lspconfig').tsserver.setup({ capabilities = capabilities }) -- javascri
 require('lspconfig').jsonls.setup({ capabilities = capabilities }) -- json
 require('lspconfig').ltex.setup({ capabilities = capabilities }) -- latex, markdown, etc.
 -- termux: `pkg install lua-language-server`
-require('lspconfig').sumneko_lua.setup({ capabilities = capabilities }) -- lua
+require('lspconfig').lua_ls.setup({ capabilities = capabilities }) -- lua
 require('lspconfig').pylsp.setup({ -- python
   capabilities = capabilities,
   settings = {

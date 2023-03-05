@@ -5,80 +5,46 @@ My Arch and Termux configs
 ## Overview
 
 - **💻 Distros:** Arch Linux and Android/Termux
+- **💻 Window Manager:** Gnome
 - **📝 Editor:** [Neovim](neovim)
-- **🎨 Theme:** Nord _(with black background on termux)_
+- **🎨 Theme:** Adwaita _(with black background on termux)_
 
 ## CLI Utilities
 
 - **🗃️ [doti](doti) -** Easily manage dotfiles
-- **🔆 [brightnessctl](brightnessctl) -** Control device brightness
-- **🔊 [pamixer](pamixer) -** Control device volume
-- **✂️ [wl-clipboard](wl-clipboard) -** Clipboard
 - **📄 [bat](bat) -** Alternative to `cat`
 - **🌟 [glow](glow) -** Render markdown on the terminal
 - **➗ [qalculate](qalculate) -** Calculator
+
 <details>
   <summary>Also Installed</summary>
 
+- **🔨 ansible -**
+- **🗜 atool -** Manage archives (zit, tar, etc.)
 - **📂 exa -** Modern `ls`
 - **🔍 fd -** Alternative to `find`
-- **🗜 atool -** Manage archives (zit, tar, etc.)
-- **📖 tldr -** Simplified man pages
-- **🔨 ansible -**
-- **🔗 stow -** Symlink manager for dotfiles
-- **#️⃣ tea -** CLI tool to manage gitea
 - **#️⃣ gh -** CLI tool to manage github
+- **📖 tldr -** Simplified man pages
+- **✂️ wl-clipboard -** Clipboard
 </details>
 <details>
   <summary>Consider Installing</summary>
 
 - **🗄️ [duf](https://github.com/muesli/duf) -** `df` alternative
 - **🔎 [fzf](https://github.com/junegunn/fzf) -** CLI fuzzy finder
-- **🔔 [undistract-me](https://github.com/jml/undistract-me) -** Notifies when slow terminal commands finish
 - **🤬 [The Fuck](https://github.com/nvbn/thefuck) -** Corrects last console command
 - **🌳 [broot](https://github.com/Canop/broot) -** a usable `tree`
 </details>
 
 ## Utilities
 
-- **📟 [kitty](kitty) -** Terminal
 - **🐚 [zsh](zsh) -** Shell
 - **➡️ [starship](starship) -** Shell prompt
-- **🔔 [dunst](dunst) -** Notification daemon
-- **🚀 [rofi](rofi) -** Application launcher
-- **⌨️ [wvkbd](wvkbd) -** On-screen keyboard
-
-<details>
-  <summary>Old</summary>
-
-- **🔔 [mako](mako) -** Notification daemon
-- **🚀 [wofi](wofi) -** Application launcher
-</details>
-
-## Display
-
-- **🖥 [ly](ly) -** Display manage
-- **🪟 [Sway](sway) -** Wayland compositor and tiling window manager
-- **🔒 [swaylock](swaylock) -** Lock screen
-- **➖ [waybar](waybar) -** Status bar
-<details>
-  <summary>Consider Installing</summary>
-
-- **swayidle -**
-</details>
-<details>
-  <summary>Old</summary>
-
-- **🪟 river -** Wayland compositor and tiling window manager
-- **🪟 qtile -** Windows Manager configured in python
-- **⚙ Xresources -** Config files for Xresources
-</details>
 
 ## GUI Applications
 
 - **🌐 [Firefox](firefox) -** Internet browser
 - **🇻 [tridactyl](tridactyl) -** Vi-bindings for Firefox
-- **🌐 [qutebrowser](qutebrowser) -** Internet browser with vim bindings
 <details>
   <summary>Also Installed</summary>
 
@@ -95,76 +61,39 @@ My Arch and Termux configs
 
 ## Media Players
 
-- **🎞️ [mpv](mpv) -** video player
-- **🖼️ [vimiv](vimiv) -** Image viewer
-- **📃 [zathura](zathura) -** PDF/ePub Viewer
-- **🎨 [Spicetify](spicetify) -** Spotify theming
-<details>
-  <summary>Also Installed</summary>
-
 - **🎵🎶 Spotify -** Spotify client
-</details>
-<details>
-  <summary>Consider Installing</summary>
-
-- **🖼️ [imv](imv) -** Image viewer
-- **🖼️ [mvi](mvi) -** Image viewer
-- **🔤 [OSD Lyrics](https://github.com/osdlyrics/osdlyrics) -** Show synced lyrics with your favorite media player on Linux
-</details>
+  - **🎨 [Spicetify](spicetify) -** Spotify theming
 
 ## Productivity
 
+- **📄 [LibreOffice](libreoffice) -** Office suite
+
 <details>
   <summary>Consider Installing</summary>
 
-- **🗓️ [calcurse](calcurse) -** TUI calendar
-- **📝📋 [Taskwarrior](taskwarrior) -** TUI TODO list
-- **📄 [LibreOffice](https://www.libreoffice.org/) -** Office suite
 - **📄 [Calligra](https://www.libreoffice.org/) -** Office suite
 </details>
 
 ## Communication
 
-- **🎨 [BetterDiscord](betterdiscord) -** Discord theming
-<details>
-  <summary>Also Installed</summary>
-
 - **💬 Discord -** Discord client
+  - **🎨 [BetterDiscord](betterdiscord) -** Discord theming
 - **💬 Element -** Matrix client
 - **💬 Telegram -** Telegram client
 - **💬 Signal -** Signal client
-</details>
 
 ## Extra
 
-- **🎨 [GTK](gtk) -** Config files for GTK 2.0 & GTK 3.0
 - **🎨 [dircolors](dircolors) -** Theme for `ls` and `tree`
 - **⚛️ [electron](electron) -** Config files for electron apps
 
 ## Games
 
-<details>
-  <summary>Consider Installing</summary>
-
-- **🎮 [0 A.D.](https://play0ad.com/) -** A free, open-source, historical Real Time Strategy (RTS) game
-- **🎮 [FreeCiv](https://www.freeciv.org/) -** A Free and Open Source empire-building strategy game inspired by the history of human civilization
 - **🎮 [Heroic](https://heroicgameslauncher.com/) -** Open Source GOG and Epic games launcher
-</details>
 
 ## Android
 
 - **📱 [termux](termux) -** Terminal with a package manager that works on an android device
-<details>
-  <summary>Also Installed</summary>
-
-- **📱 KDE Connect -** Connect to Android phone and other devices
-- **📱 srccpy -** Display and control your Android device
-</details>
-<details>
-  <summary>Consider Installing</summary>
-
-- **📱 [Anbox](https://anbox.io/) -** Run Android applications on any GNU/Linux operating system.
-- **📱 [Waydroid](https://waydro.id/) -** Waydroid uses a container-based approach to boot a full Android system on a regular GNU/Linux system like Ubuntu.
 - **📱 [guiscrcpy](https://github.com/srevinsaju/guiscrcpy) -** Open Source GUI based Android Screen Mirroring System
 </details>
 

@@ -14,8 +14,8 @@
 
 ## Config
 
-- Remove any existing config in order to create symlinks
-  - `sudo rm -r /etc/osk-sdl.conf`
+- Move original config to `*.bk` in order to create symlinks
+  - `sudo mv /etc/osk-sdl.conf /etc/osk-sdl.conf.bk`
 - Create symlink of config
   - `doti add -r osk-sdl`
 - After any edit to config, run the following to apply.

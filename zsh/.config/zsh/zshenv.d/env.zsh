@@ -7,7 +7,8 @@
 ### Theming ###
 #export QT_QPA_PLATFORMTHEME=qt5ct
 #export QT_QPA_PLATFORMTHEME=gtk2
-export QT_STYLE_OVERRIDE=adwaita
+#export QT_STYLE_OVERRIDE=adwaita-dark
+export QT_QPA_PLATFORMTHEME=gnome
 
 
 ### Default Programs ###
