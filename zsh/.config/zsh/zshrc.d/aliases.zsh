@@ -9,7 +9,7 @@ alias :q!="exit"
 alias wq="exit"
 alias :wq="exit"
 # ssh (kitty)
-[[ "$TERM" == "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
+[[ "${TERM}" == "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
 # znap (plugin manager)
 alias PU="znap pull"
 # neovim
@@ -33,18 +33,18 @@ alias rm="rm -Ir"
 alias rsync="rsync -ah --info=progress2"
 # mkdir
 alias mkdir="mkdir -p"
-# ls
-#alias ls="ls --color=auto"
-#alias la="ls -a --color=auto"
-#alias ll="ls -hl --color=auto"
-#alias lla="ls -hla --color=auto"
-# exa
+# ls & exa
 hash exa &> /dev/null && {
   alias ls="exa --icons"
   alias la="exa -a --icons"
   alias ll="exa -l --icons --git"
   alias lla="exa -la --icons --git"
   alias tree="exa --tree --icons --git"
+} || {
+  alias ls="ls --color=auto"
+  alias la="ls -a --color=auto"
+  alias ll="ls -hl --color=auto"
+  alias lla="ls -hla --color=auto"
 }
 # grep
 alias grep="grep --color=auto"
@@ -83,8 +83,3 @@ hash wl-copy &> /dev/null && {
 }
 # mount
 alias mount="mount -o uid=1000,gid=1000"
-# kdeconnect-cli
-alias kc="kdeconnect-cli"
-alias kc-gp5="kdeconnect-cli -n ghassan-gp5"
-# qtile
-alias qtile="qtile start -b wayland"
