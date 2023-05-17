@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# Arabic picker
-
-rofimoji --action copy --max-recent 0 --file arabic --prompt عربي > /dev/null 2>&1

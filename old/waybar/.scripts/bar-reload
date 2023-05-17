@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# reload bar (waybar)
-
-killall -SIGUSR2 waybar > /dev/null 2>&1

@@ -1,9 +1,0 @@
-mode=run
-insensitive=true
-prompt=
-width=300
-height=180
-term=kitty
-hide_scroll=true
-location=2
-yoffset=50

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# drun
-
-rofi -show drun > /dev/null 2>&1
