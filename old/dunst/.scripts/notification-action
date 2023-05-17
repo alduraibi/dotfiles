@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# perform notification action
-
-dunstctl action

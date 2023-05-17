@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# Set screen backlight to 1%
-
-brightnessctl set 1% > /dev/null 2>&1

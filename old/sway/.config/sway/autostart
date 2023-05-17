@@ -1,9 +1,0 @@
-#
-### Auto start
-#
-
-exec dunst
-exec autotiling
-exec /usr/lib/kdeconnectd
-exec vkeyboard-start_hidden
-# exec $XDG_CONFIG_HOME/gtk-3.0/gsettings.sh

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# toggle pause notifications
-
-dunstctl set-paused toggle

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# check pause state for notifications
-
-dunstctl is-paused

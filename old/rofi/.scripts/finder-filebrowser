@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# run
-
-rofi -show filebrowser -display-filebrowser "ﱮ " > /dev/null 2>&1
