@@ -40,96 +40,95 @@ My Linux setup
 
 ### Backup
 
-- **🔄 [Syncthing GTK](https://flathub.org/apps/me.kozec.syncthingtk) -** File sync
+- **[🔄](https://flathub.org/apps/me.kozec.syncthingtk) Syncthing GTK -** File sync
 
 ### Internet
 
-- **🌐 [Firefox](firefox) -** Internet browser
-- **🔐 [Bitwarden](https://flathub.org/apps/com.bitwarden.desktop) -** Password manager
-- **🔤 [Dialect](https://flathub.org/apps/app.drey.Dialect) -** Translator
-- **⬇️ [Fragments](https://flathub.org/apps/de.haeckerfelix.Fragments) -** Bittorrent client
-- **🌐 [Chromium](https://flathub.org/apps/org.chromium.Chromium) -** Internet browser
-- **🌐 [Web](https://flathub.org/apps/org.gnome.Epiphany) -** Gnome's internet browser
+- **🌐 [Firefox](firefox) [Firefox]()-** Internet browser
+- **[🔐](https://flathub.org/apps/com.bitwarden.desktop) [Bitwarden](bitwarden) -** Password manager
+- **[🔤](https://flathub.org/apps/app.drey.Dialect) Dialect -** Translator
+- **[⬇️](https://flathub.org/apps/de.haeckerfelix.Fragments) [Fragments](fragments) -** Bittorrent client
+- **[🌐](https://flathub.org/apps/org.chromium.Chromium) Chromium -** Internet browser
+- **[🌐](https://flathub.org/apps/org.gnome.Epiphany) Web -** Gnome's internet browser
 
 
 ### Media Players
 
-- **📺️ [Jellyfin Media Player](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) -** Jellyfin client
-- **🎞️ [Celluloid](https://flathub.org/apps/io.github.celluloid_player.Celluloid) -** Video player
-- **🖼️ [Loupe](https://flathub.org/apps/org.gnome.Loupe) -** Image viewer
-- **🎶 [Spotify](https://flathub.org/apps/com.spotify.Client) -** Official Spotify client
-  - **🎨 [Spicetify](spicetify) -** Spotify theming
-- **🎶 [Spot](https://flathub.org/apps/dev.alextren.Spot) -** Spotify client (GTK)
+- **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin Media Player -** Jellyfin client
+- **[🎞️](https://flathub.org/apps/io.github.celluloid_player.Celluloid) Celluloid -** Video player
+- **[🖼️](https://flathub.org/apps/org.gnome.Loupe) Loupe -** Image viewer
+- **[🎶](https://flathub.org/apps/com.spotify.Client) [Spotify](spotify) -** Official Spotify client
+- **[🎶](https://flathub.org/apps/dev.alextren.Spot) Spot -** Spotify client (GTK)
 
 ### Media Editors
 
-- **🎬️ [Pitivi](https://flathub.org/apps/org.pitivi.Pitivi) -** Video editor
-- **📸 [Snapshot](https://flathub.org/apps/org.gnome.Snapshot) -** Camera
-- **🎙️ [Sound Recorder](https://flathub.org/apps/org.gnome.SoundRecorder) -** Record audio
-- **🎬️ [Video Trimmer](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer) -** Trim videos
+- **[🎬️](https://flathub.org/apps/org.pitivi.Pitivi) Pitivi -** Video editor
+- **[📸](https://flathub.org/apps/org.gnome.Snapshot) Snapshot -** Camera
+- **[🎙️](https://flathub.org/apps/org.gnome.SoundRecorder) Sound Recorder -** Record audio
+- **[🎬️](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer) Video Trimmer -** Trim videos
 
 ### Productivity
 
-- **🧮 [Calculator](https://flathub.org/apps/org.gnome.Calculator) -** Calculator
-- **📅 [Calendar](https://flathub.org/apps/org.gnome.Calendar) -** Calendar
-- **⏰ [Clocks](https://flathub.org/apps/org.gnome.Clocks) -** Clocks
-- **📇 [Contacts](https://flathub.org/apps/org.gnome.Contacts) -** Contacts
-- **⛅ [Weather](https://flathub.org/apps/org.gnome.Weather) -** Weather
+- **[🧮](https://flathub.org/apps/org.gnome.Calculator) Calculator-** Calculator
+- **[📅](https://flathub.org/apps/org.gnome.Calendar) Calendar -** Calendar
+- **[⏰](https://flathub.org/apps/org.gnome.Clocks) Clocks -** Clocks
+- **[📇](https://flathub.org/apps/org.gnome.Contacts) Contacts -** Contacts
+- **[⛅](https://flathub.org/apps/org.gnome.Weather) Weather -** Weather
 
 ### Metrics
-- **💽 [Disk Usage Analyzer](https://flathub.org/apps/org.gnome.baobab) -**
-- **📜 [Logs](https://flathub.org/apps/org.gnome.Logs) -**
+- **[💽](https://flathub.org/apps/org.gnome.baobab) Disk Usage Analyzer -**
+- **[📜](https://flathub.org/apps/org.gnome.Logs) Logs -**
 - *System Monitor*
 
 ### Settings
-- **[Extension Manager](https://flathub.org/apps/com.mattjakeman.ExtensionManager) -**
-- **[Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal) -**
+- **[](https://flathub.org/apps/com.mattjakeman.ExtensionManager) Extension Manager -**
+- **[](https://flathub.org/apps/com.github.tchx84.Flatseal) Flatseal -**
 - *Settings*
 - *Tweaks*
-- **🔤 [Fonts](https://flathub.org/apps/org.gnome.font-viewer) -**
+- **[🔤](https://flathub.org/apps/org.gnome.font-viewer) Fonts -**
 
 ### Printer
-- **🖨️ [Document Scanner](https://flathub.org/apps/org.gnome.SimpleScan) -**
+- **[🖨️](https://flathub.org/apps/org.gnome.SimpleScan) Document Scanner -**
 - *Manage Printing*
 - *Print Settings*
 
 
 ### Utilities
-- **🔣 [Characters](https://flathub.org/apps/org.gnome.Characters) -**
+- **[🔣](https://flathub.org/apps/org.gnome.Characters) Characters -**
 - *Disks*
-- **🔐 [Passwords and Keys](https://flathub.org/apps/org.gnome.seahorse.Application) -**
+- **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -**
 - *Software*
   - ** Flatpak -**
 
 ### Virtualization
-- **[Bottles](https://flathub.org/apps/com.usebottles.bottles) -**
-- **[Boxes](https://flathub.org/apps/org.gnome.Boxes) -**
-- **[Connections](https://flathub.org/apps/org.gnome.Connections) -**
-- **📱 [guiscrcpy](https://github.com/srevinsaju/guiscrcpy) -** Open Source GUI based Android Screen Mirroring System
+- **[](https://flathub.org/apps/com.usebottles.bottles) Bottles -**
+- **[](https://flathub.org/apps/org.gnome.Boxes) Boxes -**
+- **[](https://flathub.org/apps/org.gnome.Connections) Connections -**
+- **[📱](https://github.com/srevinsaju/guiscrcpy) guiscrcpy -** Open Source GUI based Android Screen Mirroring System
 
 ### Notes
 
-- **📄 [PDF Arranger](https://flathub.org/apps/com.github.jeromerobert.pdfarranger) -** Note taking
-- **📝 [Rnote](https://flathub.org/apps/com.github.flxzt.rnote) -** Note taking
-- **📄 [Sticky Notes](https://flathub.org/apps/com.vixalien.sticky) -** Note taking
-- **📄 [Text Editor](https://flathub.org/apps/org.gnome.TextEditor) -** Note taking
-- **📝 [Xournal++](https://flathub.org/apps/com.github.xournalpp.xournalpp) -** Note taking
+- **[📄](https://flathub.org/apps/com.github.jeromerobert.pdfarranger) PDF Arranger -** Note taking
+- **[📝](https://flathub.org/apps/com.github.flxzt.rnote) Rnote -** Note taking
+- **[📄](https://flathub.org/apps/com.vixalien.sticky) Sticky Notes -** Note taking
+- **[📄](https://flathub.org/apps/org.gnome.TextEditor) Text Editor -** Note taking
+- **[📝](https://flathub.org/apps/com.github.xournalpp.xournalpp) Xournal++ -** Note taking
 
 ### Office
 
-- **📄 [LibreOffice](https://flathub.org/apps/org.libreoffice.LibreOffice) -** Office suite (open standards)
-- **📄 [ONLYOFFICE](https://flathub.org/apps/org.onlyoffice.desktopeditors) -** Office suite (MS Office compliant)
+- **[📄](https://flathub.org/apps/org.libreoffice.LibreOffice) LibreOffice -** Office suite (open standards)
+- **[📄](https://flathub.org/apps/org.onlyoffice.desktopeditors) ONLYOFFICE -** Office suite (MS Office compliant)
 
 <details>
   <summary>Consider Installing</summary>
 
-- **📄 [Calligra](https://www.libreoffice.org/) -** Office suite
+- **[📄]() Calligra -** Office suite
 </details>
 
 ### Social
 
-- **💬 [Tangram](https://flathub.org/apps/re.sonny.Tangram) -** Pinned tabs
-- **💬 [Zoom](https://flathub.org/apps/us.zoom.Zoom) -** Zoom client
+- **[💬](https://flathub.org/apps/re.sonny.Tangram) Tangram -** Pinned tabs
+- **[💬](https://flathub.org/apps/us.zoom.Zoom) Zoom -** Zoom client
 
 ### Extra
 
@@ -138,9 +137,9 @@ My Linux setup
 
 ### Games
 
-- **🎮 [Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl) -** Open Source GOG and Epic games launcher
-- **🎮 [Steam](https://flathub.org/apps/com.valvesoftware.Steam) -** Steam games launcher
-  - **🎨 [AdwSteamGtk](https://flathub.org/apps/io.github.Foldex.AdwSteamGtk) -** Gnome Adwaita theme for Steam
+- **[🎮](https://flathub.org/apps/com.heroicgameslauncher.hgl) Heroic Games Launcher -** Open Source GOG and Epic games launcher
+- **[🎮](https://flathub.org/apps/com.valvesoftware.Steam) Steam -** Steam games launcher
+  - **[🎨](https://flathub.org/apps/io.github.Foldex.AdwSteamGtk) AdwSteamGtk -** Gnome Adwaita theme for Steam
 
 ### Extensions
 
