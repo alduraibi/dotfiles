@@ -1,7 +1,27 @@
-[GSConnect]
+[avahi]
+title=Avahi
+description=Multicast DNS (Bonjour protocol)
+ports=5353/udp|5298
+
+[fragments]
+title=Fragments
+description=Fragments BitTorrent client
+ports=51413
+
+[gsconnect]
 title=GSConnect / KDE Connect
 description=Enabling communication between all your devices
 ports=1714:1764/tcp|1714:1764/udp
+
+[rdp]
+title=RDP
+description=Remote Desktop Protocol
+ports=3389/tcp
+
+[syncthing]
+title=Syncthing
+description=Syncthing file synchronisation
+ports=22000|21027/udp
 
 [wireguard]
 title=WireGuard
