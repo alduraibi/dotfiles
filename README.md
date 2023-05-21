@@ -21,6 +21,7 @@ My Linux setup
 - **📖 tldr -** Simplified man pages
 - **✂️ wl-clipboard -** Clipboard
 - **📝 [Neovim](neovim) -** Text editor based on vim
+  - Requirements: `deno`
 - **🔳 [Tmux](tmux) -** Terminal multiplexer
 - **🐚 [zsh](zsh) -** Shell
 - **🐳 Docker -** Containers
@@ -44,7 +45,7 @@ My Linux setup
 
 ### Internet
 
-- **🌐 [Firefox](firefox) [Firefox]()-** Internet browser
+- **[🌐](https://flathub.org/apps/org.mozilla.firefox) [Firefox](firefox) -** Internet browser
 - **[🔐](https://flathub.org/apps/com.bitwarden.desktop) [Bitwarden](bitwarden) -** Password manager
 - **[🔤](https://flathub.org/apps/app.drey.Dialect) Dialect -** Translator
 - **[⬇️](https://flathub.org/apps/de.haeckerfelix.Fragments) [Fragments](fragments) -** Bittorrent client
@@ -69,23 +70,25 @@ My Linux setup
 
 ### Productivity
 
-- **[🧮](https://flathub.org/apps/org.gnome.Calculator) Calculator-** Calculator
-- **[📅](https://flathub.org/apps/org.gnome.Calendar) Calendar -** Calendar
-- **[⏰](https://flathub.org/apps/org.gnome.Clocks) Clocks -** Clocks
-- **[📇](https://flathub.org/apps/org.gnome.Contacts) Contacts -** Contacts
-- **[⛅](https://flathub.org/apps/org.gnome.Weather) Weather -** Weather
+- **[🧮](https://flathub.org/apps/org.gnome.Calculator) Calculator**
+- **[📅](https://flathub.org/apps/org.gnome.Calendar) Calendar**
+  - `evolution-data-server`
+- **[⏰](https://flathub.org/apps/org.gnome.Clocks) Clocks**
+- **[📇](https://flathub.org/apps/org.gnome.Contacts) Contacts**
+  - `evolution-data-server`
+- **[⛅](https://flathub.org/apps/org.gnome.Weather) Weather**
 
 ### Metrics
-- **[💽](https://flathub.org/apps/org.gnome.baobab) Disk Usage Analyzer -**
-- **[📜](https://flathub.org/apps/org.gnome.Logs) Logs -**
+- **[💽](https://flathub.org/apps/org.gnome.baobab) Disk Usage Analyzer**
+- **[📜](https://flathub.org/apps/org.gnome.Logs) Logs**
 - *System Monitor*
 
 ### Settings
-- **[](https://flathub.org/apps/com.mattjakeman.ExtensionManager) Extension Manager -**
-- **[](https://flathub.org/apps/com.github.tchx84.Flatseal) Flatseal -**
+- **[➕](https://flathub.org/apps/com.mattjakeman.ExtensionManager) [Extension Manager](extension-manager) -** Manage Gnome extensions
+- **[✖️](https://flathub.org/apps/com.github.tchx84.Flatseal) Flatseal -** Manage flatpak permissions
 - *Settings*
 - *Tweaks*
-- **[🔤](https://flathub.org/apps/org.gnome.font-viewer) Fonts -**
+- **[🔤](https://flathub.org/apps/org.gnome.font-viewer) Fonts -** View installed fonts
 
 ### Printer
 - **[🖨️](https://flathub.org/apps/org.gnome.SimpleScan) Document Scanner -**
@@ -94,25 +97,25 @@ My Linux setup
 
 
 ### Utilities
-- **[🔣](https://flathub.org/apps/org.gnome.Characters) Characters -**
+- **[🔣](https://flathub.org/apps/org.gnome.Characters) Characters -** Character and Emoji picker
 - *Disks*
-- **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -**
+- **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -** Manages keyrings
 - *Software*
-  - ** Flatpak -**
+  - *Flatpak*
 
 ### Virtualization
-- **[](https://flathub.org/apps/com.usebottles.bottles) Bottles -**
-- **[](https://flathub.org/apps/org.gnome.Boxes) Boxes -**
-- **[](https://flathub.org/apps/org.gnome.Connections) Connections -**
-- **[📱](https://github.com/srevinsaju/guiscrcpy) guiscrcpy -** Open Source GUI based Android Screen Mirroring System
+- **[🍾](https://flathub.org/apps/com.usebottles.bottles) Bottles -** Run windows programs
+- **[🔳](https://flathub.org/apps/org.gnome.Boxes) Boxes -** Virtual machines
+- **[🔗](https://flathub.org/apps/org.gnome.Connections) Connections -** Remote desktop connections
+- **[📱](https://github.com/srevinsaju/guiscrcpy) guiscrcpy -** Android screen mirroring
 
 ### Notes
 
-- **[📄](https://flathub.org/apps/com.github.jeromerobert.pdfarranger) PDF Arranger -** Note taking
-- **[📝](https://flathub.org/apps/com.github.flxzt.rnote) Rnote -** Note taking
-- **[📄](https://flathub.org/apps/com.vixalien.sticky) Sticky Notes -** Note taking
-- **[📄](https://flathub.org/apps/org.gnome.TextEditor) Text Editor -** Note taking
-- **[📝](https://flathub.org/apps/com.github.xournalpp.xournalpp) Xournal++ -** Note taking
+- **[📄](https://flathub.org/apps/com.github.jeromerobert.pdfarranger) PDF Arranger -** Manipulate PDF files
+- **[📝](https://flathub.org/apps/com.github.flxzt.rnote) Rnote -** Hand written notes
+- **[📄](https://flathub.org/apps/com.vixalien.sticky) Sticky Notes -** Quick notes
+- **[📄](https://flathub.org/apps/org.gnome.TextEditor) Text Editor -** Basic text editor
+- **[📝](https://flathub.org/apps/com.github.xournalpp.xournalpp) Xournal++ -** Hand written notes on PDF files
 
 ### Office
 
@@ -128,17 +131,17 @@ My Linux setup
 ### Social
 
 - **[💬](https://flathub.org/apps/re.sonny.Tangram) Tangram -** Pinned tabs
-- **[💬](https://flathub.org/apps/us.zoom.Zoom) Zoom -** Zoom client
+- **[😀](https://flathub.org/apps/it.mijorus.smile) Smile -** Emoji picker
+- **[📞](https://flathub.org/apps/us.zoom.Zoom) Zoom -** Zoom client
 
 ### Extra
 
-- **🎨 [dircolors](dircolors) -** Theme for `ls` and `tree`
 - **⚛️ [electron](electron) -** Config files for electron apps
 
 ### Games
 
 - **[🎮](https://flathub.org/apps/com.heroicgameslauncher.hgl) Heroic Games Launcher -** Open Source GOG and Epic games launcher
-- **[🎮](https://flathub.org/apps/com.valvesoftware.Steam) Steam -** Steam games launcher
+- **[🎮](https://flathub.org/apps/com.valvesoftware.Steam) [Steam](steam) -** Steam games launcher
   - **[🎨](https://flathub.org/apps/io.github.Foldex.AdwSteamGtk) AdwSteamGtk -** Gnome Adwaita theme for Steam
 
 ### Extensions

@@ -10,6 +10,6 @@ Installed from flathub
   ```
 - Append the following to the `Exec=` line:
   ```sh
-  # --ozone-platform-hint=wayland --enable-features=WaylandWindowDecorations`
+  # --ozone-platform-hint=wayland --enable-features=WaylandWindowDecorations
   vi ~/.local/share/applications/com.bitwarden.desktop.desktop
   ```
