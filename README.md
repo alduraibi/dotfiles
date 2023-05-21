@@ -2,24 +2,28 @@
 
 My Linux setup
 
-## Overview
 
-- **💻 Distros:** Arch Linux and Termux(Android)
+## Laptop & Tablet
+
+- **💻 Distro:** [Arch Linux](arch-linux)
 - **💻 Window Manager:** Gnome
 - **📦️ Package Managers:** Flatpak & Pacman
-- **🎨 Theme:** Adwaita *(with black background on termux)*
 
-## Laptop
-### Terminal
+### Essentials
 
+- **⌨️ [osk-sdl](osk-sdl) -** On-Screen Keyboard to unlock disk encryption
 - **🗃️ [doti](doti) -** Easily manage dotfiles
 - **📦️ [paru](paru) -** AUR helper
+
+### Terminal
+
 - **📄 [bat](bat) -** Alternative to `cat`
 - **🔨 ansible -**
   - ** sshpass -**
 - **📂 exa -** Modern `ls`
 - **📖 tldr -** Simplified man pages
 - **✂️ wl-clipboard -** Clipboard
+- **🧱 [ufw](ufw) -** Firewall
 - **📝 [Neovim](neovim) -** Text editor based on vim
   - Requirements: `deno`
 - **🔳 [Tmux](tmux) -** Terminal multiplexer
@@ -156,7 +160,11 @@ My Linux setup
 - **🔤 Amiri -** Arabic font
 - **🔤 Amiri Typewriter -** Arabic monospaced font
 
-## Termux (Android)
+## Phone
+
+- **💻 Distro:** Termux(Android)
+
+### Applications
 
 - **📱 [termux](termux) -** Terminal with a package manager that works on an android device
 - **🐚 [zsh](zsh) -** Shell
