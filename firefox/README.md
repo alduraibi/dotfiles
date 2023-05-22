@@ -2,7 +2,9 @@
 
 > The open-source privacy respecting web browser from Mozilla.
 
-### Theme ([firefox-gnome-theme])
+## Theme
+
+Gnome theme taken from [here](firefox-gnome-theme)
 
 - Clone repo:
 ```sh
@@ -34,21 +36,41 @@ cd firefox-gnome-theme
 
 ## Installed Add-ons
 
-- **[uBlock Origin][ublock]** - Ad-Blocker
 - **[Bitwarden]** - Password manager
   - Set `Vault timeout` to `Never`
   - Enable `Auto-fill on page load`
-- **[I don't care about cookies][cookies]** - Disable cookie warnings
-- **[Reddit Enhancement Suite][res]** - Improves reddit
-- **[Terms of service; Didn't read][tosdr]** - tldr for TOS
-  - `Preferences` -> uncheck `Send Notifications`
-- **[Privacy Badger][badger]** - Blocks invisible trackers
+- **[ClearURLs]** - Removes tracking elements from URLs
+- **[Dark Reader]** - Dark mode for every website
+- **[Facebook Container]** - Prevent Facebook from tracking you around the web
+- **[Firefox Translations]** - Offline translations
+- **[I don't care about cookies]** - Disable cookie warnings
+- **[LanguageTool]** - Grammar and Spell Checker
+- **[Reddit Enhancement Suite]** - Improves reddit
+- **[Simple Translate]** - Online translations
+- **[SponsorBlock]** - Skip Sponsorships on YouTube
+- **[uBlock Origin]** - Ad-Blocker
+
+<details>
+  <summary>Disabled Add-ons</summary>
+  
+- **[Enhancer for YouTube]** - Take control of YouTube
+- **[User-Agent Switcher and Manager]** - Change the browser user-agent
+- **[Video DownloadHelper]** - Download videos from anywhere
+</details>
 
 
 [firefox-gnome-theme]: https://github.com/rafaelmardojai/firefox-gnome-theme
-[ublock]: https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
-[bitwarden]: https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
-[cookies]: https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/
-[res]: https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/
-[badger]: https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/?utm_content=addons-manager-reviews-link&utm_medium=firefox-browser&utm_source=firefox-browser
-[tosdr]: https://addons.mozilla.org/en-US/firefox/addon/terms-of-service-didnt-read/
+[Bitwarden]: https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
+[ClearURLs]: https://addons.mozilla.org/en-US/firefox/addon/clearurls/
+[Dark Reader]: https://addons.mozilla.org/en-US/firefox/addon/darkreader/
+[Facebook Container]: https://addons.mozilla.org/en-US/firefox/addon/facebook-container/
+[Firefox Translations]: https://addons.mozilla.org/en-US/firefox/addon/firefox-translations/
+[I don't care about cookies]: https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/
+[LanguageTool]: https://addons.mozilla.org/en-US/firefox/addon/languagetool/
+[Reddit Enhancement Suite]: https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/
+[Simple Translate]: https://addons.mozilla.org/en-US/firefox/addon/simple-translate/
+[SponsorBlock]: https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/
+[uBlock Origin]: https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+[Enhancer for YouTube]: https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
+[User-Agent Switcher and Manager]: https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/
+[Video DownloadHelper]: https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/
