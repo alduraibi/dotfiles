@@ -36,6 +36,7 @@ cd firefox-gnome-theme
 
 ## Installed Add-ons
 
+- **[Arabic spell-checking dictionary]** - Arabic dictionary and spell checker
 - **[Bitwarden]** - Password manager
   - Set `Vault timeout` to `Never`
   - Enable `Auto-fill on page load`
@@ -60,6 +61,7 @@ cd firefox-gnome-theme
 
 
 [firefox-gnome-theme]: https://github.com/rafaelmardojai/firefox-gnome-theme
+[Arabic spell-checking dictionary]: https://addons.mozilla.org/en-US/firefox/addon/arabic-spell-checking-dictiona/
 [Bitwarden]: https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
 [ClearURLs]: https://addons.mozilla.org/en-US/firefox/addon/clearurls/
 [Dark Reader]: https://addons.mozilla.org/en-US/firefox/addon/darkreader/
