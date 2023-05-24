@@ -101,6 +101,7 @@ My Linux setup
 
 
 ### Utilities
+- **[⬛️](https://flathub.org/apps/com.raggesilver.BlackBox) [Black Box](blackbox) -** Terminal Emulator
 - **[🔣](https://flathub.org/apps/org.gnome.Characters) Characters -** Character and Emoji picker
 - *Disks*
 - **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -** Manages keyrings
