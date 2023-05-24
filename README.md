@@ -6,7 +6,7 @@ My Linux setup
 ## Laptop & Tablet
 
 - **💻 Distro:** [Arch Linux](arch-linux)
-- **💻 Window Manager:** Gnome
+- **💻 Window Manager:** [Gnome](gnome)
 - **📦️ Package Managers:** Flatpak & Pacman
 
 ### Essentials
@@ -88,7 +88,7 @@ My Linux setup
 - *System Monitor*
 
 ### Settings
-- **[➕](https://flathub.org/apps/com.mattjakeman.ExtensionManager) [Extension Manager](extension-manager) -** Manage Gnome extensions
+- **[➕](https://flathub.org/apps/com.mattjakeman.ExtensionManager) [Extension Manager](gnome/README.md#Extensions) -** Manage Gnome extensions
 - **[✖️](https://flathub.org/apps/com.github.tchx84.Flatseal) Flatseal -** Manage flatpak permissions
 - *Settings*
 - *Tweaks*
@@ -178,6 +178,8 @@ My Linux setup
 - **📖 tldr -** Simplified man pages
 
 ## Server
+
+- **💻 Distro:** Debian
 
 ## [doti](https://github.com/ghassan0/doti)
 

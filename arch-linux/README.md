@@ -230,26 +230,6 @@
         systemctl enable gdm NetworkManager systemd-boot-update
         ```
 
-7.  ssh keys
-
-    ```sh
-    # Switch to user
-    su - ghassan
-
-    # Create main ssh key (ed25519)
-    ssh-keygen -t ed25519 -C "$USER@$HOST"
-    # Also create backup ssh key (rsa) to use with older systems
-    ssh-keygen -t rsa -b 4096 -C "$USER@$HOST"
-
-    # Copy contents of main public ssh key to add to github then:
-
-    # Clone ansible setup to be run
-    git clone git@github.com:ghassan0/archi.git
-
-    # Exit from user account
-    exit
-    ```
-
 8.  Reboot
 
     ```sh
@@ -505,35 +485,6 @@
 
 - Gnome (theme, extensions, etc.)
 
-  - Power profiles
-
-    ```sh
-    # install gnome-control-center deps
-    sudo pacman -S --asdeps system-config-printer power-profiles-daemon
-    # enable power-profiles-daemon
-    sudo systemctl enable --now power-profiles-daemon
-    ```
-
-  - Auto-login fix
-
-    1. install package `sudo pacman -S seahorse`
-    2. open seahorse -> right-click `login` -> set empty password
-
-  - GTK3 theme
-
-    ```sh
-    # install adw-gtk3 for dark adwaita on gtk3 apps
-    yay -S adw-gtk3
-    # go to gnome-tweaks -> appearance -> legacy application -> adw-gtk3-dark
-    ```
-
-  - QT theme
-
-    ```sh
-    # install adw-gtk3 for dark adwaita on gtk3 apps
-    sudo pacman -S adwaita-qt5 adwaita-qt6 qgnomeplatform-qt5 qgnomeplatform-qt6
-    add `export QT_QPA_PLATFORMTHEME=gnome` to zshenv
-    ```
 
 - Applications
 
@@ -547,13 +498,6 @@
     # enable user service
     systemctl --user enable --now syncthing
     ```
-
-- Remote desktop (extend display)
-
-  - `gsettings set org.gnome.desktop.remote-desktop.rdp screen-share-mode extend`
-  - Settings -> Sharing -> Turn on Sharing (top right button) -> Turn on Remote Desktop
-  - install `Connections` from flathub
-  - sudo ufw allow rdp
 
 - WireGuard (vpn)
 
