@@ -6,16 +6,7 @@
 
 - Install extension:
   ```sh
-  yay -S nautilus-open-any-terminal
-  ```
-- Set Black Box (Flatpak version) as default for extension
-  ```sh
-  gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal blackbox
-  gsettings set com.github.stunkymonkey.nautilus-open-any-terminal flatpak system
-  ```
-- Optional: Open in a new tab of Black Box instead of a new window
-  ```sh
-  gsettings set com.github.stunkymonkey.nautilus-open-any-terminal new-tab true
+  yay -S nautilus-open-in-blackbox
   ```
 
 ## Theme

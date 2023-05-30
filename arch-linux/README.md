@@ -230,7 +230,7 @@
         systemctl enable gdm NetworkManager systemd-boot-update
         ```
 
-8.  Reboot
+7.  Reboot
 
     ```sh
     sync    # (?)
@@ -241,267 +241,209 @@
 
 ## Post-install
 
-- Pre-Reqs
+### Pre-Reqs
 
-  - Install aur helper:
+- Install aur helper:
 
-    ```sh
-    git clone https://aur.archlinux.org/paru-bin.git
-    cd paru-bin
-    makepkg -si
-    cd ..
-    sudo rm -r paru-bin
-    ```
+  ```sh
+  git clone https://aur.archlinux.org/paru-bin.git
+  cd paru-bin
+  makepkg -si
+  cd ..
+  sudo rm -r paru-bin
+  ```
 
-  - SSH
+- SSH
 
-    ```sh
-    # Create main ssh key (ed25519) (then copy public key to github)
-    ssh-keygen -t ed25519 -C "$USER@$HOST"
-    cat ~/.ssh/id_ed25519.pub
-    # Also create backup ssh key (rsa) to use with older systems
-    ssh-keygen -t rsa -b 4096 -C "$USER@$HOST"
+  ```sh
+  # Create main ssh key (ed25519) (then copy public key to github)
+  ssh-keygen -t ed25519 -C "$USER@$HOST"
+  cat ~/.ssh/id_ed25519.pub
+  # Also create backup ssh key (rsa) to use with older systems
+  ssh-keygen -t rsa -b 4096 -C "$USER@$HOST"
 
-    # enable ssh
-    sudo systemctl enable --now sshd
-    ```
+  # enable ssh
+  sudo systemctl enable --now sshd
+  ```
 
-  - Dotfiles
+- Dotfiles
 
-    ```sh
-    paru -S doti
+  ```sh
+  paru -S doti
 
-    # clone dotfile repo
-    git clone git@github.com:ghassan0/dotfiles.git ~/.dotfiles
+  # clone dotfile repo
+  git clone git@github.com:ghassan0/dotfiles.git ~/.dotfiles
 
-    doti -r
-    ```
+  doti -r
+  ```
 
-- System
+### System
 
-  - Install missing firmware:
+- Install missing firmware:
 
-    ```sh
-    yay -S sof-firmware linux-firmware-qlogic upd72020x-fw aic94xx-firmware wd719x-firmware ast-firmware
-    ```
+  ```sh
+  yay -S sof-firmware linux-firmware-qlogic upd72020x-fw aic94xx-firmware wd719x-firmware ast-firmware
+  ```
 
-  - Clock stuff:
+- Clock stuff:
 
-    - create `sudo vim /etc/chrony.conf`
-
-      ```sh
-      server 0.pool.ntp.org offline
-      server 1.pool.ntp.org offline
-      server 2.pool.ntp.org offline
-      server 3.pool.ntp.org offline
-      ```
-
-    - run
-
-      ```sh
-      yay -S chrony networkmanager-dispatcher-chrony
-
-      sudo echo 'Environment=SYSTEMD_TIMEDATED_NTP_SERVICES=chronyd.service:systemd-timesyncd.service' >> /usr/lib/systemd/system/systemd-timedated.service
-
-      sudo systemctl disable systemd-timesyncd
-      sudo systemctl enable --now chronyd systemd-timedated
-      ```
-
-  - enable early KMS:
-
-    - run `sudo vim /etc/mkinitcpio.conf` and change the `MODULES=()` line to `MODULES=(i915)`
-    - run `lsmod | grep intel_agp`
-    - if the model **IS** loaded: change the `MODULES=()` line to `MODULES=(intel_agp i915)`
-    - run `sudo mkinitcpio -P` and reboot
-
-  - font stuff:
+  - create `sudo vim /etc/chrony.conf`
 
     ```sh
-    sudo pacman -S ttf-liberation ttf-dejavu ttf-nerd-fonts-symbols-common
+    server 0.pool.ntp.org offline
+    server 1.pool.ntp.org offline
+    server 2.pool.ntp.org offline
+    server 3.pool.ntp.org offline
     ```
 
-  - audio stuff:
+  - run
 
     ```sh
-    sudo pacman -S --asdeps wireplumber pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse pipewire-zeroconf
+    yay -S chrony networkmanager-dispatcher-chrony
+
+    sudo echo 'Environment=SYSTEMD_TIMEDATED_NTP_SERVICES=chronyd.service:systemd-timesyncd.service' >> /usr/lib/systemd/system/systemd-timedated.service
+
+    sudo systemctl disable systemd-timesyncd
+    sudo systemctl enable --now chronyd systemd-timedated
     ```
 
-  - Hardware Acceleration (intel GPUs, check arch wiki for other GPUs)
+- Enable early KMS:
 
+  - run `sudo vim /etc/mkinitcpio.conf` and change the `MODULES=()` line to `MODULES=(i915)`
+  - run `lsmod | grep intel_agp`
+  - if the model **IS** loaded: change the `MODULES=()` line to `MODULES=(intel_agp i915)`
+  - run `sudo mkinitcpio -P` and reboot
+
+- Fonts:
+
+  ```sh
+  sudo pacman -S ttf-liberation ttf-dejavu ttf-nerd-fonts-symbols-common otf-firamono-nerd
+  ```
+
+- Audio stuff:
+
+  ```sh
+  sudo pacman -S --asdeps wireplumber pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse pipewire-zeroconf
+  ```
+
+- Hardware Acceleration (intel GPUs, check arch wiki for other GPUs)
+
+  ```sh
+  # run to see your GPU
+  lspci | grep VGA
+
+  # for Intel GPU's 2014 and newer run:
+  sudo pacman -S intel-media-driver libvdpau-va-gl libva-utils vdpauinfo intel-media-sdk
+  export LIBVA_DRIVER_NAME=iHD
+
+  # for Intel GPU's 2013 and older run:
+  sudo pacman -S libva-intel-driver libvdpau-va-gl libva-utils vdpauinfo intel-media-sdk
+  export LIBVA_DRIVER_NAME=i965
+
+  # for both:
+  export VDPAU_DRIVER=va_gl
+  # confirm everything is working by:
+  vainfo
+  vdpauinfo
+
+  # if everything is working, add the following block to
+  sudo vim /etc/environment
+  ```
+
+  ```sh
+  #
+  # This file is parsed by pam_env module
+  #
+  # Syntax: simple "KEY=VAL" pairs on separate lines
+  #
+  #
+  # Hardware Acceleration / GPU
+  LIBVA_DRIVER_NAME=iHD
+  # or LIBVA_DRIVER_NAME=i965 (for Intel GPU's 2013 and older)
+  VDPAU_DRIVER=va_gl
+  # If your Intel GPU is gen 8+:
+  MESA_LOADER_DRIVER_OVERRIDE=iris
+  ```
+
+  - check **power and thermals** link at the bottom for VP9 decoding
+
+- ThermalD
+
+  Only works with Intel. Does not conflict with `power-profiles-daemon`
+
+  ```sh
+  # install package
+  sudo pacman -S thermald
+  # enable service (NOTE: for yoga c940 do the next step before starting the service)
+  sudo systemctl enable --now thermald
+  ```
+
+  - For yoga c940 (do before starting systemd service):
     ```sh
-    # run to see your GPU
-    lspci | grep VGA
-
-    # for Intel GPU's 2014 and newer run:
-    sudo pacman -S intel-media-driver libvdpau-va-gl libva-utils vdpauinfo intel-media-sdk
-    export LIBVA_DRIVER_NAME=iHD
-
-    # for Intel GPU's 2013 and older run:
-    sudo pacman -S libva-intel-driver libvdpau-va-gl libva-utils vdpauinfo intel-media-sdk
-    export LIBVA_DRIVER_NAME=i965
-
-    # for both:
-    export VDPAU_DRIVER=va_gl
-    # confirm everything is working by:
-    vainfo
-    vdpauinfo
-
-    # if everything is working, add the following block to
-    sudo vim /etc/environment
+    sudo cp files/c940/thermald.xml /etc/thermald/thermal-conf.xml
+    sudo mkdir -p /etc/systemd/system/thermald.service.d
+    sudo cp files/c940/thermald.service /etc/systemd/system/thermald.service.d/c940.conf
     ```
 
-    ```sh
-    #
-    # This file is parsed by pam_env module
-    #
-    # Syntax: simple "KEY=VAL" pairs on separate lines
-    #
-    #
-    # Hardware Acceleration / GPU
-    LIBVA_DRIVER_NAME=iHD
-    # or LIBVA_DRIVER_NAME=i965 (for Intel GPU's 2013 and older)
-    VDPAU_DRIVER=va_gl
-    # If your Intel GPU is gen 8+:
-    MESA_LOADER_DRIVER_OVERRIDE=iris
+### System (extra)
+
+- [Setup Firewall](../ufw/README.md#Setup)
+
+- Avahi
+
+  ```sh
+  # install avahi and dep:
+  sudo pacman -S avahi
+  sudo pacman -S --asdeps nss-mdns
+
+  # disable conflicting service
+  sudo systemctl disable systemd-resolved
+  # enable avahi
+  sudo systemctl enable --now avahi-daemon
+
+  # change line in file
+  sudo sed -ie "s/^hosts:.*/hosts: mymachines mdns_minimal [NOTFOUND=return] resolve [\!UNAVAIL=return] files myhostname dns/g" /etc/nsswitch.conf
+
+  # unblock UDP port 5353 in firewall
+  sudo ufw allow avahi
+  ```
+
+- Bluetooth
+
+  ```sh
+  sudo systemctl enable --now bluetooth
+  ```
+
+- Printing
+
+  ```sh
+  # install packages
+  sudo pacman -S cups cups-pdf
+  # enable cups
+  sudo systemctl enable --now cups
+  ```
+
+- Pacman
+
+  ```sh
+  # install reflector to update mirrorlist
+  sudo pacman -S reflector
+  # edit config with the contents below
+  sudo vim /etc/xdg/reflector/reflector.conf
+  # enable reflector
+  sudo systemctl enable --now reflector.timer
+  sudo systemctl enable --now paccache.timer
+  ```
+
+  - Contents of `reflector.conf`:
+    ```
+    --save /etc/pacman.d/mirrorlist
+    --protocol https
+    --latest 10
+    --sort rate
     ```
 
-    - check **power and thermals** link at the bottom for VP9 decoding
-
-  - ~~Undervolting~~
-
-    - install packages: `yay -S intel-undervolt mprime-bin`
-    - add `msr.allow_writes=on` at the end of the options line in `/boot/loader/entries/arch.conf` and the lts version
-    - reboot
-    - edit file `sudo vim sudo vim /etc/intel-undervolt.conf`
-      ```sh
-      undervolt 0 'CPU' -10
-      undervolt 1 'GPU' 0
-      undervolt 2 'CPU Cache' 0
-      undervolt 3 'System Agent' 0
-      undervolt 4 'Analog I/O' 0
-      ```
-    - run `sudo intel-undervolt apply && sudo intel-undervolt read` and make sure it applied properly
-    - stress test by running `mprime` for 30 minutes
-      - then decrease the mV by -10 for every successful run until your laptop crashes or hangs
-      - set to last stable value
-    - run `sudo systemctl enable --now intel-undervolt.service`
-
-  - thermald (Intel only)
-
-    ```sh
-    # install package
-    sudo pacman -S thermald
-    # enable service (NOTE: for yoga c940 do the next step before starting the service)
-    sudo systemctl enable --now thermald
-    ```
-
-    - For yoga c940 (do before starting systemd service):
-      ```sh
-      sudo cp files/c940/thermald.xml /etc/thermald/thermal-conf.xml
-      sudo mkdir -p /etc/systemd/system/thermald.service.d
-      sudo cp files/c940/thermald.service /etc/systemd/system/thermald.service.d/c940.conf
-      ```
-
-- System (extra)
-
-  - ufw
-
-    ```sh
-    # install ufw:
-    sudo pacman -S ufw
-    # enable ufw
-    sudo systemctl enable --now ufw
-    # set default to deny
-    sudo ufw default deny
-    # limit ssh access in firewall
-    sudo ufw limit SSH
-    # set enable
-    sudo ufw enable
-    ```
-
-  - avahi
-
-    ```sh
-    # install avahi and dep:
-    sudo pacman -S avahi
-    sudo pacman -S --asdeps nss-mdns
-
-    # disable conflicting service
-    sudo systemctl disable systemd-resolved
-    # enable avahi
-    sudo systemctl enable --now avahi-daemon
-
-    # change line in file
-    sudo sed -ie "s/^hosts:.*/hosts: mymachines mdns_minimal [NOTFOUND=return] resolve [\!UNAVAIL=return] files myhostname dns/g" /etc/nsswitch.conf
-
-    # unblock UDP port 5353 in firewall
-    sudo ufw allow avahi
-    ```
-
-  - Bluetooth
-
-    ```sh
-    sudo systemctl enable --now bluetooth
-    ```
-
-  - Printing
-
-    ```sh
-    # install packages
-    sudo pacman -S cups cups-pdf
-    # enable cups
-    sudo systemctl enable --now cups
-    ```
-
-  - reflector (updates pacman mirrorlist)
-
-    ```sh
-    # install reflector
-    sudo pacman -S reflector
-    # edit config with the contents below
-    sudo vim /etc/xdg/reflector/reflector.conf
-    # enable reflector
-    sudo systemctl enable --now reflector.timer
-    sudo systemctl enable --now paccache.timer
-    ```
-
-    - Contents of config:
-      ```
-      --save /etc/pacman.d/mirrorlist
-      --protocol https
-      --latest 10
-      --sort rate
-      ```
-
-  - On-Screen Keyboard for disk encryption
-
-    - install: `yay -S osk-sdl`
-    - remove `:allow-discards` in `/boot/loader/entries/arch.conf`
-    - edit `/etc/mkinitcpio.conf`
-      - set **MODULES** to: `MODULES=(i915 hid_multitouch i2c_hid i2c_hid_acpi intel_lpss intel_lpss_pci)`
-      - replace `encrypt` hook with `osk-sdl`
-    - edit config file `/etc/osk-sdl.conf`
-    - `sudo mkinitcpio -P` (run after config adjustments)
-
-- Gnome (theme, extensions, etc.)
-
-
-- Applications
-
-  - Syncthing (GTK) (old way)
-
-    ```sh
-    # install packages
-    sudo yay -S syncthing-gtk
-    # allow in firewall
-    sudo ufw allow syncthing
-    # enable user service
-    systemctl --user enable --now syncthing
-    ```
-
-- WireGuard (vpn)
-
-  - sudo ufw allow wireguard
+- [On-Screen Keyboard for disk encryption](../osk-sdl/README.md)
 
 - Lenovo Yoga C940
 

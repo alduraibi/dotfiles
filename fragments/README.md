@@ -2,7 +2,7 @@
 
 Installed through flathub
 
-### Allow through firewall
+## Firewall
 
 ```sh
 sudo ufw allow fragments
