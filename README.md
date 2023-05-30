@@ -45,7 +45,7 @@ My Linux setup
 
 ### Backup
 
-- **[🔄](https://flathub.org/apps/me.kozec.syncthingtk) Syncthing GTK -** File sync
+- **[🔄](https://flathub.org/apps/me.kozec.syncthingtk) [Syncthing GTK](syncthing-gtk) -** File sync
 
 ### Internet
 
@@ -89,6 +89,9 @@ My Linux setup
 
 ### Settings
 - **[➕](https://flathub.org/apps/com.mattjakeman.ExtensionManager) [Extension Manager](gnome/README.md#Extensions) -** Manage Gnome extensions
+- **[⚙️
+](https://flathub.org/apps/org.gnome.Firmware) Firmware -** Upgrade firmware
+  - `fwupd`
 - **[✖️](https://flathub.org/apps/com.github.tchx84.Flatseal) Flatseal -** Manage flatpak permissions
 - *Settings*
 - *Tweaks*
