@@ -127,7 +127,7 @@ My Linux setup
 
 ### Office
 
-- **[📄](https://flathub.org/apps/org.libreoffice.LibreOffice) LibreOffice -** Office suite (open standards)
+- **[📄](https://flathub.org/apps/org.libreoffice.LibreOffice) [LibreOffice](libreoffice) -** Office suite (open standards)
 - **[📄](https://flathub.org/apps/org.onlyoffice.desktopeditors) ONLYOFFICE -** Office suite (MS Office compliant)
 
 <details>
@@ -145,6 +145,7 @@ My Linux setup
 ### Extra
 
 - **⚛️ [electron](electron) -** Config files for electron apps
+- **[Templates](templates) -** Template files to create new files from Nautilus
 
 ### Games
 
