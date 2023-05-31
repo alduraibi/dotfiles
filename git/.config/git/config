@@ -6,10 +6,10 @@
 [init]
 	defaultBranch = main
 [sendemail]
-	smtpserver = smtp.mailbox.org
-	smtpuser = ghassan@mailbox.org
-	smtpencryption = ssl
-	smtpserverport = 465
+	smtpserver = smtp.gmail.com
+	smtpuser = ghassanalduraibi@gmail.com
+	smtpencryption = tls
+	smtpserverport = 587
 [alias]
   s = status
   a = add

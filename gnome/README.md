@@ -48,6 +48,7 @@ sudo systemctl enable --now power-profiles-daemon
 
 - [Black Box](../blackbox/README.md#Theme)
 - [Firefox](../firefox/README.md#Theme)
+- [LibreOffice](../libreoffice/README.md#Theme)
 - [Steam](../steam/README.md#Theme)
 
 ## Extensions
