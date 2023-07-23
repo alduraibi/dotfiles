@@ -61,3 +61,6 @@ znap source "MichaelAquilina/zsh-autoswitch-virtualenv"
 # autoload -Uz compinit
 # compinit
 # # End of lines added by compinstall
+
+# Created by `pipx` on 2023-06-30 04:12:21
+export PATH="$PATH:/home/ghassan/.local/bin"

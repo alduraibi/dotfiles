@@ -89,9 +89,6 @@ My Linux setup
 
 ### Settings
 - **[➕](https://flathub.org/apps/com.mattjakeman.ExtensionManager) [Extension Manager](gnome/README.md#Extensions) -** Manage Gnome extensions
-- **[⚙️
-](https://flathub.org/apps/org.gnome.Firmware) Firmware -** Upgrade firmware
-  - `fwupd`
 - **[✖️](https://flathub.org/apps/com.github.tchx84.Flatseal) Flatseal -** Manage flatpak permissions
 - *Settings*
 - *Tweaks*
@@ -109,7 +106,7 @@ My Linux setup
 - *Disks*
 - **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -** Manages keyrings
 - *Software*
-  - *Flatpak*
+  - Dependencies: *flatpak*, *fwupd*
 
 ### Virtualization
 - **[🍾](https://flathub.org/apps/com.usebottles.bottles) Bottles -** Run windows programs
