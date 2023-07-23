@@ -11,10 +11,7 @@
 
 ## Theme
 
-Taken from [here](https://gist.github.com/vixalien/befdb265f7ed9132f990832b2aa35e05)
-
-- use `doti` to symlink theme into place
-  - `Preferences` -> `Terminal` -> `Theme`
+- `Preferences` -> `Terminal` -> `Theme`
   - Select the dark and light `Adwaita` themes in the preferences
 - `Preferences` -> `General` -> `Show Borders` -> `off`
 - `Preferences` -> `General` -> `Theme Integration` -> `off`

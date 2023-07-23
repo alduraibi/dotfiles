@@ -8,7 +8,7 @@
 ## Microsoft Office Compatibility
 
 - Fonts:
-  - `yay -S ttf-ms-fonts`
+  - `yay -S ttf-ms-win11-auto`
 
 ## Extensions
 
