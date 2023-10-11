@@ -61,6 +61,9 @@ My Linux setup
 
 - **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin Media Player -** Jellyfin client
 - **[🎞️](https://flathub.org/apps/io.github.celluloid_player.Celluloid) Celluloid -** Video player
+- **[🎶](https://flathub.org/apps/com.vixalien.decibels) Decibels -** Audio player
+- **[📖️](https://flathub.org/apps/com.github.geigi.cozy) Cozy -** Audiobook player
+- **[📖️](https://flathub.org/apps/com.github.johnfactotum.Foliate) Foliate -** eBook reader
 - **[🖼️](https://flathub.org/apps/org.gnome.Loupe) Loupe -** Image viewer
 - **[🎶](https://flathub.org/apps/com.spotify.Client) [Spotify](spotify) -** Official Spotify client
 - **[🎶](https://flathub.org/apps/dev.alextren.Spot) Spot -** Spotify client (GTK)
@@ -69,6 +72,7 @@ My Linux setup
 
 - **[🎬️](https://flathub.org/apps/org.pitivi.Pitivi) Pitivi -** Video editor
 - **[📸](https://flathub.org/apps/org.gnome.Snapshot) Snapshot -** Camera
+- **[🎶](https://flathub.org/apps/app.drey.EarTag) Ear Tag -** Audio file tag editor
 - **[🎙️](https://flathub.org/apps/org.gnome.SoundRecorder) Sound Recorder -** Record audio
 - **[🎬️](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer) Video Trimmer -** Trim videos
 
@@ -90,6 +94,7 @@ My Linux setup
 ### Settings
 - **[➕](https://flathub.org/apps/com.mattjakeman.ExtensionManager) [Extension Manager](gnome/README.md#Extensions) -** Manage Gnome extensions
 - **[✖️](https://flathub.org/apps/com.github.tchx84.Flatseal) Flatseal -** Manage flatpak permissions
+- **[🧹️](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) Flatsweep -** Clean up files from deleted flatpaks
 - *Settings*
 - *Tweaks*
 - **[🔤](https://flathub.org/apps/org.gnome.font-viewer) Fonts -** View installed fonts
@@ -104,6 +109,7 @@ My Linux setup
 - **[⬛️](https://flathub.org/apps/com.raggesilver.BlackBox) [Black Box](blackbox) -** Terminal Emulator
 - **[🔣](https://flathub.org/apps/org.gnome.Characters) Characters -** Character and Emoji picker
 - *Disks*
+- **[💿️](https://flathub.org/apps/io.gitlab.adhami3310.Impression) Impression -** Create bootable drives
 - **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -** Manages keyrings
 - *Software*
   - Dependencies: *flatpak*, *fwupd*
