@@ -78,7 +78,6 @@ Install `Extension Manager` flatpak to install and manage the following extensio
   ```
 - ~~[Improved OSK]~~
 - [Just Perfection]
-  - Visibility -> Activities Button -> off
   - Visibility -> Keyboard Layout -> off
   - Visibility -> Accessibility Menu -> off
   - Behavior -> Workspace Wraparound -> on
@@ -87,6 +86,7 @@ Install `Extension Manager` flatpak to install and manage the following extensio
 - [PiP on top]
 - [Rounded Window Corners]
 - [Screen Rotate]
+- [Smile - complementary extension]
 
 
 
@@ -107,3 +107,4 @@ Install `Extension Manager` flatpak to install and manage the following extensio
 [PiP on top]: https://extensions.gnome.org/extension/4691/pip-on-top/
 [Rounded Window Corners]: https://extensions.gnome.org/extension/5237/rounded-window-corners/
 [Screen Rotate]: https://extensions.gnome.org/extension/5389/screen-rotate/
+[Smile - complementary extension]: https://extensions.gnome.org/extension/6096/smile-complementary-extension/
