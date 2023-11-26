@@ -1,22 +1,18 @@
 # ⚙️ dotfiles 🔧
-
 My Linux setup
 
 
 ## Laptop & Tablet
-
 - **💻 Distro:** [Arch Linux](arch-linux)
 - **💻 Window Manager:** [Gnome](gnome)
 - **📦️ Package Managers:** Flatpak & Pacman
 
 ### Essentials
-
 - **⌨️ [osk-sdl](osk-sdl) -** On-Screen Keyboard to unlock disk encryption
 - **🗃️ [doti](doti) -** Easily manage dotfiles
 - **📦️ [paru](paru) -** AUR helper
 
 ### Terminal
-
 - **📄 [bat](bat) -** Alternative to `cat`
 - **🔨 ansible -**
   - ** sshpass -**
@@ -44,11 +40,9 @@ My Linux setup
 </details>
 
 ### Backup
-
 - **[🔄](https://flathub.org/apps/me.kozec.syncthingtk) [Syncthing GTK](syncthing-gtk) -** File sync
 
 ### Internet
-
 - **[🌐](https://flathub.org/apps/org.mozilla.firefox) [Firefox](firefox) -** Internet browser
 - **[🔐](https://flathub.org/apps/com.bitwarden.desktop) [Bitwarden](bitwarden) -** Password manager
 - **[🔤](https://flathub.org/apps/app.drey.Dialect) Dialect -** Translator
@@ -58,7 +52,6 @@ My Linux setup
 
 
 ### Media Players
-
 - **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin Media Player -** Jellyfin client
 - **[🎞️](https://flathub.org/apps/io.github.celluloid_player.Celluloid) Celluloid -** Video player
 - **[🎶](https://flathub.org/apps/com.vixalien.decibels) Decibels -** Audio player
@@ -69,15 +62,16 @@ My Linux setup
 - **[🎶](https://flathub.org/apps/dev.alextren.Spot) Spot -** Spotify client (GTK)
 
 ### Media Editors
-
-- **[🎬️](https://flathub.org/apps/org.pitivi.Pitivi) Pitivi -** Video editor
+- **[📸](https://flathub.org/apps/com.github.taiko2k.avvie) Avvie -** Crop images
 - **[📸](https://flathub.org/apps/org.gnome.Snapshot) Snapshot -** Camera
 - **[🎶](https://flathub.org/apps/app.drey.EarTag) Ear Tag -** Audio file tag editor
+- **[🎬️](https://flathub.org/apps/io.gitlab.adhami3310.Footage) Footage -** Simple video editor
+- **[🎶](https://flathub.org/apps/io.github.seadve.Mousai) Mousai -** Identify songs
+- **[🎬️](https://flathub.org/apps/org.pitivi.Pitivi) Pitivi -** Video editor
 - **[🎙️](https://flathub.org/apps/org.gnome.SoundRecorder) Sound Recorder -** Record audio
 - **[🎬️](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer) Video Trimmer -** Trim videos
 
 ### Productivity
-
 - **[🧮](https://flathub.org/apps/org.gnome.Calculator) Calculator**
 - **[📅](https://flathub.org/apps/org.gnome.Calendar) Calendar**
   - `evolution-data-server`
@@ -109,6 +103,7 @@ My Linux setup
 - **[⬛️](https://flathub.org/apps/com.raggesilver.BlackBox) [Black Box](blackbox) -** Terminal Emulator
 - **[🔣](https://flathub.org/apps/org.gnome.Characters) Characters -** Character and Emoji picker
 - *Disks*
+- **[🎨](https://flathub.org/apps/com.github.finefindus.eyedropper) Eyedropper -** Pick and format colors
 - **[💿️](https://flathub.org/apps/io.gitlab.adhami3310.Impression) Impression -** Create bootable drives
 - **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -** Manages keyrings
 - *Software*
@@ -123,7 +118,6 @@ My Linux setup
 - **📱 [Valent](valent) -** KDE Connect for Gnome
 
 ### Notes
-
 - **[📄](https://flathub.org/apps/com.github.jeromerobert.pdfarranger) PDF Arranger -** Manipulate PDF files
 - **[📝](https://flathub.org/apps/com.github.flxzt.rnote) Rnote -** Hand written notes
 - **[📄](https://flathub.org/apps/com.vixalien.sticky) Sticky Notes -** Quick notes
@@ -131,7 +125,6 @@ My Linux setup
 - **[📝](https://flathub.org/apps/com.github.xournalpp.xournalpp) Xournal++ -** Hand written notes on PDF files
 
 ### Office
-
 - **[📄](https://flathub.org/apps/org.libreoffice.LibreOffice) [LibreOffice](libreoffice) -** Office suite (open standards)
 - **[📄](https://flathub.org/apps/org.onlyoffice.desktopeditors) ONLYOFFICE -** Office suite (MS Office compliant)
 
@@ -142,25 +135,21 @@ My Linux setup
 </details>
 
 ### Social
-
 - **[💬](https://flathub.org/apps/re.sonny.Tangram) Tangram -** Pinned tabs
 - **[😀](https://flathub.org/apps/it.mijorus.smile) Smile -** Emoji picker
 - **[📞](https://flathub.org/apps/us.zoom.Zoom) Zoom -** Zoom client
 
 ### Extra
-
 - **⚛️ [electron](electron) -** Config files for electron apps
 - **[Templates](templates) -** Template files to create new files from Nautilus
 
 ### Games
-
 - **[🎮](https://flathub.org/apps/com.heroicgameslauncher.hgl) Heroic Games Launcher -** Open Source GOG and Epic games launcher
 - **[🎮](https://flathub.org/apps/com.valvesoftware.Steam) [Steam](steam) -** Steam games launcher
   - **[🎨](https://flathub.org/apps/io.github.Foldex.AdwSteamGtk) AdwSteamGtk -** Gnome Adwaita theme for Steam
 
 
 ### Fonts
-
 - **😀 Twemoji -** Twitter emoji font
 - **🔤 FiraGO -** Latin script font
 - **🔤 Fura Code -** Latin script monospaced Fira Code font with Nerd Font patch
@@ -168,11 +157,9 @@ My Linux setup
 - **🔤 Amiri Typewriter -** Arabic monospaced font
 
 ## Phone
-
 - **💻 Distro:** Termux(Android)
 
 ### Applications
-
 - **📱 [termux](termux) -** Terminal with a package manager that works on an android device
 - **🐚 [zsh](zsh) -** Shell
 - **🗃 [ranger](ranger) -** TUI file explorer with vi bindings
@@ -185,11 +172,9 @@ My Linux setup
 - **📖 tldr -** Simplified man pages
 
 ## Server
-
 - **💻 Distro:** Debian
 
 ## [doti](https://github.com/ghassan0/doti)
-
 Program that manages your dotfiles by symlink-ing them into their respective directories.
 
 - Install doti: `pip install doti` (or `yay -S doti` for Arch)
