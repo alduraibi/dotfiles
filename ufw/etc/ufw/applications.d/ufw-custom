@@ -8,8 +8,8 @@ title=Fragments
 description=Fragments BitTorrent client
 ports=51413
 
-[gsconnect]
-title=GSConnect / KDE Connect
+[kdeconnect]
+title=KDE Connect
 description=Enabling communication between all your devices
 ports=1714:1764/tcp|1714:1764/udp
 

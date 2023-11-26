@@ -23,6 +23,7 @@ sudo ufw enable
 - [Fragments](../fragments/README.md#Firewall): `sudo ufw allow fragments`
 - Syncthing: `sudo ufw allow syncthing`
 - SSH: `sudo ufw limit SSH`
+- [Valent](../valent/README.md#Firewall): `sudo ufw allow kdeconnect`
 - Wireguard: `sudo ufw allow wireguard`
 
 [arch wiki]: https://wiki.archlinux.org/title/ufw

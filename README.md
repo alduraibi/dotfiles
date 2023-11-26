@@ -117,8 +117,10 @@ My Linux setup
 ### Virtualization
 - **[🍾](https://flathub.org/apps/com.usebottles.bottles) Bottles -** Run windows programs
 - **[🔳](https://flathub.org/apps/org.gnome.Boxes) Boxes -** Virtual machines
+
+### Remote
 - **[🔗](https://flathub.org/apps/org.gnome.Connections) Connections -** Remote desktop connections
-- **[📱](https://github.com/srevinsaju/guiscrcpy) guiscrcpy -** Android screen mirroring
+- **📱 [Valent](valent) -** KDE Connect for Gnome
 
 ### Notes
 
@@ -156,9 +158,6 @@ My Linux setup
 - **[🎮](https://flathub.org/apps/com.valvesoftware.Steam) [Steam](steam) -** Steam games launcher
   - **[🎨](https://flathub.org/apps/io.github.Foldex.AdwSteamGtk) AdwSteamGtk -** Gnome Adwaita theme for Steam
 
-### Extensions
-
-- **📱 [GSConnect](gsconnect) -** KDE Connect for Gnome
 
 ### Fonts
 

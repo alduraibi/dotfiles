@@ -57,26 +57,19 @@ Install `Extension Manager` flatpak to install and manage the following extensio
 
 - [Alphabetical App Grid]
   - Position of ordered folders -> Start
-- [Always Show Titles In Overview]
+- [Always Show Titles In Overview] - Makes it easier to close apps on a touchscreen
   - Enable `Always show window cose buttons`
 - [AppIndicator and KStatusNotifierItem Support]
 - [Blur my Shell]
-- [Caffeine]
+- [Caffeine] - Keep screen on
 - [Clipboard History]
 - [Dim Completed Calendar Events]
 - [Do Not Disturb While Screen Sharing Or Recording]
-- [GSConnect]
-  ```sh
-  # sudo pacman -S --asdeps folks libgdata gsound python-nautilus
-  # allow in firewall (first include in ufw-custom)
-  sudo ufw allow gsconnect
-  ```
 - [Hibernate Status Button]
 - [Hot Edge]
   ```sh
   sudo pacman -S libgda6
   ```
-- ~~[Improved OSK]~~
 - [Just Perfection]
   - Visibility -> Keyboard Layout -> off
   - Visibility -> Accessibility Menu -> off
@@ -86,7 +79,8 @@ Install `Extension Manager` flatpak to install and manage the following extensio
 - [PiP on top]
 - [Rounded Window Corners]
 - [Screen Rotate]
-- [Smile - complementary extension]
+- [Smile] - Complementary extension for Smile (emoji picker)
+- [Valent](../valent/README.md) - Complementary extension for Valent (KDE Connect for Gnome)
 
 
 
