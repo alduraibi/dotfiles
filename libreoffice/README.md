@@ -7,13 +7,16 @@
 
 ## Microsoft Office Compatibility
 
-- Fonts:
+- Download Fonts:
   - `yay -S ttf-ms-win11-auto`
+
+## Language Server
+
+- `Tools` -> `Options` -> `Language Settings` -> `LanguageTool Server` -> `Enable LanguageTool`
 
 ## Extensions
 
 `Tools` -> `Extension Manager` -> `Add` -> click downloaded extension
 
 - [Arabic Spellchecker](https://extensions.libreoffice.org/en/extensions/show/arabic-spell-checker)
-- [LanguageTool](https://extensions.libreoffice.org/en/extensions/show/languagetool)
 - [English dictionaries for LibreOffice 4.0+](https://extensions.libreoffice.org/en/extensions/show/english-dictionaries)

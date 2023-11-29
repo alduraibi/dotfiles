@@ -45,11 +45,11 @@ My Linux setup
 ### Internet
 - **[🌐](https://flathub.org/apps/org.mozilla.firefox) [Firefox](firefox) -** Internet browser
 - **[🔐](https://flathub.org/apps/com.bitwarden.desktop) [Bitwarden](bitwarden) -** Password manager
+- **[🌐](https://flathub.org/apps/org.chromium.Chromium) Chromium -** Internet browser
 - **[🔤](https://flathub.org/apps/app.drey.Dialect) Dialect -** Translator
 - **[⬇️](https://flathub.org/apps/de.haeckerfelix.Fragments) [Fragments](fragments) -** Bittorrent client
-- **[🌐](https://flathub.org/apps/org.chromium.Chromium) Chromium -** Internet browser
+- **[⬇️](https://flathub.org/apps/org.nickvision.tubeconverter) [Fragments](Parabolic) -** Web video and audio downloader
 - **[🌐](https://flathub.org/apps/org.gnome.Epiphany) Web -** Gnome's internet browser
-
 
 ### Media Players
 - **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin Media Player -** Jellyfin client
@@ -66,7 +66,6 @@ My Linux setup
 - **[📸](https://flathub.org/apps/org.gnome.Snapshot) Snapshot -** Camera
 - **[🎶](https://flathub.org/apps/app.drey.EarTag) Ear Tag -** Audio file tag editor
 - **[🎬️](https://flathub.org/apps/io.gitlab.adhami3310.Footage) Footage -** Simple video editor
-- **[🎶](https://flathub.org/apps/io.github.seadve.Mousai) Mousai -** Identify songs
 - **[🎬️](https://flathub.org/apps/org.pitivi.Pitivi) Pitivi -** Video editor
 - **[🎙️](https://flathub.org/apps/org.gnome.SoundRecorder) Sound Recorder -** Record audio
 - **[🎬️](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer) Video Trimmer -** Trim videos
@@ -105,6 +104,7 @@ My Linux setup
 - *Disks*
 - **[🎨](https://flathub.org/apps/com.github.finefindus.eyedropper) Eyedropper -** Pick and format colors
 - **[💿️](https://flathub.org/apps/io.gitlab.adhami3310.Impression) Impression -** Create bootable drives
+- **[🎶](https://flathub.org/apps/io.github.seadve.Mousai) Mousai -** Identify songs
 - **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -** Manages keyrings
 - *Software*
   - Dependencies: *flatpak*, *fwupd*
