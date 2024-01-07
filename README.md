@@ -23,65 +23,67 @@ My Linux setup 🐧
 ## Applications
 
 ### Essentials
-- **⌨️ [osk-sdl](osk-sdl) -** On-Screen Keyboard to unlock disk encryption (unmaintained) \[💻️|🔳]
-- **⌨️ unl0kr -** On-Screen Keyboard to unlock disk encryption \[📱]
-- **🗃️ [doti](doti) -** Easily manage dotfiles \[💻️|🔳|📱]
-- **📦️ [paru](paru) -** AUR helper \[💻️|🔳]
+- **⌨️ [osk-sdl](osk-sdl) -** On-Screen Keyboard to unlock disk encryption (unmaintained) <sup>\[💻️|🔳]</sup>
+- **⌨️ unl0kr -** On-Screen Keyboard to unlock disk encryption <sup>\[📱]</sup>
+- **🗃️ [doti](doti) -** Easily manage dotfiles <sup>\[💻️|🔳|📱]</sup>
+- **📦️ [paru](paru) -** AUR helper <sup>\[💻️|🔳]</sup>
 
 ### Files
-- **[⬇️](https://flathub.org/apps/de.haeckerfelix.Fragments) [Fragments](fragments) -** Bittorrent client \[💻️|🔳|📱]
-- **[⬇️](https://flathub.org/apps/org.nickvision.tubeconverter) Parabolic -** Web video and audio downloader \[💻️|🔳|📱]
-- **[🔄](https://flathub.org/apps/me.kozec.syncthingtk) [Syncthing GTK](syncthing-gtk) -** File sync \[💻️|🔳]
-- **[🔃](https://flathub.org/apps/app.drey.Warp) Warp -** Send and receive files \[💻️|🔳|📱]
+- **[⬇️](https://flathub.org/apps/de.haeckerfelix.Fragments) [Fragments](fragments) -** Bittorrent client <sup>\[💻️|🔳|📱]</sup>
+- **[⬇️](https://flathub.org/apps/org.nickvision.tubeconverter) Parabolic -** Web video and audio downloader <sup>\[💻️|🔳|📱]</sup>
+- **[🔄](https://flathub.org/apps/me.kozec.syncthingtk) [Syncthing GTK](syncthing-gtk) -** File sync <sup>\[💻️|🔳]</sup>
+- **[🔃](https://flathub.org/apps/app.drey.Warp) Warp -** Send and receive files <sup>\[💻️|🔳|📱]</sup>
 
 ### Games
-- **[🔃](https://flathub.org/apps/org.gnome.Crosswords) Crosswords -** Crossword puzzles \[📱]
-- **[🎮](https://flathub.org/apps/com.heroicgameslauncher.hgl) Heroic Games Launcher -** Open Source GOG and Epic games launcher \[💻️]
-- **[🎮](https://flathub.org/apps/com.valvesoftware.Steam) [Steam](steam) -** Steam games launcher \[💻️|🔳]
-  - **[🎨](https://flathub.org/apps/io.github.Foldex.AdwSteamGtk) AdwSteamGtk -** Gnome Adwaita theme for Steam \[💻️|🔳]
+- **[🔃](https://flathub.org/apps/org.gnome.Crosswords) Crosswords -** Crossword puzzles <sup>\[📱]</sup>
+- **[🎮](https://flathub.org/apps/com.heroicgameslauncher.hgl) Heroic Games Launcher -** Open Source GOG and Epic games launcher <sup>\[💻️]</sup>
+- **[🎮](https://flathub.org/apps/com.valvesoftware.Steam) [Steam](steam) -** Steam games launcher <sup>\[💻️|🔳]</sup>
+  - **[🎨](https://flathub.org/apps/io.github.Foldex.AdwSteamGtk) AdwSteamGtk -** Gnome Adwaita theme for Steam <sup>\[💻️|🔳]</sup>
 
 ### Internet
 - **[🌐](https://flathub.org/apps/org.mozilla.firefox) [Firefox](firefox) -** Internet browser
-- **[🌐](https://flathub.org/apps/org.chromium.Chromium) Chromium -** Internet browser \[💻️|🔳]
-- **[🔤](https://flathub.org/apps/app.drey.Dialect) Dialect -** Translator \[💻️|🔳|📱]
-- **[🌐](https://flathub.org/apps/org.gnome.Epiphany) Web -** Gnome's internet browser \[💻️|🔳|📱]
+- **[🌐](https://flathub.org/apps/org.chromium.Chromium) Chromium -** Internet browser <sup>\[💻️|🔳]</sup>
+- **[🔤](https://flathub.org/apps/app.drey.Dialect) Dialect -** Translator <sup>\[💻️|🔳|📱]</sup>
+- **[🗺️](https://flathub.org/apps/org.gnome.Maps) Maps -** OpenStreetMap client <sup>\[📱]</sup>
+- **[🌐](https://flathub.org/apps/org.gnome.Epiphany) Web -** Gnome's internet browser <sup>\[💻️|🔳|📱]</sup>
 
 ### Media Players
-- **[📺️](https://flathub.org/apps/cafe.avery.Delfin) Delfin -** Jellyfin client \[💻️|🔳|📱]
-- **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin Media Player -** Jellyfin client \[💻️|🔳]
-- **[🎞️](https://flathub.org/apps/io.github.celluloid_player.Celluloid) Celluloid -** Video player \[💻️|🔳|📱]
-- **[🎶](https://flathub.org/apps/com.vixalien.decibels) Decibels -** Audio player \[💻️|🔳|📱]
-- **[📖️](https://flathub.org/apps/com.github.geigi.cozy) Cozy -** Audiobook player \[💻️|🔳|📱]
-- **[📖️](https://flathub.org/apps/com.github.johnfactotum.Foliate) Foliate -** eBook reader \[💻️|🔳|📱]
-- **[🖼️](https://flathub.org/apps/org.gnome.Loupe) Loupe -** Image viewer \[💻️|🔳|📱]
-- **[🎶](https://flathub.org/apps/com.spotify.Client) [Spotify](spotify) -** Official Spotify client \[💻️|🔳]
-- **[🎶](https://flathub.org/apps/dev.alextren.Spot) Spot -** Spotify client (GTK) \[💻️|🔳|📱]
+- **[📺️](https://flathub.org/apps/cafe.avery.Delfin) Delfin -** Jellyfin client <sup>\[💻️|🔳|📱]</sup>
+- **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin Media Player -** Jellyfin client <sup>\[💻️|🔳]</sup>
+- **[🎞️](https://flathub.org/apps/io.github.celluloid_player.Celluloid) Celluloid -** Video player <sup>\[💻️|🔳|📱]</sup>
+- **[🎶](https://flathub.org/apps/com.vixalien.decibels) Decibels -** Audio player <sup>\[💻️|🔳|📱]</sup>
+- **[📖️](https://flathub.org/apps/com.github.geigi.cozy) Cozy -** Audiobook player <sup>\[💻️|🔳|📱]</sup>
+- **[📖️](https://flathub.org/apps/com.github.johnfactotum.Foliate) Foliate -** eBook reader <sup>\[💻️|🔳|📱]</sup>
+- **[🖼️](https://flathub.org/apps/org.gnome.Loupe) Loupe -** Image viewer <sup>\[💻️|🔳|📱]</sup>
+- **[📻️](https://flathub.org/apps/org.gnome.Podcasts) Podcasts -** Podcast player <sup>\[📱]</sup>
+- **[🎶](https://flathub.org/apps/com.spotify.Client) [Spotify](spotify) -** Official Spotify client <sup>\[💻️|🔳]</sup>
+- **[🎶](https://flathub.org/apps/dev.alextren.Spot) Spot -** Spotify client (GTK) <sup>\[💻️|🔳|📱]</sup>
 
 ### Media Editors
-- **[📸](https://flathub.org/apps/com.github.taiko2k.avvie) Avvie -** Crop images \[💻️|🔳|📱]
-- **[📸](https://flathub.org/apps/org.gnome.Snapshot) Snapshot -** Camera \[💻️|🔳|📱]
-- **[🎶](https://flathub.org/apps/app.drey.EarTag) Ear Tag -** Audio file tag editor \[💻️|🔳]
-- **[🎬️](https://flathub.org/apps/io.gitlab.adhami3310.Footage) Footage -** Simple video editor \[💻️|🔳]
-- **[🎬️](https://flathub.org/apps/org.pitivi.Pitivi) Pitivi -** Video editor \[💻️|🔳]
-- **[🎙️](https://flathub.org/apps/org.gnome.SoundRecorder) Sound Recorder -** Record audio \[💻️|🔳|📱]
-- **[🎬️](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer) Video Trimmer -** Trim videos \[💻️|🔳]
+- **[📸](https://flathub.org/apps/com.github.taiko2k.avvie) Avvie -** Crop images <sup>\[💻️|🔳|📱]</sup>
+- **[📸](https://flathub.org/apps/org.gnome.Snapshot) Snapshot -** Camera <sup>\[💻️|🔳|📱]</sup>
+- **[🎶](https://flathub.org/apps/app.drey.EarTag) Ear Tag -** Audio file tag editor <sup>\[💻️|🔳]</sup>
+- **[🎬️](https://flathub.org/apps/io.gitlab.adhami3310.Footage) Footage -** Simple video editor <sup>\[💻️|🔳]</sup>
+- **[🎬️](https://flathub.org/apps/org.pitivi.Pitivi) Pitivi -** Video editor <sup>\[💻️|🔳]</sup>
+- **[🎙️](https://flathub.org/apps/org.gnome.SoundRecorder) Sound Recorder -** Record audio <sup>\[💻️|🔳|📱]</sup>
+- **[🎬️](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer) Video Trimmer -** Trim videos <sup>\[💻️|🔳]</sup>
 
 ### Metrics
-- **[💽](https://flathub.org/apps/org.gnome.baobab) Disk Usage Analyzer -** \[💻️|🔳]
-- **[📜](https://flathub.org/apps/org.gnome.Logs) Logs -** \[💻️|🔳|📱]
-- *System Monitor -* \[💻️|🔳]
+- **[💽](https://flathub.org/apps/org.gnome.baobab) Disk Usage Analyzer -** <sup>\[💻️|🔳]</sup>
+- **[📜](https://flathub.org/apps/org.gnome.Logs) Logs -** <sup>\[💻️|🔳|📱]
+- *System Monitor -* <sup>\[💻️|🔳]</sup>
 
 ### Notes
-- **[📄](https://flathub.org/apps/com.github.jeromerobert.pdfarranger) PDF Arranger -** Manipulate PDF files \[💻️|🔳]
-- **[📝](https://flathub.org/apps/com.github.flxzt.rnote) Rnote -** Hand written notes \[💻️|🔳]
-- **[📄](https://flathub.org/apps/com.vixalien.sticky) Sticky Notes -** Quick notes \[💻️|🔳|📱]
-- **[📄](https://flathub.org/apps/org.gnome.TextEditor) Text Editor -** Basic text editor \[💻️|🔳|📱]
-- **[📝](https://flathub.org/apps/com.github.xournalpp.xournalpp) Xournal++ -** Hand written notes on PDF files \[💻️|🔳]
+- **[📝](https://flathub.org/apps/com.github.flxzt.rnote) Rnote -** Hand written notes <sup>\[💻️|🔳]</sup>
+- **[📑](https://flathub.org/apps/com.vixalien.sticky) Sticky Notes -** Quick notes <sup>\[💻️|🔳|📱]</sup>
+- **[📄](https://flathub.org/apps/org.gnome.TextEditor) Text Editor -** Basic text editor <sup>\[💻️|🔳|📱]</sup>
+- **[📝](https://flathub.org/apps/com.github.xournalpp.xournalpp) Xournal++ -** Hand written notes on PDF files <sup>\[💻️|🔳]</sup>
 
 ### Office
-- **[📄](https://flathub.org/apps/org.gnome.Evince) Document Viewer -** PDF viewer \[💻️|🔳|📱]
-- **[📄](https://flathub.org/apps/org.libreoffice.LibreOffice) [LibreOffice](libreoffice) -** Office suite (open standards) \[💻️|🔳]
-- **[📄](https://flathub.org/apps/org.onlyoffice.desktopeditors) ONLYOFFICE -** Office suite (MS Office compliant) \[💻️|🔳]
+- **[📄](https://flathub.org/apps/org.gnome.Evince) Document Viewer -** PDF viewer <sup>\[💻️|🔳|📱]</sup>
+- **[📄](https://flathub.org/apps/org.libreoffice.LibreOffice) [LibreOffice](libreoffice) -** Office suite (open standards) <sup>\[💻️|🔳]</sup>
+- **[📄](https://flathub.org/apps/org.onlyoffice.desktopeditors) ONLYOFFICE -** Office suite (MS Office compliant) <sup>\[💻️|🔳]</sup>
+- **[🔢](https://flathub.org/apps/com.github.jeromerobert.pdfarranger) PDF Arranger -** Manipulate PDF files <sup>\[💻️|🔳]</sup>
 
 <details>
   <summary>Consider Installing</summary>
@@ -90,46 +92,46 @@ My Linux setup 🐧
 </details>
 
 ### Productivity
-- **[🧮](https://flathub.org/apps/org.gnome.Calculator) Calculator -** \[💻️|🔳|📱]
-- **[📅](https://flathub.org/apps/org.gnome.Calendar) Calendar -** \[💻️|🔳|📱]
-  - `evolution-data-server` \[💻️|🔳]
-- **[📞](https://flathub.org/apps/org.gnome.Calls) Calls -** Make phone and SIP calls \[📱]
-- **[💬](https://flathub.org/apps/sm.puri.Chatty) Chats -** SMS/MMS texting \[📱]
-- **[⏰](https://flathub.org/apps/org.gnome.Clocks) Clocks -** \[💻️|🔳|📱]
-- **[📇](https://flathub.org/apps/org.gnome.Contacts) Contacts -** \[💻️|🔳|📱]
-  - `evolution-data-server` \[💻️|🔳]
-- **[⛅](https://flathub.org/apps/org.gnome.Weather) Weather -** \[💻️|🔳|📱]
+- **[🧮](https://flathub.org/apps/org.gnome.Calculator) Calculator -** <sup>\[💻️|🔳|📱]</sup>
+- **[📅](https://flathub.org/apps/org.gnome.Calendar) Calendar -** <sup>\[💻️|🔳|📱]</sup>
+  - `evolution-data-server` <sup>\[💻️|🔳]</sup>
+- **[📞](https://flathub.org/apps/org.gnome.Calls) Calls -** Make phone and SIP calls <sup>\[📱]</sup>
+- **[💬](https://flathub.org/apps/sm.puri.Chatty) Chats -** SMS/MMS texting <sup>\[📱]</sup>
+- **[⏰](https://flathub.org/apps/org.gnome.Clocks) Clocks -** <sup>\[💻️|🔳|📱]</sup>
+- **[📇](https://flathub.org/apps/org.gnome.Contacts) Contacts -** <sup>\[💻️|🔳|📱]</sup>
+  - `evolution-data-server` <sup>\[💻️|🔳]</sup>
+- **[⛅](https://flathub.org/apps/org.gnome.Weather) Weather -** <sup>\[💻️|🔳|📱]</sup>
 
 ### Printer
-- **[🖨️](https://flathub.org/apps/org.gnome.SimpleScan) Document Scanner -** \[💻️|🔳]
-- *Manage Printing -* \[💻️|🔳]
-- *Print Settings -* \[💻️|🔳|📱]
+- **[🖨️](https://flathub.org/apps/org.gnome.SimpleScan) Document Scanner -** <sup>\[💻️|🔳]</sup>
+- *🖨️ Manage Printing -* <sup>\[💻️|🔳]</sup>
+- *🖨️ Print Settings -* <sup>\[💻️|🔳]</sup>
 
 ### Remote
-- **[🔗](https://flathub.org/apps/org.gnome.Connections) Connections -** Remote desktop connections \[💻️|🔳]
-- **📱 [Valent](valent) -** KDE Connect for Gnome \[💻️|🔳|📱]
+- **[🔗](https://flathub.org/apps/org.gnome.Connections) Connections -** Remote desktop connections <sup>\[💻️|🔳]</sup>
+- **📱 [Valent](valent) -** KDE Connect for Gnome <sup>\[💻️|🔳|📱]</sup>
 
 ### Security
-- **[2️⃣](https://flathub.org/apps/com.belmoussaoui.Authenticator) Authenticator -** Two-factor authentication \[💻️|🔳|📱]
-- **[🔐](https://flathub.org/apps/com.bitwarden.desktop) [Bitwarden](bitwarden) -** Password manager \[💻️|🔳]
-- **[🔐](https://flathub.org/apps/org.gnome.World.Secrets) Secrets -** Password manager \[💻️|🔳]
+- **[2️⃣](https://flathub.org/apps/com.belmoussaoui.Authenticator) Authenticator -** Two-factor authentication <sup>\[💻️|🔳|📱]</sup>
+- **[🔐](https://flathub.org/apps/com.bitwarden.desktop) [Bitwarden](bitwarden) -** Password manager <sup>\[💻️|🔳]</sup>
+- **[🔐](https://flathub.org/apps/org.gnome.World.Secrets) Secrets -** Password manager <sup>\[💻️|🔳]</sup>
 
 ### Settings
-- **[➕](https://flathub.org/apps/com.mattjakeman.ExtensionManager) [Extension Manager](gnome/README.md#Extensions) -** Manage Gnome extensions \[💻️|🔳|📱]
-- **[✖️](https://flathub.org/apps/com.github.tchx84.Flatseal) Flatseal -** Manage flatpak permissions \[💻️|🔳|📱]
-- **[🧹️](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) Flatsweep -** Clean up files from deleted flatpaks \[💻️|🔳|📱]
-- *Settings -* \[💻️|🔳|📱]
-- *Gnome Tweaks -* \[💻️|🔳|📱]
-- *postmarketOS Tweaks -* \[📱]
-- **[🔤](https://flathub.org/apps/org.gnome.font-viewer) Fonts -** View installed fonts \[💻️|🔳]
+- **[➕](https://flathub.org/apps/com.mattjakeman.ExtensionManager) [Extension Manager](gnome/README.md#Extensions) -** Manage Gnome extensions <sup>\[💻️|🔳|📱]</sup>
+- **[✖️](https://flathub.org/apps/com.github.tchx84.Flatseal) Flatseal -** Manage flatpak permissions <sup>\[💻️|🔳|📱]</sup>
+- **[🧹️](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep) Flatsweep -** Clean up files from deleted flatpaks <sup>\[💻️|🔳|📱]</sup>
+- *⚙️ Settings -* <sup>\[💻️|🔳|📱]</sup>
+- *🔧 Gnome Tweaks -* <sup>\[💻️|🔳|📱]</sup>
+- *🔧 postmarketOS Tweaks -* <sup>\[📱]</sup>
+- **[🔤](https://flathub.org/apps/org.gnome.font-viewer) Fonts -** View installed fonts <sup>\[💻️|🔳]</sup>
 
 ### Social
-- **[💬](https://flathub.org/apps/de.schmidhuberj.Flare) Flare -** Signal client \[💻️|🔳|📱]
-- **[💬](https://flathub.org/apps/org.gnome.Fractal) Fractal -** Matrix client \[💻️|🔳|📱]
-- **[😀](https://flathub.org/apps/it.mijorus.smile) Smile -** Emoji picker \[💻️|🔳]
-- **[💬](https://flathub.org/apps/re.sonny.Tangram) Tangram -** Pinned tabs \[💻️|🔳|📱]
-- **[🐘](https://flathub.org/apps/dev.geopjr.Tuba) Tuba -** Mastodon client \[💻️|🔳|📱]
-- **[📞](https://flathub.org/apps/us.zoom.Zoom) Zoom -** Zoom client \[💻️|🔳]
+- **[💬](https://flathub.org/apps/de.schmidhuberj.Flare) Flare -** Signal client <sup>\[💻️|🔳|📱]</sup>
+- **[💬](https://flathub.org/apps/org.gnome.Fractal) Fractal -** Matrix client <sup>\[💻️|🔳|📱]</sup>
+- **[😀](https://flathub.org/apps/it.mijorus.smile) Smile -** Emoji picker <sup>\[💻️|🔳]</sup>
+- **[💬](https://flathub.org/apps/re.sonny.Tangram) Tangram -** Pinned tabs <sup>\[💻️|🔳|📱]</sup>
+- **[🐘](https://flathub.org/apps/dev.geopjr.Tuba) Tuba -** Mastodon client <sup>\[💻️|🔳|📱]</sup>
+- **[📞](https://flathub.org/apps/us.zoom.Zoom) Zoom -** Zoom client <sup>\[💻️|🔳]</sup>
 
 ### Terminal
 - **📄 [bat](bat) -** Alternative to `cat`
@@ -159,20 +161,20 @@ My Linux setup 🐧
 </details>
 
 ### Utilities
-- **[⬛️](https://flathub.org/apps/com.raggesilver.BlackBox) [Black Box](blackbox) -** Terminal Emulator \[💻️|🔳]
-- **⬛️ Console -** Terminal Emulator \[💻️|🔳|📱]
-- **[🔣](https://flathub.org/apps/org.gnome.Characters) Characters -** Character and Emoji picker \[💻️|🔳]
-- *Disks -*  \[💻️|🔳]
-- **[🎨](https://flathub.org/apps/com.github.finefindus.eyedropper) Eyedropper -** Pick and format colors \[💻️|🔳]
-- **[💿️](https://flathub.org/apps/io.gitlab.adhami3310.Impression) Impression -** Create bootable drives \[💻️|🔳]
-- **[🎶](https://flathub.org/apps/io.github.seadve.Mousai) Mousai -** Identify songs \[💻️|🔳|📱]
-- **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -** Manages keyrings \[💻️|🔳|📱]
-- *📦️ Software - * \[💻️|🔳|📱]
+- **[⬛️](https://flathub.org/apps/com.raggesilver.BlackBox) [Black Box](blackbox) -** Terminal Emulator <sup>\[💻️|🔳]</sup>
+- **⬛️ Console -** Terminal Emulator <sup>\[💻️|🔳|📱]</sup>
+- **[🔣](https://flathub.org/apps/org.gnome.Characters) Characte</sup>rs -** Character and Emoji picker <sup>\[💻️|🔳]</sup>
+- *💾 Disks -*  <sup>\[💻️|🔳]</sup>
+- **[🎨](https://flathub.org/apps/com.github.finefindus.eyedropper) Eyedropper -** Pick and format colors <sup>\[💻️|🔳]</sup>
+- **[💿️](https://flathub.org/apps/io.gitlab.adhami3310.Impression) Impression -** Create bootable drives <sup>\[💻️|🔳]</sup>
+- **[🎶](https://flathub.org/apps/io.github.seadve.Mousai) Mousai -** Identify songs <sup>\[💻️|🔳|📱]</sup>
+- **[🔐](https://flathub.org/apps/org.gnome.seahorse.Application) Passwords and Keys -** Manages keyrings <sup>\[💻️|🔳|📱]</sup>
+- *📦️ Software - * <sup>\[💻️|🔳|📱]</sup>
   - Dependencies: *flatpak*, *fwupd*
 
 ### Virtualization
-- **[🍾](https://flathub.org/apps/com.usebottles.bottles) Bottles -** Run windows programs \[💻️]
-- **[🔳](https://flathub.org/apps/org.gnome.Boxes) Boxes -** Virtual machines \[💻️]
+- **[🍾](https://flathub.org/apps/com.usebottles.bottles) Bottles -** Run windows programs <sup>\[💻️]</sup>
+- **[🔳](https://flathub.org/apps/org.gnome.Boxes) Boxes -** Virtual machines <sup>\[💻️]</sup>
 
 ### Extra
 - **⚛️ [electron](electron) -** Config files for electron apps
@@ -185,9 +187,6 @@ My Linux setup 🐧
 - **🔤 Amiri -** Arabic font
 - **🔤 Amiri Typewriter -** Arabic monospaced font
 
-
-## Server
-- **💻 Distro:** Debian
 
 ## [doti](https://github.com/ghassan0/doti)
 Program that manages your dotfiles by symlink-ing them into their respective directories.
