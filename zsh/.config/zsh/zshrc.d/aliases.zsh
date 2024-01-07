@@ -8,8 +8,6 @@ alias :q="exit"
 alias :q!="exit"
 alias wq="exit"
 alias :wq="exit"
-# ssh (kitty)
-[[ "${TERM}" == "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"
 # znap (plugin manager)
 alias PU="znap pull"
 # neovim
@@ -27,24 +25,24 @@ hash bat &> /dev/null && {
 # dd
 alias dd="dd status=progress"
 # cp/mv/rm/ln
-alias cp="cp -iR"
-alias mv="mv -i"
-alias rm="rm -Ir"
+#alias cp="cp -iR"
+#alias mv="mv -i"
+#alias rm="rm -Ir"
 alias rsync="rsync -ah --info=progress2"
 # mkdir
 alias mkdir="mkdir -p"
 # ls & exa
 hash exa &> /dev/null && {
-  # alias ls="exa --icons"
-  # alias la="exa -a --icons"
-  # alias ll="exa -l --icons --git"
-  # alias lla="exa -la --icons --git"
-  # alias tree="exa --tree --icons --git"
-  alias ls="exa"
-  alias la="exa -a"
-  alias ll="exa -l --git"
-  alias lla="exa -la --git"
-  alias tree="exa --tree --git"
+  alias ls="exa --icons"
+  alias la="exa -a --icons"
+  alias ll="exa -l --icons --git"
+  alias lla="exa -la --icons --git"
+  alias tree="exa --tree --icons --git"
+  # alias ls="exa"
+  # alias la="exa -a"
+  # alias ll="exa -l --git"
+  # alias lla="exa -la --git"
+  # alias tree="exa --tree --git"
 } || {
   alias ls="ls --color=auto"
   alias la="ls -a --color=auto"
@@ -78,13 +76,15 @@ alias makepkg-srcinfo="makepkg --printsrcinfo > .SRCINFO"
 alias makepkg-checksums="updpkgsums"
 # git
 alias g="git"
-# alias ga="git add"
-# alias gat="git add -u"
-# alias gc="git commit -m"
 # wl-clipboard
 hash wl-copy &> /dev/null && {
   alias copy="wl-copy"
   alias paste="wl-paste"
+}
+# termux-clipboard
+hash termux-clipboard-set &> /dev/null && {
+  alias copy="termux-clipboard-set"
+  alias paste="termux-clipboard-get"
 }
 # mount
 alias mount="mount -o uid=1000,gid=1000"

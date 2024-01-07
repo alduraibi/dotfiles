@@ -446,13 +446,23 @@
 - [On-Screen Keyboard for disk encryption](../osk-sdl/README.md)
 
 - Lenovo Yoga C940
+  - Enable tablet mode
+    ```sh
+    # install package
+    yay -S yoga-usage-mode-dkms-git
+    # add `yoga-usage-mode` to file:
+    sudo vim /etc/modules-load.d/modules.conf
+    ```
 
-  ```sh
-  # enable tablet mode
-  yay -S yoga-usage-mode-dkms-git
-  # add `yoga-usage-mode` to file:
-  sudo vim /etc/modules-load.d/modules.conf
-  ```
+  - Enable fingerprint sensor:
+    ```sh
+    yay -S --asdeps libfprint-tod-git
+    yay -S libfprint-2-tod1-synatudor-git
+    yay -S fprint
+
+    # Enroll fingerprint
+    fprint-enroll
+    ```
 
 ## References
 

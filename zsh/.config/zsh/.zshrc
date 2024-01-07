@@ -16,7 +16,6 @@ fi
 # znap prompt sindresorhus/pure
 znap prompt "romkatv/powerlevel10k"
 
-
 # History file options
 HISTFILE="${XDG_DATA_HOME}/zsh/histfile"
 HISTSIZE=10000
@@ -33,8 +32,6 @@ bindkey -v
 [[ ! -f "${ZDOTDIR}/zshrc.d/aliases.zsh" ]] || source "${ZDOTDIR}/zshrc.d/aliases.zsh"
 # Load functions
 [[ ! -f "${ZDOTDIR}/zshrc.d/functions.zsh" ]] || source "${ZDOTDIR}/zshrc.d/functions.zsh"
-# Load termux
-[[ ! -f "${ZDOTDIR}/zshrc.d/termux.zsh" ]] || source "${ZDOTDIR}/zshrc.d/termux.zsh"
 
 
 # Load plugins
