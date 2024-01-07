@@ -23,6 +23,11 @@ title=Syncthing
 description=Syncthing file synchronisation
 ports=22000|21027/udp
 
+[waydroid]
+title=Waydroid
+description=Android
+ports=53|67
+
 [wireguard]
 title=WireGuard
 description=VPN
