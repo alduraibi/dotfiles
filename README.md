@@ -152,9 +152,7 @@ My Linux setup 🐧
   <summary>Consider Installing</summary>
 
 - **🌟 [glow](glow) -** Render markdown on the terminal
-- **#️⃣ gh -** CLI tool to manage github
 - **🔍 fd -** Alternative to `find`
-- **🗄️ [duf](https://github.com/muesli/duf) -** `df` alternative
 - **🔎 [fzf](https://github.com/junegunn/fzf) -** CLI fuzzy finder
 - **🤬 [The Fuck](https://github.com/nvbn/thefuck) -** Corrects last console command
 - **🌳 [broot](https://github.com/Canop/broot) -** a usable `tree`
@@ -191,7 +189,10 @@ My Linux setup 🐧
 ## [doti](https://github.com/ghassan0/doti)
 Program that manages your dotfiles by symlink-ing them into their respective directories.
 
-- Install doti: `pip install doti` (or `yay -S doti` for Arch)
+- Install doti in venv:
+  - Create venv: `python -m venv venv`
+  - Activate: `source venv/bin/activate`
+  - Install doti: `python -m pip install doti`
 - Within your dotfiles directory, create a folder for an app and include all its configs as they appear from your home or root directory.
   - Will usually look like:
     - home: `app_name/.config/app_name/config`
