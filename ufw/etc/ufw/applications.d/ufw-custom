@@ -20,7 +20,7 @@ ports=3389/tcp
 
 [syncthing]
 title=Syncthing
-description=Syncthing file synchronisation
+description=Syncthing file synchronization
 ports=22000|21027/udp
 
 [waydroid]
