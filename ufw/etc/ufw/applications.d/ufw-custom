@@ -1,7 +1,7 @@
 [avahi]
 title=Avahi
 description=Multicast DNS (Bonjour protocol)
-ports=5353/udp|5298
+ports=5353/udp
 
 [fragments]
 title=Fragments
