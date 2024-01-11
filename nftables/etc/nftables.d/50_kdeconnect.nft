@@ -1,0 +1,8 @@
+#!/usr/sbin/nft -f
+
+table inet filter {
+	chain input {
+		udp dport 1714-1764 accept
+		tcp dport 1714-1764 accept
+	}
+}

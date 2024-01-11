@@ -20,6 +20,11 @@ My Linux setup 🐧
 - **Window Manager:** Gnome-Mobile
 - **Package Managers:** Flatpak & APK
 
+### Termux 🤖
+- **Device:** Google Pixel 8
+- **Distro:** Android - [Termux](termux)
+- **Package Managers:** pkg(apt)
+
 ## Applications
 
 ### Essentials
@@ -134,17 +139,17 @@ My Linux setup 🐧
 - **[📞](https://flathub.org/apps/us.zoom.Zoom) Zoom -** Zoom client <sup>\[💻️|🔳]</sup>
 
 ### Terminal
-- **📄 [bat](bat) -** Alternative to `cat`
-- **🔨 ansible -**
+- **📄 [bat](bat) -** Alternative to `cat` <sup>\[💻️|🔳|📱|🤖]</sup>
+- **🔨 ansible -** <sup>\[💻️|🔳]</sup>
   - ** sshpass -**
-- **📂 exa -** Modern `ls`
-- **📖 tldr -** Simplified man pages
-- **✂️ wl-clipboard -** Clipboard
-- **🧱 [ufw](ufw) -** Firewall
-- **📝 [Neovim](neovim) -** Text editor based on vim
+- **📂 exa -** Modern `ls` <sup>\[💻️|🔳|📱|🤖]</sup>
+- **📖 tldr -** Simplified man pages <sup>\[💻️|🔳|📱|🤖]</sup>
+- **✂️ wl-clipboard -** Clipboard <sup>\[💻️|🔳|📱]</sup>
+- **🧱 [ufw](ufw) -** Firewall <sup>\[💻️|🔳|📱]</sup>
+- **📝 [Neovim](neovim) -** Text editor based on vim <sup>\[💻️|🔳|📱|🤖]</sup>
   - Requirements: `deno`
-- **🔳 [Tmux](tmux) -** Terminal multiplexer
-- **🐚 [zsh](zsh) -** Shell
+- **🔳 [Tmux](tmux) -** Terminal multiplexer <sup>\[💻️|🔳|📱|🤖]</sup>
+- **🐚 [zsh](zsh) -** Shell <sup>\[💻️|🔳|📱|🤖]</sup>
 - **🐳 Docker -** Containers
   - **🐳 Docker-Compose -** Containers
 

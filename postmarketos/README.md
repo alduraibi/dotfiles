@@ -29,3 +29,8 @@
   # Start service now
   sudo service sshd start
   ```
+
+- [Firewall](../ufw/README.md)
+  - Switch to [ufw](../ufw/README.md) after this [issue](https://gitlab.com/postmarketOS/pmaports/-/issues/2398) is resolved.
+  - For the meantime, use [nftables](../nftables/README.md)
+    - After any changes: `sudo service nftables restart`
