@@ -45,14 +45,14 @@
         - `g`
         - `n`
           - _press enter_
-          - `+1G`
+          - `+3G`
           - `t`
           - `1`
     2.  If existing efi partition is small (~100MB), create a seperate boot partition (XBOOTLDR)
         - type: `Linux extended boot`
         - GUID: `bc13c2ff-59e6-4262-a352-b275fd6f7172`
         - file system: any (FAT32)
-        - size: 550M
+        - size: 3G
         - disable `fast boot` mode
         - must be on the same physical disk as the ESP (EFI partition)
     3.  Create the linux partition
@@ -269,12 +269,20 @@
 - Dotfiles
 
   ```sh
-  paru -S doti
-
   # clone dotfile repo
   git clone git@github.com:ghassan0/dotfiles.git ~/.dotfiles
+  
+  # create python virtual environment to install and use doti
+  cd .dotfiles
+  python -m venv venv
+  source venv/bin/activate
+  python -m pip install doti
 
+  # run doti to symlink all dotfiles
   doti -r
+
+  # deactivate virtual environment
+  deactivate
   ```
 
 ### System
