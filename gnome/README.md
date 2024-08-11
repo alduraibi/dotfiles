@@ -1,6 +1,6 @@
 # Gnome
 
-## Power profiles
+## Control Center
 
 ```sh
 # install gnome-control-center deps
@@ -77,7 +77,7 @@ Install `Extension Manager` flatpak to install and manage the following extensio
   - Behavior -> Window Demands Attention Focus -> on
   - Behavior -> Always Show Workspace Switcher -> on
 - [PiP on top]
-- [Rounded Window Corners]
+- [Rounded Window Corners Reborn]
 - [Screen Rotate]
 - [Smile] - Complementary extension for Smile (emoji picker)
 - [Valent](../valent/README.md) - Complementary extension for Valent (KDE Connect for Gnome)
@@ -99,6 +99,6 @@ Install `Extension Manager` flatpak to install and manage the following extensio
 [Improved OSK]: https://extensions.gnome.org/extension/4413/improved-osk/
 [Just Perfection]: https://extensions.gnome.org/extension/3843/just-perfection/
 [PiP on top]: https://extensions.gnome.org/extension/4691/pip-on-top/
-[Rounded Window Corners]: https://extensions.gnome.org/extension/5237/rounded-window-corners/
+[Rounded Window Corners Reborn]: https://extensions.gnome.org/extension/7048/rounded-window-corners-reborn/
 [Screen Rotate]: https://extensions.gnome.org/extension/5389/screen-rotate/
 [Smile - complementary extension]: https://extensions.gnome.org/extension/6096/smile-complementary-extension/

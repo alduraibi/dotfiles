@@ -85,7 +85,8 @@ My Linux setup 🐧
 - **[📝](https://flathub.org/apps/com.github.xournalpp.xournalpp) Xournal++ -** Hand written notes on PDF files <sup>\[💻️|🔳]</sup>
 
 ### Office
-- **[📄](https://flathub.org/apps/org.gnome.Evince) Document Viewer -** PDF viewer <sup>\[💻️|🔳|📱]</sup>
+- **[📄](https://flathub.org/apps/org.gnome.Papers) Papers -** New PDF viewer <sup>\[💻️|🔳|📱]</sup>
+  - **[📄](https://flathub.org/apps/org.gnome.Evince) Document Viewer -** Old PDF viewer <sup>\[💻️|🔳|📱]</sup>
 - **[📄](https://flathub.org/apps/org.libreoffice.LibreOffice) [LibreOffice](libreoffice) -** Office suite (open standards) <sup>\[💻️|🔳]</sup>
 - **[📄](https://flathub.org/apps/org.onlyoffice.desktopeditors) ONLYOFFICE -** Office suite (MS Office compliant) <sup>\[💻️|🔳]</sup>
 - **[🔢](https://flathub.org/apps/com.github.jeromerobert.pdfarranger) PDF Arranger -** Manipulate PDF files <sup>\[💻️|🔳]</sup>
@@ -166,7 +167,7 @@ My Linux setup 🐧
 ### Utilities
 - **[⬛️](https://flathub.org/apps/com.raggesilver.BlackBox) [Black Box](blackbox) -** Terminal Emulator <sup>\[💻️|🔳]</sup>
 - **⬛️ Console -** Terminal Emulator <sup>\[💻️|🔳|📱]</sup>
-- **[🔣](https://flathub.org/apps/org.gnome.Characters) Characte</sup>rs -** Character and Emoji picker <sup>\[💻️|🔳]</sup>
+- **[🔣](https://flathub.org/apps/org.gnome.Characters) Characters -** Character and Emoji picker <sup>\[💻️|🔳]</sup>
 - *💾 Disks -*  <sup>\[💻️|🔳]</sup>
 - **[🎨](https://flathub.org/apps/com.github.finefindus.eyedropper) Eyedropper -** Pick and format colors <sup>\[💻️|🔳]</sup>
 - **[💿️](https://flathub.org/apps/io.gitlab.adhami3310.Impression) Impression -** Create bootable drives <sup>\[💻️|🔳]</sup>

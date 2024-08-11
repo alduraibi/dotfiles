@@ -10,6 +10,9 @@
   sudo apk add flatpak
   # add Flathub repository
   sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+  # Set priority order to flatpak for gnome-software
+  gsettings set org.gnome.software packaging-format-preference "['flatpak']"
   ```
 
 - Avahi
@@ -20,6 +23,7 @@
   sudo rc-update add avahi-daemon
   # Start service now
   sudo rc-service avahi-daemon start
+  # Add nftables rule in firewall section
   ```
 
 - SSH
