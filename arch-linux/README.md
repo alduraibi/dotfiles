@@ -45,14 +45,14 @@
         - `g`
         - `n`
           - _press enter_
-          - `+3G`
+          - `+5G`
           - `t`
           - `1`
     2.  If existing efi partition is small (~100MB), create a seperate boot partition (XBOOTLDR)
         - type: `Linux extended boot`
         - GUID: `bc13c2ff-59e6-4262-a352-b275fd6f7172`
         - file system: any (FAT32)
-        - size: 3G
+        - size: 5G
         - disable `fast boot` mode
         - must be on the same physical disk as the ESP (EFI partition)
     3.  Create the linux partition
@@ -451,7 +451,7 @@
     --sort rate
     ```
 
-- [On-Screen Keyboard for disk encryption](../osk-sdl/README.md)
+- [On-Screen Keyboard for disk encryption](../unl0kr/README.md)
 
 - Lenovo Yoga C940
   - Enable tablet mode

@@ -28,8 +28,7 @@ My Linux setup 🐧
 ## Applications
 
 ### Essentials
-- **⌨️ [osk-sdl](osk-sdl) -** On-Screen Keyboard to unlock disk encryption (unmaintained) <sup>\[💻️|🔳]</sup>
-- **⌨️ unl0kr -** On-Screen Keyboard to unlock disk encryption <sup>\[📱]</sup>
+- **⌨️ unl0kr -** On-Screen Keyboard to unlock disk encryption <sup>\[💻️|🔳|📱]</sup>
 - **🗃️ [doti](doti) -** Easily manage dotfiles <sup>\[💻️|🔳|📱]</sup>
 - **📦️ [paru](paru) -** AUR helper <sup>\[💻️|🔳]</sup>
 
