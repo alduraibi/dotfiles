@@ -221,8 +221,8 @@ My Linux setup 🐧
 Program that manages your dotfiles by symlink-ing them into their respective directories.
 
 - Install doti in venv:
-  - Create venv: `python -m venv venv`
-  - Activate: `source venv/bin/activate`
+  - Create venv: `python -m venv .venv`
+  - Activate: `source .venv/bin/activate`
   - Install doti: `python -m pip install doti`
 - Within your dotfiles directory, create a folder for an app and include all its configs as they appear from your home or root directory.
   - Will usually look like:
