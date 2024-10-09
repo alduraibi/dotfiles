@@ -7,19 +7,32 @@
 ## Install:
 
 ```
+# Cross-platform: using venv & pip
+python -m venv .venv            # Create python virtual environment
+source .venv/bin/activate       # Activate virtual environment
+python -m pip install doti      # Install `doti` in venv
+
+# Cross-platform: using pip (no venv)
+pip install doti
+
+# Arch Linux: from AUR
 yay -S doti
 
-# or
-
-pip install doti
 ```
 
 ## Usage:
 
-```
+```sh
+# Open your dotfiles directory
+cd path/to/dotfiles/directory
+
+# Only if you installed `doti` using a venv
+source .venv/bin/activate        # Activate virtual environment
+
+# Run `doti` to link your dotfiles into their correct places
 doti
 ```
 
-[desc]: https://github.com/ghassan0/doti
-[source code]: https://github.com/ghassan0/doti
+[desc]: https://github.com/alduraibi/doti
+[source code]: https://github.com/alduraibi/doti
 [package]: https://pypi.org/project/doti/
