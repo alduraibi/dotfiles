@@ -270,7 +270,7 @@
 
   ```sh
   # clone dotfile repo
-  git clone git@github.com:ghassan0/dotfiles.git ~/.dotfiles
+  git clone git@github.com:alduraibi/dotfiles.git ~/.dotfiles
   
   # create python virtual environment to install and use doti
   cd .dotfiles
