@@ -14,7 +14,6 @@ sudo systemctl enable --now power-profiles-daemon
 1. Install [Passwords and Keys](https://flathub.org/apps/org.gnome.seahorse.Application) flatpak
 2. Open `Passwords and Keys` -> right-click `login` -> set empty password
 
-
 ## Remote desktop (extend display)
 
 - `gsettings set org.gnome.desktop.remote-desktop.rdp screen-share-mode extend`
@@ -50,6 +49,7 @@ sudo systemctl enable --now power-profiles-daemon
 - [Firefox](../firefox/README.md#Theme)
 - [LibreOffice](../libreoffice/README.md#Theme)
 - [Steam](../steam/README.md#Theme)
+- [VS Code](../vscode/README.md#Theme)
 
 ## Extensions
 
@@ -58,7 +58,7 @@ Install `Extension Manager` flatpak to install and manage the following extensio
 - [Alphabetical App Grid]
   - Position of ordered folders -> Start
 - [Always Show Titles In Overview] - Makes it easier to close apps on a touchscreen
-  - Enable `Always show window cose buttons`
+  - Enable `Always show window close buttons`
 - [AppIndicator and KStatusNotifierItem Support]
 - [Blur my Shell]
 - [Caffeine] - Keep screen on
@@ -81,9 +81,6 @@ Install `Extension Manager` flatpak to install and manage the following extensio
 - [Screen Rotate]
 - [Smile] - Complementary extension for Smile (emoji picker)
 - [Valent](../valent/README.md) - Complementary extension for Valent (KDE Connect for Gnome)
-
-
-
 
 [Alphabetical App Grid]: https://extensions.gnome.org/extension/4269/alphabetical-app-grid/
 [Always Show Titles In Overview]: https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/
