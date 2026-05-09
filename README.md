@@ -33,6 +33,16 @@ My Linux setup 🐧
 
 ## Applications
 
+### Art
+
+- **[📐](https://flathub.org/en/apps/org.gimp.GIMP) GIMP -** Image Editor <sup>\[💻️|🔳]</sup>
+- **[📐](https://flathub.org/en/apps/org.inkscape.Inkscape) Inkscape -** Vector Graphics Editor <sup>\[💻️|🔳]</sup>
+
+### Editors
+
+- **[📄](https://flathub.org/apps/org.gnome.TextEditor) Text Editor -** Basic text editor <sup>\[💻️|🔳|📱]</sup>
+- **👨‍💻 [VS Code](vscode) -** Basic text editor <sup>\[💻️|🔳|📱]</sup>
+
 ### Essentials
 
 - **⌨️ [unl0kr](unl0kr) -** On-Screen Keyboard to unlock disk encryption <sup>\[💻️|🔳|📱]</sup>
@@ -43,13 +53,16 @@ My Linux setup 🐧
 
 - **[⬇️](https://flathub.org/apps/de.haeckerfelix.Fragments) [Fragments](fragments) -** Bittorrent client <sup>\[💻️|🔳|📱]</sup>
 - **[⬇️](https://flathub.org/apps/org.nickvision.tubeconverter) Parabolic -** Web video and audio downloader <sup>\[💻️|🔳|📱]</sup>
-- **[🔄](https://flathub.org/apps/me.kozec.syncthingtk) [Syncthing GTK](syncthing-gtk) -** File sync <sup>\[💻️|🔳]</sup>
+<!-- - **[🔄](https://flathub.org/apps/me.kozec.syncthingtk) [Syncthing GTK](syncthing-gtk) -** File sync <sup>\[💻️|🔳]</sup> -->
 - **[🔃](https://flathub.org/apps/app.drey.Warp) Warp -** Send and receive files <sup>\[💻️|🔳|📱]</sup>
 
 ### Games
 
-- **[🔃](https://flathub.org/apps/org.gnome.Crosswords) Crosswords -** Crossword puzzles <sup>\[📱]</sup>
+- **[🔠](https://flathub.org/apps/org.gnome.Crosswords) Crosswords -** Crossword puzzles <sup>\[📱]</sup>
+- **[🟪](https://flathub.org/en/apps/io.github.tfuxu.floodit) Flood It -** Game <sup>\[💻️|🔳|📱]</sup>
 - **[🎮](https://flathub.org/apps/com.heroicgameslauncher.hgl) Heroic Games Launcher -** Open Source GOG and Epic games launcher <sup>\[💻️]</sup>
+- **[🃏](https://flathub.org/en/apps/org.gnome.Mahjongg) Mahjongg -** Game <sup>\[💻️|🔳|📱]</sup>
+- **[🧩](https://flathub.org/en/apps/de.til7701.Puzzled) Puzzled -** Game <sup>\[💻️|🔳|📱]</sup>
 - **[🎮](https://flathub.org/apps/com.valvesoftware.Steam) [Steam](steam) -** Steam games launcher <sup>\[💻️|🔳]</sup>
   - **[🎨](https://flathub.org/apps/io.github.Foldex.AdwSteamGtk) AdwSteamGtk -** Gnome Adwaita theme for Steam <sup>\[💻️|🔳]</sup>
 
@@ -61,19 +74,6 @@ My Linux setup 🐧
 - **[🗺️](https://flathub.org/apps/org.gnome.Maps) Maps -** OpenStreetMap client <sup>\[📱]</sup>
 - **[🌐](https://flathub.org/apps/org.gnome.Epiphany) Web -** Gnome's internet browser <sup>\[💻️|🔳|📱]</sup>
 
-### Media Players
-
-- **[📺️](https://flathub.org/apps/cafe.avery.Delfin) Delfin -** Jellyfin client <sup>\[💻️|🔳|📱]</sup>
-- **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin Media Player -** Jellyfin client <sup>\[💻️|🔳]</sup>
-- **[🎞️](https://flathub.org/apps/io.github.celluloid_player.Celluloid) Celluloid -** Video player <sup>\[💻️|🔳|📱]</sup>
-- **[🎶](https://flathub.org/apps/com.vixalien.decibels) Decibels -** Audio player <sup>\[💻️|🔳|📱]</sup>
-- **[📖️](https://flathub.org/apps/com.github.geigi.cozy) Cozy -** Audiobook player <sup>\[💻️|🔳|📱]</sup>
-- **[📖️](https://flathub.org/apps/com.github.johnfactotum.Foliate) Foliate -** eBook reader <sup>\[💻️|🔳|📱]</sup>
-- **[🖼️](https://flathub.org/apps/org.gnome.Loupe) Loupe -** Image viewer <sup>\[💻️|🔳|📱]</sup>
-- **[📻️](https://flathub.org/apps/org.gnome.Podcasts) Podcasts -** Podcast player <sup>\[📱]</sup>
-- **[🎶](https://flathub.org/apps/com.spotify.Client) [Spotify](spotify) -** Official Spotify client <sup>\[💻️|🔳]</sup>
-- **[🎶](https://flathub.org/apps/dev.alextren.Spot) Spot -** Spotify client (GTK) <sup>\[💻️|🔳|📱]</sup>
-
 ### Media Editors
 
 - **[📸](https://flathub.org/apps/com.github.taiko2k.avvie) Avvie -** Crop images <sup>\[💻️|🔳|📱]</sup>
@@ -84,6 +84,19 @@ My Linux setup 🐧
 - **[🎙️](https://flathub.org/apps/org.gnome.SoundRecorder) Sound Recorder -** Record audio <sup>\[💻️|🔳|📱]</sup>
 - **[🎬️](https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer) Video Trimmer -** Trim videos <sup>\[💻️|🔳]</sup>
 
+### Media Players
+
+- **[📺️](https://flathub.org/apps/cafe.avery.Delfin) Delfin -** Jellyfin client <sup>\[💻️|🔳|📱]</sup>
+- **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin -** Jellyfin client <sup>\[💻️|🔳]</sup>
+- **[🎞️](https://flathub.org/apps/io.github.celluloid_player.Celluloid) Celluloid -** Video player <sup>\[💻️|🔳|📱]</sup>
+- **[🎶](https://flathub.org/apps/com.vixalien.decibels) Audio Player -** Audio player (Decibels)<sup>\[💻️|🔳|📱]</sup>
+- **[📖️](https://flathub.org/apps/com.github.geigi.cozy) Cozy -** Audiobook player <sup>\[💻️|🔳|📱]</sup>
+- **[📖️](https://flathub.org/apps/com.github.johnfactotum.Foliate) Foliate -** eBook reader <sup>\[💻️|🔳|📱]</sup>
+- **[🖼️](https://flathub.org/apps/org.gnome.Loupe) Loupe -** Image viewer <sup>\[💻️|🔳|📱]</sup>
+- **[📻️](https://flathub.org/apps/org.gnome.Podcasts) Podcasts -** Podcast player <sup>\[📱]</sup>
+- **[🎶](https://flathub.org/apps/com.spotify.Client) [Spotify](spotify) -** Official Spotify client <sup>\[💻️|🔳]</sup>
+<!-- - **[🎶](https://flathub.org/apps/dev.alextren.Spot) Spot -** Spotify client (GTK) <sup>\[💻️|🔳|📱]</sup> -->
+
 ### Metrics
 
 - **[💽](https://flathub.org/apps/org.gnome.baobab) Disk Usage Analyzer -** View disk usage<sup>\[💻️|🔳]</sup>
@@ -92,15 +105,15 @@ My Linux setup 🐧
 
 ### Notes
 
+- **[📝](https://flathub.org/en/apps/org.gnome.gitlab.somas.Apostrophe) Apostrophe -** Organized notes <sup>\[💻️|🔳]</sup>
+- **[📝](https://flathub.org/en/apps/io.appflowy.AppFlowy) AppFlowy -** Organized notes <sup>\[💻️|🔳|📱]</sup>
 - **[📝](https://flathub.org/apps/com.github.flxzt.rnote) Rnote -** Hand written notes <sup>\[💻️|🔳]</sup>
 - **[📑](https://flathub.org/apps/com.vixalien.sticky) Sticky Notes -** Quick notes <sup>\[💻️|🔳|📱]</sup>
-- **[📄](https://flathub.org/apps/org.gnome.TextEditor) Text Editor -** Basic text editor <sup>\[💻️|🔳|📱]</sup>
 - **[📝](https://flathub.org/apps/com.github.xournalpp.xournalpp) Xournal++ -** Hand written notes on PDF files <sup>\[💻️|🔳]</sup>
 
 ### Office
 
-- **[📄](https://flathub.org/apps/org.gnome.Papers) Papers -** New PDF viewer <sup>\[💻️|🔳|📱]</sup>
-- **[📄](https://flathub.org/apps/org.gnome.Evince) Document Viewer -** Old PDF viewer <sup>\[💻️|🔳|📱]</sup>
+- **[📄](https://flathub.org/apps/org.gnome.Papers) Document Viewer -** PDF viewer (Papers) <sup>\[💻️|🔳|📱]</sup>
 - **[📄](https://flathub.org/apps/org.libreoffice.LibreOffice) [LibreOffice](libreoffice) -** Office suite (open standards) <sup>\[💻️|🔳]</sup>
 - **[📄](https://flathub.org/apps/org.onlyoffice.desktopeditors) ONLYOFFICE -** Office suite (MS Office compliant) <sup>\[💻️|🔳]</sup>
 - **[🔢](https://flathub.org/apps/com.github.jeromerobert.pdfarranger) PDF Arranger -** Manipulate PDF files <sup>\[💻️|🔳]</sup>
@@ -187,7 +200,6 @@ My Linux setup 🐧
 
 ### Utilities
 
-- **[⬛️](https://flathub.org/apps/com.raggesilver.BlackBox) [Black Box](blackbox) -** Terminal Emulator <sup>\[💻️|🔳]</sup>
 - **⬛️ Console -** Terminal Emulator <sup>\[💻️|🔳|📱]</sup>
 - **[🔣](https://flathub.org/apps/org.gnome.Characters) Characters -** Character and Emoji picker <sup>\[💻️|🔳]</sup>
 - _💾 Disks -_ <sup>\[💻️|🔳]</sup>

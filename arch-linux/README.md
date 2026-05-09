@@ -139,7 +139,7 @@
 5.  Install Arch:
     1. Update mirror list:
        ```sh
-       reflector --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+       reflector --protocol https --latest 50 --fastest 10 --sort score --save /etc/pacman.d/mirrorlist
        ```
     2. Install essential packages:
        ```sh
@@ -271,15 +271,15 @@
   ```sh
   # clone dotfile repo
   git clone git@github.com:alduraibi/dotfiles.git ~/.dotfiles
-  
+
   # create python virtual environment to install and use doti
   cd .dotfiles
-  python -m venv venv
-  source venv/bin/activate
+  python -m venv .venv
+  source .venv/bin/activate
   python -m pip install doti
 
   # run doti to symlink all dotfiles
-  doti -r
+  doti
 
   # deactivate virtual environment
   deactivate
@@ -447,14 +447,17 @@
     ```
     --save /etc/pacman.d/mirrorlist
     --protocol https
-    --latest 10
-    --sort rate
+    --latest 50
+    --fastest 10
+    --sort score
     ```
 
 - [On-Screen Keyboard for disk encryption](../unl0kr/README.md)
 
 - Lenovo Yoga C940
+
   - Enable tablet mode
+
     ```sh
     # install package
     yay -S yoga-usage-mode-dkms-git
@@ -463,6 +466,7 @@
     ```
 
   - Enable fingerprint sensor:
+
     ```sh
     yay -S --asdeps libfprint-tod-git
     yay -S libfprint-2-tod1-synatudor-git

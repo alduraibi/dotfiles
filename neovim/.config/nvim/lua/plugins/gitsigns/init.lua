@@ -1,2 +1,6 @@
 -- plugins/gitsigns.lua
-require('gitsigns').setup({})
+
+return {
+    "lewis6991/gitsigns.nvim",
+    opts = {},
+}

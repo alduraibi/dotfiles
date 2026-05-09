@@ -70,7 +70,11 @@ setopt autocd
 unsetopt beep
 # Enable vi-style key bindings
 #bindkey -v
+# Fix typos
+setopt correct_all
 #export ZVM_VI_EDITOR="nvim"
+
+setopt AUTO_MENU
 
 
 # # The following lines were added by compinstall
