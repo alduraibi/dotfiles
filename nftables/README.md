@@ -5,6 +5,7 @@
 **Links:** [postmarketOS Wiki]
 
 ## Setup
+
 After any change: `sudo service nftables restart`
 
 ## Applications

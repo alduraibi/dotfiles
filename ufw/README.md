@@ -7,6 +7,7 @@
 ## Install
 
 ### Arch Linux
+
 ```sh
 # install ufw:
 sudo pacman -S ufw
@@ -15,6 +16,7 @@ sudo systemctl enable --now ufw
 ```
 
 ### postmarketOS
+
 ```sh
 # Disable nftables
 sudo rc-update del nftables
@@ -26,6 +28,7 @@ sudo rc-update add ufw
 ```
 
 ### Setup
+
 ```sh
 # set default to deny
 sudo ufw default deny

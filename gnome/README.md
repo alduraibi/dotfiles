@@ -30,22 +30,25 @@ sudo systemctl enable --now power-profiles-daemon
 ### GTK3 theme
 
 1. Install for dark adwaita on gtk3 apps
+
    ```sh
    yay -S adw-gtk3
    ```
+
 2. Go to `gnome-tweaks` -> `appearance` -> `legacy application` -> `adw-gtk3-dark`
 
 ### QT theme
 
 1. Install for adwaita on QT apps
+
    ```sh
    sudo pacman -S adwaita-qt5 adwaita-qt6 qgnomeplatform-qt5 qgnomeplatform-qt6
    ```
+
 2. Add `export QT_QPA_PLATFORMTHEME=gnome` to zshenv
 
 ### Application Themes
 
-- [Black Box](../blackbox/README.md#Theme)
 - [Firefox](../firefox/README.md#Theme)
 - [LibreOffice](../libreoffice/README.md#Theme)
 - [Steam](../steam/README.md#Theme)
@@ -65,11 +68,14 @@ Install `Extension Manager` flatpak to install and manage the following extensio
 - [Clipboard History]
 - [Dim Completed Calendar Events]
 - [Do Not Disturb While Screen Sharing Or Recording]
+- [Foresight]
 - [Hibernate Status Button]
 - [Hot Edge]
+
   ```sh
   sudo pacman -S libgda6
   ```
+
 - [Just Perfection]
   - Visibility -> Keyboard Layout -> off
   - Visibility -> Accessibility Menu -> off
@@ -90,12 +96,11 @@ Install `Extension Manager` flatpak to install and manage the following extensio
 [Clipboard History]: https://extensions.gnome.org/extension/4839/clipboard-history/
 [Dim Completed Calendar Events]: https://extensions.gnome.org/extension/5979/dim-completed-calendar-events/
 [Do Not Disturb While Screen Sharing Or Recording]: https://extensions.gnome.org/extension/5985/do-not-disturb-while-screen-sharing-or-recording/
-[GSConnect]: https://extensions.gnome.org/extension/1319/gsconnect/
+[Foresight]: https://extensions.gnome.org/extension/7901/foresight/
 [Hibernate Status Button]: https://extensions.gnome.org/extension/755/hibernate-status-button/
 [Hot Edge]: https://extensions.gnome.org/extension/4222/hot-edge/
-[Improved OSK]: https://extensions.gnome.org/extension/4413/improved-osk/
 [Just Perfection]: https://extensions.gnome.org/extension/3843/just-perfection/
 [PiP on top]: https://extensions.gnome.org/extension/4691/pip-on-top/
 [Rounded Window Corners Reborn]: https://extensions.gnome.org/extension/7048/rounded-window-corners-reborn/
 [Screen Rotate]: https://extensions.gnome.org/extension/5389/screen-rotate/
-[Smile - complementary extension]: https://extensions.gnome.org/extension/6096/smile-complementary-extension/
+[Smile]: https://extensions.gnome.org/extension/6096/smile-complementary-extension/

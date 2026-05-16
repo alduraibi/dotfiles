@@ -5,6 +5,7 @@
 ## Post-install
 
 - Flatpak
+
   ```sh
   # install
   sudo apk add flatpak
@@ -16,6 +17,7 @@
   ```
 
 - Avahi
+
   ```sh
   # install
   sudo apk add avahi
@@ -27,6 +29,7 @@
   ```
 
 - SSH
+
   ```sh
   # Enable service on boot
   sudo rc-update add sshd

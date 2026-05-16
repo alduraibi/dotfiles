@@ -4,9 +4,9 @@
 
 **Links:** [Source Code] - [Package]
 
-## Install:
+## Install
 
-```
+```sh
 # Cross-platform: using venv & pip
 python -m venv .venv            # Create python virtual environment
 source .venv/bin/activate       # Activate virtual environment
@@ -20,7 +20,7 @@ yay -S doti
 
 ```
 
-## Usage:
+## Usage
 
 ```sh
 # Open your dotfiles directory

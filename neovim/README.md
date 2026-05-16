@@ -1,4 +1,4 @@
-# 📝 Neovim:
+# 📝 Neovim
 
 > Neovim is a hyperextensible Vim-based text editor.<sup>[1][desc]</sup>
 
@@ -43,9 +43,7 @@
 [lazy.nvim]: https://lazy.folke.io/
 [adwaita.nvim]: https://github.com/Mofiqul/adwaita.nvim
 [lualine.nvim]: https://github.com/nvim-lualine/lualine.nvim
-[which-key.nvim]: https://github.com/folke/which-key.nvim
 [indent-blankline.nvim]: https://github.com/lukas-reineke/indent-blankline.nvim
 [gitsigns.nvim]: https://github.com/lewis6991/gitsigns.nvim
 [nvim-autopairs]: https://github.com/windwp/nvim-autopairs
-[mkdir.nvim]: https://github.com/jghauser/mkdir.nvim
 [nvim-web-devicons]: https://github.com/kyazdani42/nvim-web-devicons

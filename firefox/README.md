@@ -4,14 +4,17 @@
 
 ## Theme
 
-Gnome theme taken from [here](firefox-gnome-theme)
+Gnome theme taken from [here][firefox-gnome-theme]
 
 - Clone repo:
+
 ```sh
 git clone https://github.com/rafaelmardojai/firefox-gnome-theme
 cd firefox-gnome-theme
 ```
+
 - Run auto-install script:
+
 ```sh
 ./scripts/auto-install.sh
 ```
@@ -57,8 +60,8 @@ cd firefox-gnome-theme
 - **[Enhancer for YouTube]** - Take control of YouTube
 - **[User-Agent Switcher and Manager]** - Change the browser user-agent
 - **[Video DownloadHelper]** - Download videos from anywhere
-</details>
 
+</details>
 
 [firefox-gnome-theme]: https://github.com/rafaelmardojai/firefox-gnome-theme
 [Arabic spell-checking dictionary]: https://addons.mozilla.org/en-US/firefox/addon/arabic-spell-checking-dictiona/
