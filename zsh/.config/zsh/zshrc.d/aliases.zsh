@@ -12,7 +12,8 @@ alias :wq="exit"
 alias PU="znap pull"
 # neovim
 hash nvim &> /dev/null && {
-  alias vi="nvim"
+  alias vi="\nvim"
+  alias nvim="NVIM_APPNAME=nvim-lazyvim nvim"
 }
 # paru/yay
 hash paru &> /dev/null && {
