@@ -181,7 +181,7 @@ My Linux setup 🐧
   - **sshpass -**
 - **📄 [bat](bat) -** Alternative to `cat` <sup>\[💻️|🔳|📱|🤖]</sup>
 - **[🌳](https://github.com/Canop/broot) broot -** a usable `tree`
-- **📂 exa -** Modern `ls` <sup>\[💻️|🔳|📱|🤖]</sup>
+- **📂 eza -** Modern `ls` <sup>\[💻️|🔳|📱|🤖]</sup>
 - **🔍 fd -** Alternative to `find`
 - **📖 tldr -** Simplified man pages <sup>\[💻️|🔳|📱|🤖]</sup>
 - **✂️ wl-clipboard -** Clipboard <sup>\[💻️|🔳|📱]</sup>

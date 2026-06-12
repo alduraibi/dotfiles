@@ -9,21 +9,25 @@
 My Termux setup:
 
 - Install Packages
+
 ```sh
 # Essentials
 pkg install git python termux-api openssh
 
 # Tools
-pkg install atool bat duf exa fd fzf tmux
+pkg install atool bat duf eza fd fzf tmux
 ```
 
 - Change shell to Zsh
+
 ```sh
 pkg install zsh
-chsh zsh
+chsh -s zsh
+# restart session
 ```
 
 - Enable access to some Android folders
+
 ```sh
 # https://wiki.termux.com/wiki/Internal_and_external_storage
 termux-setup-storage
@@ -31,14 +35,15 @@ termux-setup-storage
 ```
 
 - Setup dotfiles
+
 ```sh
 # Clone repo
 git clone DOTFILE_REPO ~/.dotfiles
 cd ~/.dotfiles
 
 # create and activate venv
-python -m venv venv
-source venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate
 
 # install doti and dependencies
 python -m pip install doti
@@ -49,6 +54,7 @@ doti
 ```
 
 - Neovim
+
 ```sh
 pkg install neovim
 # Neovim Extras

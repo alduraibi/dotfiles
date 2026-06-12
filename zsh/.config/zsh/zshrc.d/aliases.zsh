@@ -31,18 +31,18 @@ alias dd="dd status=progress"
 alias rsync="rsync -ah --info=progress2"
 # mkdir
 alias mkdir="mkdir -p"
-# ls & exa
-hash exa &> /dev/null && {
-  alias ls="exa --icons"
-  alias la="exa -a --icons"
-  alias ll="exa -l --icons --git"
-  alias lla="exa -la --icons --git"
-  alias tree="exa --tree --icons --git"
-  # alias ls="exa"
-  # alias la="exa -a"
-  # alias ll="exa -l --git"
-  # alias lla="exa -la --git"
-  # alias tree="exa --tree --git"
+# ls & eza
+hash eza &> /dev/null && {
+  alias ls="eza --icons"
+  alias la="eza -a --icons"
+  alias ll="eza -l --icons --git"
+  alias lla="eza -la --icons --git"
+  alias tree="eza --tree --icons --git"
+  # alias ls="eza"
+  # alias la="eza -a"
+  # alias ll="eza -l --git"
+  # alias lla="eza -la --git"
+  # alias tree="eza --tree --git"
 } || {
   alias ls="ls --color=auto"
   alias la="ls -a --color=auto"
