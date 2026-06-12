@@ -33,7 +33,31 @@ My Linux setup 🐧
 
 ## Applications
 
-### Media
+### Media Players
+
+#### Audio Players
+
+- **[🎶](https://flathub.org/apps/com.vixalien.decibels) Audio Player -** Audio player (Decibels)<sup>\[💻️|🔳|📱]</sup>
+- **[📖️](https://flathub.org/apps/com.github.geigi.cozy) Cozy -** Audiobook player <sup>\[💻️|🔳|📱]</sup>
+- **[📻️](https://flathub.org/apps/org.gnome.Podcasts) Podcasts -** Podcast player <sup>\[📱]</sup>
+- **[🎶](https://flathub.org/apps/com.spotify.Client) [Spotify](spotify) -** Official Spotify client <sup>\[💻️|🔳]</sup>
+<!-- - **[🎶](https://flathub.org/apps/dev.alextren.Spot) Spot -** Spotify client (GTK) <sup>\[💻️|🔳|📱]</sup> -->
+
+#### Image Viewers
+
+- **[🖼️](https://flathub.org/apps/org.gnome.Loupe) Loupe -** Image viewer <sup>\[💻️|🔳|📱]</sup>
+
+#### Video Players
+
+- **[📺️](https://flathub.org/apps/cafe.avery.Delfin) Delfin -** Jellyfin client <sup>\[💻️|🔳|📱]</sup>
+- **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin -** Jellyfin client <sup>\[💻️|🔳]</sup>
+- **[🎞️](https://flathub.org/apps/io.github.celluloid_player.Celluloid) Celluloid -** Video player <sup>\[💻️|🔳|📱]</sup>
+
+#### Other Media Players
+
+- **[📖️](https://flathub.org/apps/com.github.johnfactotum.Foliate) Foliate -** eBook reader <sup>\[💻️|🔳|📱]</sup>
+
+### Media Editors
 
 #### Audio Editors
 
@@ -55,19 +79,6 @@ My Linux setup 🐧
 
 - **[📸](https://flathub.org/apps/org.gnome.Snapshot) Snapshot -** Camera <sup>\[💻️|🔳|📱]</sup>
 - **[🎙️](https://flathub.org/apps/org.gnome.SoundRecorder) Sound Recorder -** Record audio <sup>\[💻️|🔳|📱]</sup>
-
-#### Media Players
-
-- **[📺️](https://flathub.org/apps/cafe.avery.Delfin) Delfin -** Jellyfin client <sup>\[💻️|🔳|📱]</sup>
-- **[📺️](https://flathub.org/apps/com.github.iwalton3.jellyfin-media-player) Jellyfin -** Jellyfin client <sup>\[💻️|🔳]</sup>
-- **[🎞️](https://flathub.org/apps/io.github.celluloid_player.Celluloid) Celluloid -** Video player <sup>\[💻️|🔳|📱]</sup>
-- **[🎶](https://flathub.org/apps/com.vixalien.decibels) Audio Player -** Audio player (Decibels)<sup>\[💻️|🔳|📱]</sup>
-- **[📖️](https://flathub.org/apps/com.github.geigi.cozy) Cozy -** Audiobook player <sup>\[💻️|🔳|📱]</sup>
-- **[📖️](https://flathub.org/apps/com.github.johnfactotum.Foliate) Foliate -** eBook reader <sup>\[💻️|🔳|📱]</sup>
-- **[🖼️](https://flathub.org/apps/org.gnome.Loupe) Loupe -** Image viewer <sup>\[💻️|🔳|📱]</sup>
-- **[📻️](https://flathub.org/apps/org.gnome.Podcasts) Podcasts -** Podcast player <sup>\[📱]</sup>
-- **[🎶](https://flathub.org/apps/com.spotify.Client) [Spotify](spotify) -** Official Spotify client <sup>\[💻️|🔳]</sup>
-<!-- - **[🎶](https://flathub.org/apps/dev.alextren.Spot) Spot -** Spotify client (GTK) <sup>\[💻️|🔳|📱]</sup> -->
 
 ### Files
 
@@ -225,16 +236,36 @@ My Linux setup 🐧
 
 ## [doti](https://github.com/alduraibi/doti)
 
-Program that manages your dotfiles by symlink-ing them into their respective directories.
+Easily manage all your dotfiles across your devices using [`doti`](https://github.com/alduraibi/doti).
 
-- Install doti in venv:
-  - Create venv: `python -m venv .venv`
-  - Activate: `source .venv/bin/activate`
-  - Install doti: `python -m pip install doti`
-- Within your dotfiles directory, create a folder for an app and include all its configs as they appear from your home or root directory.
-  - Will usually look like:
-    - home: `app_name/.config/app_name/config`
-    - root: `etc/app_name/config`
+- Install `doti`:
+
+  ```sh
+  # Open your dotfiles directory
+  cd path/to/dotfiles/directory
+  # Create python virtual environment
+  python -m venv .venv
+  # Activate virtual environment
+  source .venv/bin/activate
+  # Install `doti`
+  python -m pip install doti
+  ```
+
+- Within your dotfiles directory, create a folder for an app and include all its configs as they appear from your `home` or `root` directory. This will usually look like:
+  - for `home` directory configs: `app_name/.config/app_name/config`
+  - for `root` directory configs: `app_name/etc/app_name/config`
+
 - Edit `doti.cfg` to include configs to add or remove
-- Run `doti`
-  - Will get prompted for password for root configs
+
+- Use `doti` to link your dotfiles into their correct places
+
+  ```sh
+  # Open your dotfiles directory
+  cd path/to/dotfiles/directory
+
+  # Activate virtual environment
+  source .venv/bin/activate
+
+  # Run `doti` (note: will get prompted for password for root configs)
+  doti
+  ```
